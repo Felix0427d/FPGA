@@ -1,4 +1,0 @@
-{signal: [     
-  {name: 'Clk',          wave: 'p.................'},
-  {name: 'Out_Valid',    wave: '010...10...10...10'},
-]}

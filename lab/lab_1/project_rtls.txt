@@ -1,5 +1,0 @@
-"C:\lscc\radiant\2025.2\ip\pmi\pmi_iCE40UP.vhd"
-"C:\Users\felix\Documents\Master_1ECAM\FPGA\lab3_files\led.vhd"
-"C:\lscc\radiant\2025.2\cae_library\synthesis\vhdl\iCE40UP.vhd"
-"C:\lscc\radiant\2025.2\synpbase\lib\generic\ice40up.v"
-"C:\lscc\radiant\2025.2\ip\pmi\pmi_iCE40UP.v"

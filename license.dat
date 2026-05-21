@@ -63,7 +63,8 @@ FEATURE LSC_IP_SC_HT_gp_timer lattice 2027.03 16-mar-2027 uncounted \
 	441C2E326B29 VENDOR_STRING=LSC_IP_SC_HT_gp_timer \
 	HOSTID=ec8e77ff44ee
 
-DAEMON saltd path_to_saltd
+SERVER this_host ANY
+DAEMON saltd C:\lscc\radiant\2025.2\questasim\license_server\saltd.exe
 INCREMENT latticemsim mgcld 2027.03 16-mar-2027 uncounted \
     EF5C55E003246D1EEAAF VENDOR_STRING=CF008ED3 HOSTID=ec8e77ff44ee \
     ISSUER="ModelSIM/Questa Lattice" SN=1103296396 SIGN2="1F67 A2D4 5D26 \

@@ -1,5 +1,0 @@
-#List of actual used RTLs.
-
-File                                                                   Type     IN_PROJECT/INCLUDED/LIBRARY
-
-"C:\Users\felix\Documents\Master_1ECAM\FPGA\lab3_files\led.vhd"        vhdl                      IN PROJECT

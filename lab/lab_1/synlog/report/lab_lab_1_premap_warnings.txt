@@ -1,4 +1,0 @@
-@W: FX1172 :"c:\users\felix\documents\master_1ecam\fpga\lab3_files\led.vhd":36:8:36:9|User-specified initial value defined for instance counter_g[21:0] is being ignored due to limitations in architecture. 
-@W: FX1172 :"c:\users\felix\documents\master_1ecam\fpga\lab3_files\led.vhd":36:8:36:9|User-specified initial value defined for instance counter_r[20:0] is being ignored due to limitations in architecture. 
-@W: FX1172 :"c:\users\felix\documents\master_1ecam\fpga\lab3_files\led.vhd":36:8:36:9|User-specified initial value defined for instance reg_led_g is being ignored due to limitations in architecture. 
-@W: MT530 :"c:\users\felix\documents\master_1ecam\fpga\lab3_files\led.vhd":36:8:36:9|Found inferred clock led|clk which controls 44 sequential elements including counter_g[21:0]. This clock has no specified timing constraint which may adversely impact design performance. 

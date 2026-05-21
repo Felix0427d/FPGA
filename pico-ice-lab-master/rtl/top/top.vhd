@@ -80,7 +80,7 @@ begin
         Uart_Rx => uart_rxd
     );
 
-    -------- TO BE REMOVED DURING EXERCISES -----------------
+/*    -------- TO BE REMOVED DURING EXERCISES -----------------
     led_out_r <= counter(counter'high);
     led_out_g <= counter(counter'high);
     led_out_b <= counter(counter'high);
@@ -107,7 +107,7 @@ begin
             counter <= counter + 1;
         end if;
     end process;
-    ----------------------------------------
+    ----------------------------------------*/
 
 	-- *** LED drivers ***
     led_r <= '0' when led_out_r = '1' else 'Z';
