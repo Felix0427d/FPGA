@@ -36,14 +36,24 @@ architecture rtl of top is
     -- Reset
     signal reset : std_logic;
 
-    -- UART
+    -- UART byte-stream signals between the Open Logic UART core and the custom
+    -- UART/APB protocol adapter.
     signal uart_tx_valid : std_logic := '0';
     signal uart_tx_ready : std_logic;
     signal uart_tx_data : STD_LOGIC_VECTOR(7 downto 0);
     signal uart_rx_valid : STD_LOGIC := '0';
     signal uart_rx_data : STD_LOGIC_VECTOR(7 downto 0);
 
-    -- LEDs
+    -- Internal APB bus.
+    -- uart_protocol is the APB master and config_regs is the APB slave.
+    signal apb_paddr   : std_logic_vector(7 downto 0);
+    signal apb_psel    : std_logic;
+    signal apb_penable : std_logic;
+    signal apb_pwrite  : std_logic;
+    signal apb_pwdata  : std_logic_vector(15 downto 0);
+    signal apb_prdata  : std_logic_vector(15 downto 0);
+
+    -- LEDs driven by the APB register bank.
     signal led_out_r : STD_LOGIC := '0';
     signal led_out_g : STD_LOGIC := '0';
     signal led_out_b : STD_LOGIC := '0';
@@ -80,38 +90,51 @@ begin
         Uart_Rx => uart_rxd
     );
 
-/*    -------- TO BE REMOVED DURING EXERCISES -----------------
-    led_out_r <= counter(counter'high);
-    led_out_g <= counter(counter'high);
-    led_out_b <= counter(counter'high);
-
-    olo_base_fifo_sync_inst : entity work.olo_base_fifo_sync
-    generic map (
-      Width_g => 8,
-      Depth_g => 32
-    )
+    -- *** UART protocol adapter ***
+    -- This block converts UART command frames into APB master transactions.
+    uart_protocol_inst : entity work.uart_protocol
     port map (
-      Clk => Clk,
-      Rst => reset,
-      In_Data => uart_rx_data,
-      In_Valid => uart_rx_valid,
-      In_Ready => open,
-      Out_Data => uart_tx_data,
-      Out_Valid => uart_tx_valid,
-      Out_Ready => uart_tx_ready
+        clk       => clk,
+        reset     => reset,
+        rx_data   => uart_rx_data,
+        rx_valid  => uart_rx_valid,
+        tx_data   => uart_tx_data,
+        tx_valid  => uart_tx_valid,
+        tx_ready  => uart_tx_ready,
+        m_paddr   => apb_paddr,
+        m_psel    => apb_psel,
+        m_penable => apb_penable,
+        m_pwrite  => apb_pwrite,
+        m_pwdata  => apb_pwdata,
+        m_prdata  => apb_prdata
     );
 
-    process (clk)
-    begin
-        if rising_edge(clk) then
-            counter <= counter + 1;
-        end if;
-    end process;
-    ----------------------------------------*/
+    -- *** APB register bank ***
+    -- For this lab, the APB slave exposes a small software-visible register map.
+    config_regs_inst : entity work.config_regs
+    port map (
+        clk       => clk,
+        reset     => reset,
+        s_paddr   => apb_paddr,
+        s_psel    => apb_psel,
+        s_penable => apb_penable,
+        s_pwrite  => apb_pwrite,
+        s_pwdata  => apb_pwdata,
+        s_prdata  => apb_prdata,
+        led_r     => led_out_r,
+        led_g     => led_out_g,
+        led_b     => led_out_b
+    );
+
 
 	-- *** LED drivers ***
     led_r <= '0' when led_out_r = '1' else 'Z';
     led_g <= '0' when led_out_g = '1' else 'Z';
     led_b <= '0' when led_out_b = '1' else 'Z';
+
+    -- Unused outputs are driven to a safe idle value for now.
+    us_trig  <= '0';
+    pwm_mot1 <= (others => '0');
+    pwm_mot2 <= (others => '0');
 
 end architecture;

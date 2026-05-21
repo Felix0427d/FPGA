@@ -57,26 +57,31 @@ begin
     main : process
     begin
         test_runner_setup(runner, runner_cfg);
-        for i in 0 to 5 loop
-            push_stream(net, uart_master_stream, X"AA");
-            push_stream(net, uart_master_stream, std_logic_vector(to_unsigned(i, 8)));
-            push_stream(net, uart_master_stream, X"00");
-            push_stream(net, uart_master_stream, X"01");
-            wait for 1 ms;
-        end loop;
-        
-        for i in 0 to 5 loop
-            push_stream(net, uart_master_stream, X"AA");
-            push_stream(net, uart_master_stream, std_logic_vector(to_unsigned(i, 8)));
-            push_stream(net, uart_master_stream, X"00");
-            push_stream(net, uart_master_stream, X"00");
-            wait for 1 ms;
-        end loop;
+        while test_suite loop
+            if run("uart_command_sequence") then
+                -- 400 us = largement suffisant pour envoyer 4 octets a 115200 bauds (~347 us)
+                for i in 0 to 1 loop
+                    push_stream(net, uart_master_stream, X"AA");
+                    push_stream(net, uart_master_stream, std_logic_vector(to_unsigned(i, 8)));
+                    push_stream(net, uart_master_stream, X"00");
+                    push_stream(net, uart_master_stream, X"01");
+                    wait for 400 us;
+                end loop;
 
-        for i in 0 to 5 loop
-            push_stream(net, uart_master_stream, X"55");
-            push_stream(net, uart_master_stream, std_logic_vector(to_unsigned(i, 8)));
-            wait for 1 ms;
+                for i in 0 to 1 loop
+                    push_stream(net, uart_master_stream, X"AA");
+                    push_stream(net, uart_master_stream, std_logic_vector(to_unsigned(i, 8)));
+                    push_stream(net, uart_master_stream, X"00");
+                    push_stream(net, uart_master_stream, X"00");
+                    wait for 400 us;
+                end loop;
+
+                for i in 0 to 1 loop
+                    push_stream(net, uart_master_stream, X"55");
+                    push_stream(net, uart_master_stream, std_logic_vector(to_unsigned(i, 8)));
+                    wait for 400 us;
+                end loop;
+            end if;
         end loop;
         
         test_runner_cleanup(runner); -- Simulation ends here
