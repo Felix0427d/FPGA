@@ -2,3 +2,6 @@
 *.exe
 license.dat
 
+# Sorties de simulation VUnit (generees automatiquement)
+vunit_out/
+
