@@ -1,0 +1,358 @@
+Lattice Synthesis Engine launched.
+
+Synthesis options:
+The -a option is iCE40UP.
+The -t option is SG48.
+The -sp option is High-Performance_1.2V.
+The -p option is iCE40UP5K.
+
+###################### Device Information ######################
+----------------------------------------------------------------
+Lattice Family        | iCE40UP
+----------------------------------------------------------------
+Device                | iCE40UP5K
+----------------------------------------------------------------
+Package               | SG48
+----------------------------------------------------------------
+Performance Grade     | High-Performance_1.2V
+----------------------------------------------------------------
+################################################################
+
+####################### Device Resources #######################
+----------------------------------------------------------------
+Logic Cells           | 5280
+----------------------------------------------------------------
+RAM Blocks            | 30
+----------------------------------------------------------------
+DSP Blocks            | 8
+----------------------------------------------------------------
+PLLs                  | 1
+----------------------------------------------------------------
+I/O Pins              | 56
+----------------------------------------------------------------
+################################################################
+
+Resolving user-selected strategy settings...
+
+INFO <35001797> - synthesis: Use DCC Insertion disabled by default.
+
+###################### Strategy Settings #######################
+----------------------------------------------------------------
+Optimization Goal     | Area
+----------------------------------------------------------------
+Top-level Module Name | led
+----------------------------------------------------------------
+Target Frequency      | 200.000 MHz
+----------------------------------------------------------------
+Maximum Fanout        | 1000
+----------------------------------------------------------------
+Timing Path Count     | 3
+----------------------------------------------------------------
+RAM Read/Write Check  | False
+----------------------------------------------------------------
+BRAM Utilization      | 100.0%
+----------------------------------------------------------------
+DSP Usage             | True
+----------------------------------------------------------------
+DSP Utilization       | 100.0%
+----------------------------------------------------------------
+FSM Encoding Style    | Auto
+----------------------------------------------------------------
+Resolve Mixed Drivers | False
+----------------------------------------------------------------
+Fix Gated Clocks      | True
+----------------------------------------------------------------
+Mux Style             | Auto
+----------------------------------------------------------------
+Use Carry Chain       | True
+----------------------------------------------------------------
+Carry Chain Length    | Infinite
+----------------------------------------------------------------
+Loop Limit            | 1950
+----------------------------------------------------------------
+Use I/O Insertion     | True
+----------------------------------------------------------------
+Use I/O Registers     | True
+----------------------------------------------------------------
+Resource Sharing      | True
+----------------------------------------------------------------
+Propagate Constants   | True
+----------------------------------------------------------------
+Remove Duplicate Reg  | True
+----------------------------------------------------------------
+Force GSR             | False
+----------------------------------------------------------------
+ROM Style             | Auto
+----------------------------------------------------------------
+RAM Style             | Auto
+----------------------------------------------------------------
+Remove LOC Properties | False
+----------------------------------------------------------------
+Partition Flow        | False
+----------------------------------------------------------------
+Use DCC Insertion     | None
+----------------------------------------------------------------
+################################################################
+
+
+The -comp option is TRUE.
+The -syn option is FALSE.
+
+Output HDL filename: lab_lab_1.vm
+-path C:/Users/felix/Documents/Master_1ECAM/FPGA/lab (searchpath added)
+-path C:/Users/felix/Documents/Master_1ECAM/FPGA/lab/lab_1 (searchpath added)
+-path C:/Users/felix/Documents/Master_1ECAM/FPGA/lab3_files (searchpath added)
+-path C:/lscc/radiant/2025.2/ispfpga/ice40tp/data (searchpath added)
+Mixed language design
+Verilog design file: C:/lscc/radiant/2025.2/ip/pmi/pmi_iCE40UP.v
+VHDL library: pmi
+VHDL design file: C:/lscc/radiant/2025.2/ip/pmi/pmi_iCE40UP.vhd
+VHDL library: work
+VHDL design file: C:/Users/felix/Documents/Master_1ECAM/FPGA/lab3_files/led.vhd
+Analyzing Verilog file C:/lscc/radiant/2025.2/ispfpga/../cae_library/synthesis/verilog/generic.v. VERI-1482
+Analyzing Verilog file C:/lscc/radiant/2025.2/ispfpga/../cae_library/synthesis/verilog/iCE40UP.v. VERI-1482
+Analyzing Verilog file C:/lscc/radiant/2025.2/ispfpga/../cae_library/synthesis/verilog/iCE40UP.v. VERI-1482
+Analyzing Verilog file C:/lscc/radiant/2025.2/ispfpga/../cae_library/simulation/verilog/iCE40UP/iCE40UP_sp.v. VERI-1482
+INFO <35901328> - synthesis: C:/lscc/radiant/2025.2/ispfpga/../cae_library/simulation/verilog/iCE40UP/iCE40UP_sp.v(1): analyzing included file C:/lscc/radiant/2025.2/ispfpga/../cae_library/simulation/verilog/iCE40UP/legacy.v. VERI-1328
+INFO <35901328> - synthesis: C:/lscc/radiant/2025.2/ispfpga/../cae_library/simulation/verilog/iCE40UP/iCE40UP_sp.v(2): analyzing included file C:/lscc/radiant/2025.2/ispfpga/../cae_library/simulation/verilog/iCE40UP/RGB.v. VERI-1328
+WARNING <35901206> - synthesis: C:/lscc/radiant/2025.2/ispfpga/../cae_library/simulation/verilog/iCE40UP/RGB.v(45): duplicate module name RGB. VERI-1206
+INFO <35901328> - synthesis: C:/lscc/radiant/2025.2/ispfpga/../cae_library/simulation/verilog/iCE40UP/iCE40UP_sp.v(3): analyzing included file C:/lscc/radiant/2025.2/ispfpga/../cae_library/simulation/verilog/iCE40UP/FD1P3BZ.v. VERI-1328
+WARNING <35901206> - synthesis: C:/lscc/radiant/2025.2/ispfpga/../cae_library/simulation/verilog/iCE40UP/FD1P3BZ.v(19): duplicate module name FD1P3BZ. VERI-1206
+INFO <35901328> - synthesis: C:/lscc/radiant/2025.2/ispfpga/../cae_library/simulation/verilog/iCE40UP/iCE40UP_sp.v(4): analyzing included file C:/lscc/radiant/2025.2/ispfpga/../cae_library/simulation/verilog/iCE40UP/FD1P3DZ.v. VERI-1328
+WARNING <35901206> - synthesis: C:/lscc/radiant/2025.2/ispfpga/../cae_library/simulation/verilog/iCE40UP/FD1P3DZ.v(19): duplicate module name FD1P3DZ. VERI-1206
+INFO <35901328> - synthesis: C:/lscc/radiant/2025.2/ispfpga/../cae_library/simulation/verilog/iCE40UP/iCE40UP_sp.v(5): analyzing included file C:/lscc/radiant/2025.2/ispfpga/../cae_library/simulation/verilog/iCE40UP/FD1P3IZ.v. VERI-1328
+WARNING <35901206> - synthesis: C:/lscc/radiant/2025.2/ispfpga/../cae_library/simulation/verilog/iCE40UP/FD1P3IZ.v(18): duplicate module name FD1P3IZ. VERI-1206
+INFO <35901328> - synthesis: C:/lscc/radiant/2025.2/ispfpga/../cae_library/simulation/verilog/iCE40UP/iCE40UP_sp.v(6): analyzing included file C:/lscc/radiant/2025.2/ispfpga/../cae_library/simulation/verilog/iCE40UP/FD1P3JZ.v. VERI-1328
+WARNING <35901206> - synthesis: C:/lscc/radiant/2025.2/ispfpga/../cae_library/simulation/verilog/iCE40UP/FD1P3JZ.v(18): duplicate module name FD1P3JZ. VERI-1206
+INFO <35901328> - synthesis: C:/lscc/radiant/2025.2/ispfpga/../cae_library/simulation/verilog/iCE40UP/iCE40UP_sp.v(7): analyzing included file C:/lscc/radiant/2025.2/ispfpga/../cae_library/simulation/verilog/iCE40UP/IB.v. VERI-1328
+WARNING <35901206> - synthesis: C:/lscc/radiant/2025.2/ispfpga/../cae_library/simulation/verilog/iCE40UP/IB.v(12): duplicate module name IB. VERI-1206
+INFO <35901328> - synthesis: C:/lscc/radiant/2025.2/ispfpga/../cae_library/simulation/verilog/iCE40UP/iCE40UP_sp.v(8): analyzing included file C:/lscc/radiant/2025.2/ispfpga/../cae_library/simulation/verilog/iCE40UP/OB.v. VERI-1328
+WARNING <35901206> - synthesis: C:/lscc/radiant/2025.2/ispfpga/../cae_library/simulation/verilog/iCE40UP/OB.v(12): duplicate module name OB. VERI-1206
+INFO <35901328> - synthesis: C:/lscc/radiant/2025.2/ispfpga/../cae_library/simulation/verilog/iCE40UP/iCE40UP_sp.v(9): analyzing included file C:/lscc/radiant/2025.2/ispfpga/../cae_library/simulation/verilog/iCE40UP/OBZ_B.v. VERI-1328
+WARNING <35901206> - synthesis: C:/lscc/radiant/2025.2/ispfpga/../cae_library/simulation/verilog/iCE40UP/OBZ_B.v(14): duplicate module name OBZ_B. VERI-1206
+INFO <35901328> - synthesis: C:/lscc/radiant/2025.2/ispfpga/../cae_library/simulation/verilog/iCE40UP/iCE40UP_sp.v(10): analyzing included file C:/lscc/radiant/2025.2/ispfpga/../cae_library/simulation/verilog/iCE40UP/IFD1P3AZ.v. VERI-1328
+WARNING <35901206> - synthesis: C:/lscc/radiant/2025.2/ispfpga/../cae_library/simulation/verilog/iCE40UP/IFD1P3AZ.v(30): duplicate module name IFD1P3AZ. VERI-1206
+INFO <35901328> - synthesis: C:/lscc/radiant/2025.2/ispfpga/../cae_library/simulation/verilog/iCE40UP/iCE40UP_sp.v(11): analyzing included file C:/lscc/radiant/2025.2/ispfpga/../cae_library/simulation/verilog/iCE40UP/OFD1P3AZ.v. VERI-1328
+WARNING <35901206> - synthesis: C:/lscc/radiant/2025.2/ispfpga/../cae_library/simulation/verilog/iCE40UP/OFD1P3AZ.v(31): duplicate module name OFD1P3AZ. VERI-1206
+INFO <35901328> - synthesis: C:/lscc/radiant/2025.2/ispfpga/../cae_library/simulation/verilog/iCE40UP/iCE40UP_sp.v(12): analyzing included file C:/lscc/radiant/2025.2/ispfpga/../cae_library/simulation/verilog/iCE40UP/PDP4K.v. VERI-1328
+WARNING <35901206> - synthesis: C:/lscc/radiant/2025.2/ispfpga/../cae_library/simulation/verilog/iCE40UP/PDP4K.v(143): duplicate module name PDP4K. VERI-1206
+INFO <35901328> - synthesis: C:/lscc/radiant/2025.2/ispfpga/../cae_library/simulation/verilog/iCE40UP/iCE40UP_sp.v(13): analyzing included file C:/lscc/radiant/2025.2/ispfpga/../cae_library/simulation/verilog/iCE40UP/CCU2_B.v. VERI-1328
+WARNING <35901206> - synthesis: C:/lscc/radiant/2025.2/ispfpga/../cae_library/simulation/verilog/iCE40UP/CCU2_B.v(34): duplicate module name CCU2_B. VERI-1206
+INFO <35901328> - synthesis: C:/lscc/radiant/2025.2/ispfpga/../cae_library/simulation/verilog/iCE40UP/iCE40UP_sp.v(14): analyzing included file C:/lscc/radiant/2025.2/ispfpga/../cae_library/simulation/verilog/iCE40UP/SP256K.v. VERI-1328
+WARNING <35901206> - synthesis: C:/lscc/radiant/2025.2/ispfpga/../cae_library/simulation/verilog/iCE40UP/SP256K.v(92): duplicate module name SP256K. VERI-1206
+INFO <35901328> - synthesis: C:/lscc/radiant/2025.2/ispfpga/../cae_library/simulation/verilog/iCE40UP/iCE40UP_sp.v(15): analyzing included file C:/lscc/radiant/2025.2/ispfpga/../cae_library/simulation/verilog/iCE40UP/HSOSC.v. VERI-1328
+WARNING <35901206> - synthesis: C:/lscc/radiant/2025.2/ispfpga/../cae_library/simulation/verilog/iCE40UP/HSOSC.v(20): duplicate module name HSOSC. VERI-1206
+INFO <35901328> - synthesis: C:/lscc/radiant/2025.2/ispfpga/../cae_library/simulation/verilog/iCE40UP/iCE40UP_sp.v(16): analyzing included file C:/lscc/radiant/2025.2/ispfpga/../cae_library/simulation/verilog/iCE40UP/LSOSC.v. VERI-1328
+WARNING <35901206> - synthesis: C:/lscc/radiant/2025.2/ispfpga/../cae_library/simulation/verilog/iCE40UP/LSOSC.v(16): duplicate module name LSOSC. VERI-1206
+INFO <35901328> - synthesis: C:/lscc/radiant/2025.2/ispfpga/../cae_library/simulation/verilog/iCE40UP/iCE40UP_sp.v(17): analyzing included file C:/lscc/radiant/2025.2/ispfpga/../cae_library/simulation/verilog/iCE40UP/HSOSC1P8V.v. VERI-1328
+WARNING <35901206> - synthesis: C:/lscc/radiant/2025.2/ispfpga/../cae_library/simulation/verilog/iCE40UP/HSOSC1P8V.v(24): duplicate module name HSOSC1P8V. VERI-1206
+INFO <35901328> - synthesis: C:/lscc/radiant/2025.2/ispfpga/../cae_library/simulation/verilog/iCE40UP/iCE40UP_sp.v(18): analyzing included file C:/lscc/radiant/2025.2/ispfpga/../cae_library/simulation/verilog/iCE40UP/LSOSC1P8V.v. VERI-1328
+WARNING <35901206> - synthesis: C:/lscc/radiant/2025.2/ispfpga/../cae_library/simulation/verilog/iCE40UP/LSOSC1P8V.v(21): duplicate module name LSOSC1P8V. VERI-1206
+INFO <35901328> - synthesis: C:/lscc/radiant/2025.2/ispfpga/../cae_library/simulation/verilog/iCE40UP/iCE40UP_sp.v(19): analyzing included file C:/lscc/radiant/2025.2/ispfpga/../cae_library/simulation/verilog/iCE40UP/RGB1P8V.v. VERI-1328
+WARNING <35901206> - synthesis: C:/lscc/radiant/2025.2/ispfpga/../cae_library/simulation/verilog/iCE40UP/RGB1P8V.v(52): duplicate module name RGB1P8V. VERI-1206
+WARNING <35901214> - synthesis: C:/lscc/radiant/2025.2/ispfpga/../cae_library/simulation/verilog/iCE40UP/IB.v(11): assignment to input I. VERI-1214
+WARNING <35931013> - synthesis: C:/lscc/radiant/2025.2/ispfpga/../cae_library/simulation/verilog/iCE40UP/RGB.v(33): input port TRIM9 is not connected on this instance. VDB-1013
+WARNING <35931013> - synthesis: C:/lscc/radiant/2025.2/ispfpga/../cae_library/simulation/verilog/iCE40UP/IB.v(11): input port I is not connected on this instance. VDB-1013
+Reading structural Verilog file 'C:/lscc/radiant/2025.2/ispfpga/../cae_library/simulation/verilog/iCE40UP/iCE40UP_sp.v'. VNLR-1084
+INFO <35911012> - synthesis: C:/lscc/radiant/2025.2/ispfpga/../cae_library/simulation/verilog/iCE40UP/legacy.v(1724): compiling module 'SB_DFFER'. VNLR-1012
+WARNING <35911026> - synthesis: C:/lscc/radiant/2025.2/ispfpga/../cae_library/simulation/verilog/iCE40UP/legacy.v(1724): instantiating unknown module 'FD1P3XZ'. VNLR-1026
+INFO <35911012> - synthesis: C:/lscc/radiant/2025.2/ispfpga/../cae_library/simulation/verilog/iCE40UP/legacy.v(1724): compiling module 'SB_DFFESR'. VNLR-1012
+INFO <35911012> - synthesis: C:/lscc/radiant/2025.2/ispfpga/../cae_library/simulation/verilog/iCE40UP/legacy.v(1724): compiling module 'SB_DFFESS'. VNLR-1012
+INFO <35911012> - synthesis: C:/lscc/radiant/2025.2/ispfpga/../cae_library/simulation/verilog/iCE40UP/legacy.v(1724): compiling module 'SB_DFFES'. VNLR-1012
+INFO <35911012> - synthesis: C:/lscc/radiant/2025.2/ispfpga/../cae_library/simulation/verilog/iCE40UP/legacy.v(1724): compiling module 'SB_DFFE'. VNLR-1012
+WARNING <35911026> - synthesis: C:/lscc/radiant/2025.2/ispfpga/../cae_library/simulation/verilog/iCE40UP/legacy.v(1724): instantiating unknown module 'VLO'. VNLR-1026
+INFO <35911012> - synthesis: C:/lscc/radiant/2025.2/ispfpga/../cae_library/simulation/verilog/iCE40UP/legacy.v(1724): compiling module 'SB_DFFNER'. VNLR-1012
+WARNING <35911026> - synthesis: C:/lscc/radiant/2025.2/ispfpga/../cae_library/simulation/verilog/iCE40UP/legacy.v(1724): instantiating unknown module 'INV'. VNLR-1026
+INFO <35911012> - synthesis: C:/lscc/radiant/2025.2/ispfpga/../cae_library/simulation/verilog/iCE40UP/legacy.v(1724): compiling module 'SB_DFFNESR'. VNLR-1012
+INFO <35911012> - synthesis: C:/lscc/radiant/2025.2/ispfpga/../cae_library/simulation/verilog/iCE40UP/legacy.v(1724): compiling module 'SB_DFFNESS'. VNLR-1012
+INFO <35911012> - synthesis: C:/lscc/radiant/2025.2/ispfpga/../cae_library/simulation/verilog/iCE40UP/legacy.v(1724): compiling module 'SB_DFFNES'. VNLR-1012
+INFO <35911012> - synthesis: C:/lscc/radiant/2025.2/ispfpga/../cae_library/simulation/verilog/iCE40UP/legacy.v(1724): compiling module 'SB_DFFNE'. VNLR-1012
+INFO <35911012> - synthesis: C:/lscc/radiant/2025.2/ispfpga/../cae_library/simulation/verilog/iCE40UP/legacy.v(1724): compiling module 'SB_DFFNR'. VNLR-1012
+WARNING <35911026> - synthesis: C:/lscc/radiant/2025.2/ispfpga/../cae_library/simulation/verilog/iCE40UP/legacy.v(1724): instantiating unknown module 'VHI'. VNLR-1026
+INFO <35911012> - synthesis: C:/lscc/radiant/2025.2/ispfpga/../cae_library/simulation/verilog/iCE40UP/legacy.v(1724): compiling module 'SB_DFFNSR'. VNLR-1012
+INFO <35911012> - synthesis: C:/lscc/radiant/2025.2/ispfpga/../cae_library/simulation/verilog/iCE40UP/legacy.v(1724): compiling module 'SB_DFFNSS'. VNLR-1012
+INFO <35911012> - synthesis: C:/lscc/radiant/2025.2/ispfpga/../cae_library/simulation/verilog/iCE40UP/legacy.v(1724): compiling module 'SB_DFFNS'. VNLR-1012
+INFO <35911012> - synthesis: C:/lscc/radiant/2025.2/ispfpga/../cae_library/simulation/verilog/iCE40UP/legacy.v(1724): compiling module 'SB_DFFN'. VNLR-1012
+INFO <35911012> - synthesis: C:/lscc/radiant/2025.2/ispfpga/../cae_library/simulation/verilog/iCE40UP/legacy.v(1724): compiling module 'SB_DFFR'. VNLR-1012
+INFO <35911012> - synthesis: C:/lscc/radiant/2025.2/ispfpga/../cae_library/simulation/verilog/iCE40UP/legacy.v(1724): compiling module 'SB_DFFSR'. VNLR-1012
+INFO <35911012> - synthesis: C:/lscc/radiant/2025.2/ispfpga/../cae_library/simulation/verilog/iCE40UP/legacy.v(1724): compiling module 'SB_DFFSS'. VNLR-1012
+INFO <35911012> - synthesis: C:/lscc/radiant/2025.2/ispfpga/../cae_library/simulation/verilog/iCE40UP/legacy.v(1724): compiling module 'SB_DFFS'. VNLR-1012
+INFO <35911012> - synthesis: C:/lscc/radiant/2025.2/ispfpga/../cae_library/simulation/verilog/iCE40UP/legacy.v(1724): compiling module 'SB_DFF'. VNLR-1012
+INFO <35911012> - synthesis: C:/lscc/radiant/2025.2/ispfpga/../cae_library/simulation/verilog/iCE40UP/legacy.v(1724): compiling module 'SB_IO'. VNLR-1012
+WARNING <35911026> - synthesis: C:/lscc/radiant/2025.2/ispfpga/../cae_library/simulation/verilog/iCE40UP/legacy.v(1724): instantiating unknown module 'BB_B'. VNLR-1026
+INFO <35911012> - synthesis: C:/lscc/radiant/2025.2/ispfpga/../cae_library/simulation/verilog/iCE40UP/legacy.v(1724): compiling module 'SB_LUT4'. VNLR-1012
+WARNING <35911026> - synthesis: C:/lscc/radiant/2025.2/ispfpga/../cae_library/simulation/verilog/iCE40UP/legacy.v(1724): instantiating unknown module 'LUT4'. VNLR-1026
+INFO <35911012> - synthesis: C:/lscc/radiant/2025.2/ispfpga/../cae_library/simulation/verilog/iCE40UP/legacy.v(1724): compiling module 'SB_MAC16'. VNLR-1012
+WARNING <35911026> - synthesis: C:/lscc/radiant/2025.2/ispfpga/../cae_library/simulation/verilog/iCE40UP/legacy.v(1724): instantiating unknown module 'MAC16'. VNLR-1026
+INFO <35911012> - synthesis: C:/lscc/radiant/2025.2/ispfpga/../cae_library/simulation/verilog/iCE40UP/legacy.v(1724): compiling module 'SB_RAM1024x4NRNW'. VNLR-1012
+WARNING <35911026> - synthesis: C:/lscc/radiant/2025.2/ispfpga/../cae_library/simulation/verilog/iCE40UP/legacy.v(1724): instantiating unknown module 'EBR_B'. VNLR-1026
+INFO <35911012> - synthesis: C:/lscc/radiant/2025.2/ispfpga/../cae_library/simulation/verilog/iCE40UP/legacy.v(1724): compiling module 'SB_RAM1024x4NR'. VNLR-1012
+INFO <35911012> - synthesis: C:/lscc/radiant/2025.2/ispfpga/../cae_library/simulation/verilog/iCE40UP/legacy.v(1724): compiling module 'SB_RAM1024x4NW'. VNLR-1012
+INFO <35911012> - synthesis: C:/lscc/radiant/2025.2/ispfpga/../cae_library/simulation/verilog/iCE40UP/legacy.v(1724): compiling module 'SB_RAM1024x4'. VNLR-1012
+INFO <35911012> - synthesis: C:/lscc/radiant/2025.2/ispfpga/../cae_library/simulation/verilog/iCE40UP/legacy.v(1724): compiling module 'SB_RAM2048x2NRNW'. VNLR-1012
+INFO <35911012> - synthesis: C:/lscc/radiant/2025.2/ispfpga/../cae_library/simulation/verilog/iCE40UP/legacy.v(1724): compiling module 'SB_RAM2048x2NR'. VNLR-1012
+INFO <35911012> - synthesis: C:/lscc/radiant/2025.2/ispfpga/../cae_library/simulation/verilog/iCE40UP/legacy.v(1724): compiling module 'SB_RAM2048x2NW'. VNLR-1012
+INFO <35911012> - synthesis: C:/lscc/radiant/2025.2/ispfpga/../cae_library/simulation/verilog/iCE40UP/legacy.v(1724): compiling module 'SB_RAM2048x2'. VNLR-1012
+INFO <35911012> - synthesis: C:/lscc/radiant/2025.2/ispfpga/../cae_library/simulation/verilog/iCE40UP/legacy.v(1724): compiling module 'SB_RAM256x16NRNW'. VNLR-1012
+INFO <35911012> - synthesis: C:/lscc/radiant/2025.2/ispfpga/../cae_library/simulation/verilog/iCE40UP/legacy.v(1724): compiling module 'SB_RAM256x16NR'. VNLR-1012
+INFO <35911012> - synthesis: C:/lscc/radiant/2025.2/ispfpga/../cae_library/simulation/verilog/iCE40UP/legacy.v(1724): compiling module 'SB_RAM256x16NW'. VNLR-1012
+INFO <35911012> - synthesis: C:/lscc/radiant/2025.2/ispfpga/../cae_library/simulation/verilog/iCE40UP/legacy.v(1724): compiling module 'SB_RAM256x16'. VNLR-1012
+INFO <35911012> - synthesis: C:/lscc/radiant/2025.2/ispfpga/../cae_library/simulation/verilog/iCE40UP/legacy.v(1724): compiling module 'SB_RAM512x8NRNW'. VNLR-1012
+INFO <35911012> - synthesis: C:/lscc/radiant/2025.2/ispfpga/../cae_library/simulation/verilog/iCE40UP/legacy.v(1724): compiling module 'SB_RAM512x8NR'. VNLR-1012
+INFO <35911012> - synthesis: C:/lscc/radiant/2025.2/ispfpga/../cae_library/simulation/verilog/iCE40UP/legacy.v(1724): compiling module 'SB_RAM512x8NW'. VNLR-1012
+INFO <35911012> - synthesis: C:/lscc/radiant/2025.2/ispfpga/../cae_library/simulation/verilog/iCE40UP/legacy.v(1724): compiling module 'SB_RAM512x8'. VNLR-1012
+INFO <35911012> - synthesis: C:/lscc/radiant/2025.2/ispfpga/../cae_library/simulation/verilog/iCE40UP/RGB.v(2): compiling module 'RGB'. VNLR-1012
+WARNING <35911026> - synthesis: C:/lscc/radiant/2025.2/ispfpga/../cae_library/simulation/verilog/iCE40UP/RGB.v(33): instantiating unknown module 'RGB_CORE'. VNLR-1026
+WARNING <35911026> - synthesis: C:/lscc/radiant/2025.2/ispfpga/../cae_library/simulation/verilog/iCE40UP/RGB.v(41): instantiating unknown module 'OB_RGB'. VNLR-1026
+INFO <35911012> - synthesis: C:/lscc/radiant/2025.2/ispfpga/../cae_library/simulation/verilog/iCE40UP/FD1P3BZ.v(2): compiling module 'FD1P3BZ'. VNLR-1012
+INFO <35911012> - synthesis: C:/lscc/radiant/2025.2/ispfpga/../cae_library/simulation/verilog/iCE40UP/FD1P3DZ.v(2): compiling module 'FD1P3DZ'. VNLR-1012
+INFO <35911012> - synthesis: C:/lscc/radiant/2025.2/ispfpga/../cae_library/simulation/verilog/iCE40UP/FD1P3IZ.v(2): compiling module 'FD1P3IZ'. VNLR-1012
+INFO <35911012> - synthesis: C:/lscc/radiant/2025.2/ispfpga/../cae_library/simulation/verilog/iCE40UP/FD1P3JZ.v(2): compiling module 'FD1P3JZ'. VNLR-1012
+INFO <35911012> - synthesis: C:/lscc/radiant/2025.2/ispfpga/../cae_library/simulation/verilog/iCE40UP/IB.v(2): compiling module 'IB'. VNLR-1012
+INFO <35911012> - synthesis: C:/lscc/radiant/2025.2/ispfpga/../cae_library/simulation/verilog/iCE40UP/OB.v(2): compiling module 'OB'. VNLR-1012
+INFO <35911012> - synthesis: C:/lscc/radiant/2025.2/ispfpga/../cae_library/simulation/verilog/iCE40UP/OBZ_B.v(2): compiling module 'OBZ_B'. VNLR-1012
+INFO <35911012> - synthesis: C:/lscc/radiant/2025.2/ispfpga/../cae_library/simulation/verilog/iCE40UP/IFD1P3AZ.v(2): compiling module 'IFD1P3AZ'. VNLR-1012
+WARNING <35911026> - synthesis: C:/lscc/radiant/2025.2/ispfpga/../cae_library/simulation/verilog/iCE40UP/IFD1P3AZ.v(15): instantiating unknown module 'IOL_B'. VNLR-1026
+INFO <35911012> - synthesis: C:/lscc/radiant/2025.2/ispfpga/../cae_library/simulation/verilog/iCE40UP/OFD1P3AZ.v(2): compiling module 'OFD1P3AZ'. VNLR-1012
+INFO <35911012> - synthesis: C:/lscc/radiant/2025.2/ispfpga/../cae_library/simulation/verilog/iCE40UP/PDP4K.v(2): compiling module 'PDP4K'. VNLR-1012
+INFO <35911012> - synthesis: C:/lscc/radiant/2025.2/ispfpga/../cae_library/simulation/verilog/iCE40UP/CCU2_B.v(2): compiling module 'CCU2_B'. VNLR-1012
+WARNING <35911026> - synthesis: C:/lscc/radiant/2025.2/ispfpga/../cae_library/simulation/verilog/iCE40UP/CCU2_B.v(28): instantiating unknown module 'FA2'. VNLR-1026
+INFO <35911012> - synthesis: C:/lscc/radiant/2025.2/ispfpga/../cae_library/simulation/verilog/iCE40UP/SP256K.v(2): compiling module 'SP256K'. VNLR-1012
+WARNING <35911026> - synthesis: C:/lscc/radiant/2025.2/ispfpga/../cae_library/simulation/verilog/iCE40UP/SP256K.v(28): instantiating unknown module 'VFB_B'. VNLR-1026
+INFO <35911012> - synthesis: C:/lscc/radiant/2025.2/ispfpga/../cae_library/simulation/verilog/iCE40UP/HSOSC.v(2): compiling module 'HSOSC'. VNLR-1012
+WARNING <35911026> - synthesis: C:/lscc/radiant/2025.2/ispfpga/../cae_library/simulation/verilog/iCE40UP/HSOSC.v(16): instantiating unknown module 'HSOSC_CORE'. VNLR-1026
+INFO <35911012> - synthesis: C:/lscc/radiant/2025.2/ispfpga/../cae_library/simulation/verilog/iCE40UP/LSOSC.v(2): compiling module 'LSOSC'. VNLR-1012
+WARNING <35911026> - synthesis: C:/lscc/radiant/2025.2/ispfpga/../cae_library/simulation/verilog/iCE40UP/LSOSC.v(13): instantiating unknown module 'LSOSC_CORE'. VNLR-1026
+INFO <35911012> - synthesis: C:/lscc/radiant/2025.2/ispfpga/../cae_library/simulation/verilog/iCE40UP/HSOSC1P8V.v(2): compiling module 'HSOSC1P8V'. VNLR-1012
+INFO <35911012> - synthesis: C:/lscc/radiant/2025.2/ispfpga/../cae_library/simulation/verilog/iCE40UP/LSOSC1P8V.v(2): compiling module 'LSOSC1P8V'. VNLR-1012
+INFO <35911012> - synthesis: C:/lscc/radiant/2025.2/ispfpga/../cae_library/simulation/verilog/iCE40UP/RGB1P8V.v(2): compiling module 'RGB1P8V'. VNLR-1012
+INFO <35911015> - synthesis: C:/lscc/radiant/2025.2/ispfpga/../cae_library/simulation/verilog/iCE40UP/RGB1P8V.v(2): setting 'RGB1P8V' as the top level module. VNLR-1015
+
+Compiling design...
+
+Analyzing VHDL file C:/lscc/radiant/2025.2/ispfpga/vhdl_packages/standard.vhd. VHDL-1481
+Analyzing VHDL file C:/lscc/radiant/2025.2/ispfpga/vhdl_packages/standard.vhd
+
+INFO <35921014> - synthesis: C:/lscc/radiant/2025.2/ispfpga/vhdl_packages/standard.vhd(9): analyzing package standard. VHDL-1014
+Analyzing VHDL file C:/lscc/radiant/2025.2/ispfpga/vhdl_packages/std_1164.vhd. VHDL-1481
+Analyzing VHDL file C:/lscc/radiant/2025.2/ispfpga/vhdl_packages/std_1164.vhd
+
+INFO <35921014> - synthesis: C:/lscc/radiant/2025.2/ispfpga/vhdl_packages/std_1164.vhd(15): analyzing package std_logic_1164. VHDL-1014
+INFO <35921013> - synthesis: C:/lscc/radiant/2025.2/ispfpga/vhdl_packages/std_1164.vhd(178): analyzing package body std_logic_1164. VHDL-1013
+Analyzing VHDL file C:/lscc/radiant/2025.2/ispfpga/vhdl_packages/mgc_qsim.vhd. VHDL-1481
+Analyzing VHDL file C:/lscc/radiant/2025.2/ispfpga/vhdl_packages/mgc_qsim.vhd
+
+INFO <35921014> - synthesis: C:/lscc/radiant/2025.2/ispfpga/vhdl_packages/mgc_qsim.vhd(18): analyzing package qsim_logic. VHDL-1014
+INFO <35921013> - synthesis: C:/lscc/radiant/2025.2/ispfpga/vhdl_packages/mgc_qsim.vhd(753): analyzing package body qsim_logic. VHDL-1013
+Analyzing VHDL file C:/lscc/radiant/2025.2/ispfpga/vhdl_packages/numeric_bit.vhd. VHDL-1481
+Analyzing VHDL file C:/lscc/radiant/2025.2/ispfpga/vhdl_packages/numeric_bit.vhd
+
+INFO <35921014> - synthesis: C:/lscc/radiant/2025.2/ispfpga/vhdl_packages/numeric_bit.vhd(54): analyzing package numeric_bit. VHDL-1014
+INFO <35921013> - synthesis: C:/lscc/radiant/2025.2/ispfpga/vhdl_packages/numeric_bit.vhd(834): analyzing package body numeric_bit. VHDL-1013
+Analyzing VHDL file C:/lscc/radiant/2025.2/ispfpga/vhdl_packages/numeric_std.vhd. VHDL-1481
+Analyzing VHDL file C:/lscc/radiant/2025.2/ispfpga/vhdl_packages/numeric_std.vhd
+
+INFO <35921014> - synthesis: C:/lscc/radiant/2025.2/ispfpga/vhdl_packages/numeric_std.vhd(57): analyzing package numeric_std. VHDL-1014
+INFO <35921013> - synthesis: C:/lscc/radiant/2025.2/ispfpga/vhdl_packages/numeric_std.vhd(874): analyzing package body numeric_std. VHDL-1013
+Analyzing VHDL file C:/lscc/radiant/2025.2/ispfpga/vhdl_packages/textio.vhd. VHDL-1481
+Analyzing VHDL file C:/lscc/radiant/2025.2/ispfpga/vhdl_packages/textio.vhd
+
+INFO <35921014> - synthesis: C:/lscc/radiant/2025.2/ispfpga/vhdl_packages/textio.vhd(13): analyzing package textio. VHDL-1014
+INFO <35921013> - synthesis: C:/lscc/radiant/2025.2/ispfpga/vhdl_packages/textio.vhd(114): analyzing package body textio. VHDL-1013
+Analyzing VHDL file C:/lscc/radiant/2025.2/ispfpga/vhdl_packages/std_logic_textio.vhd. VHDL-1481
+Analyzing VHDL file C:/lscc/radiant/2025.2/ispfpga/vhdl_packages/std_logic_textio.vhd
+
+INFO <35921014> - synthesis: C:/lscc/radiant/2025.2/ispfpga/vhdl_packages/std_logic_textio.vhd(26): analyzing package std_logic_textio. VHDL-1014
+INFO <35921013> - synthesis: C:/lscc/radiant/2025.2/ispfpga/vhdl_packages/std_logic_textio.vhd(72): analyzing package body std_logic_textio. VHDL-1013
+Analyzing VHDL file C:/lscc/radiant/2025.2/ispfpga/vhdl_packages/syn_misc.vhd. VHDL-1481
+Analyzing VHDL file C:/lscc/radiant/2025.2/ispfpga/vhdl_packages/syn_misc.vhd
+
+INFO <35921014> - synthesis: C:/lscc/radiant/2025.2/ispfpga/vhdl_packages/syn_misc.vhd(30): analyzing package std_logic_misc. VHDL-1014
+INFO <35921013> - synthesis: C:/lscc/radiant/2025.2/ispfpga/vhdl_packages/syn_misc.vhd(182): analyzing package body std_logic_misc. VHDL-1013
+Analyzing VHDL file C:/lscc/radiant/2025.2/ispfpga/vhdl_packages/math_real.vhd. VHDL-1481
+INFO <35921014> - synthesis: ./.__tmp_vxr_0_(56): analyzing package math_real. VHDL-1014
+INFO <35921013> - synthesis: ./.__tmp_vxr_0_(685): analyzing package body math_real. VHDL-1013
+Analyzing VHDL file C:/lscc/radiant/2025.2/ispfpga/vhdl_packages/mixed_lang_vltype.vhd. VHDL-1481
+Analyzing VHDL file C:/lscc/radiant/2025.2/ispfpga/vhdl_packages/mixed_lang_vltype.vhd
+
+INFO <35921014> - synthesis: C:/lscc/radiant/2025.2/ispfpga/vhdl_packages/mixed_lang_vltype.vhd(9): analyzing package vl_types. VHDL-1014
+INFO <35921013> - synthesis: C:/lscc/radiant/2025.2/ispfpga/vhdl_packages/mixed_lang_vltype.vhd(88): analyzing package body vl_types. VHDL-1013
+Analyzing VHDL file C:/lscc/radiant/2025.2/ispfpga/vhdl_packages/syn_arit.vhd. VHDL-1481
+Analyzing VHDL file C:/lscc/radiant/2025.2/ispfpga/vhdl_packages/syn_arit.vhd
+
+INFO <35921014> - synthesis: C:/lscc/radiant/2025.2/ispfpga/vhdl_packages/syn_arit.vhd(25): analyzing package std_logic_arith. VHDL-1014
+INFO <35921013> - synthesis: C:/lscc/radiant/2025.2/ispfpga/vhdl_packages/syn_arit.vhd(206): analyzing package body std_logic_arith. VHDL-1013
+Analyzing VHDL file C:/lscc/radiant/2025.2/ispfpga/vhdl_packages/syn_attr.vhd. VHDL-1481
+Analyzing VHDL file C:/lscc/radiant/2025.2/ispfpga/vhdl_packages/syn_attr.vhd
+
+INFO <35921014> - synthesis: C:/lscc/radiant/2025.2/ispfpga/vhdl_packages/syn_attr.vhd(39): analyzing package attributes. VHDL-1014
+Analyzing VHDL file C:/lscc/radiant/2025.2/ispfpga/vhdl_packages/syn_sign.vhd. VHDL-1481
+Analyzing VHDL file C:/lscc/radiant/2025.2/ispfpga/vhdl_packages/syn_sign.vhd
+
+INFO <35921014> - synthesis: C:/lscc/radiant/2025.2/ispfpga/vhdl_packages/syn_sign.vhd(35): analyzing package std_logic_signed. VHDL-1014
+INFO <35921013> - synthesis: C:/lscc/radiant/2025.2/ispfpga/vhdl_packages/syn_sign.vhd(96): analyzing package body std_logic_signed. VHDL-1013
+Analyzing VHDL file C:/lscc/radiant/2025.2/ispfpga/vhdl_packages/syn_unsi.vhd. VHDL-1481
+Analyzing VHDL file C:/lscc/radiant/2025.2/ispfpga/vhdl_packages/syn_unsi.vhd
+
+INFO <35921014> - synthesis: C:/lscc/radiant/2025.2/ispfpga/vhdl_packages/syn_unsi.vhd(35): analyzing package std_logic_unsigned. VHDL-1014
+INFO <35921013> - synthesis: C:/lscc/radiant/2025.2/ispfpga/vhdl_packages/syn_unsi.vhd(94): analyzing package body std_logic_unsigned. VHDL-1013
+Analyzing VHDL file C:/lscc/radiant/2025.2/ispfpga/../cae_library/synthesis/vhdl/iCE40UP.vhd. VHDL-1481
+Analyzing VHDL file C:/lscc/radiant/2025.2/ispfpga/../cae_library/synthesis/vhdl/iCE40UP.vhd
+
+INFO <35921014> - synthesis: C:/lscc/radiant/2025.2/ispfpga/../cae_library/synthesis/vhdl/iCE40UP.vhd(4): analyzing package components. VHDL-1014
+Analyzing VHDL file C:/lscc/radiant/2025.2/ispfpga/vhdl_packages/synattr.vhd. VHDL-1481
+Analyzing VHDL file C:/lscc/radiant/2025.2/ispfpga/vhdl_packages/synattr.vhd
+
+INFO <35921014> - synthesis: C:/lscc/radiant/2025.2/ispfpga/vhdl_packages/synattr.vhd(50): analyzing package attributes. VHDL-1014
+Analyzing Verilog file c:/lscc/radiant/2025.2/ip/pmi/pmi_ice40up.v. VERI-1482
+INFO <35901328> - synthesis: c:/lscc/radiant/2025.2/ip/pmi/pmi_ice40up.v(1): analyzing included file c:/lscc/radiant/2025.2/ip/pmi/pmi_addsub.v. VERI-1328
+INFO <35901328> - synthesis: c:/lscc/radiant/2025.2/ip/pmi/pmi_addsub.v(40): analyzing included file c:/lscc/radiant/2025.2/ip/pmi/../common/adder_subtractor/rtl/lscc_add_sub.v. VERI-1328
+INFO <35901328> - synthesis: c:/lscc/radiant/2025.2/ip/pmi/pmi_ice40up.v(2): analyzing included file c:/lscc/radiant/2025.2/ip/pmi/pmi_add.v. VERI-1328
+INFO <35901328> - synthesis: c:/lscc/radiant/2025.2/ip/pmi/pmi_add.v(50): analyzing included file c:/lscc/radiant/2025.2/ip/pmi/../common/adder/rtl/lscc_adder.v. VERI-1328
+INFO <35901328> - synthesis: c:/lscc/radiant/2025.2/ip/pmi/pmi_ice40up.v(3): analyzing included file c:/lscc/radiant/2025.2/ip/pmi/pmi_complex_mult.v. VERI-1328
+INFO <35901328> - synthesis: c:/lscc/radiant/2025.2/ip/pmi/pmi_complex_mult.v(52): analyzing included file c:/lscc/radiant/2025.2/ip/pmi/../common/complex_mult/rtl/lscc_complex_mult.v. VERI-1328
+INFO <35901328> - synthesis: c:/lscc/radiant/2025.2/ip/pmi/pmi_ice40up.v(4): analyzing included file c:/lscc/radiant/2025.2/ip/pmi/pmi_counter.v. VERI-1328
+INFO <35901328> - synthesis: c:/lscc/radiant/2025.2/ip/pmi/pmi_counter.v(39): analyzing included file c:/lscc/radiant/2025.2/ip/pmi/../common/counter/rtl/lscc_cntr.v. VERI-1328
+INFO <35901328> - synthesis: c:/lscc/radiant/2025.2/ip/pmi/pmi_ice40up.v(5): analyzing included file c:/lscc/radiant/2025.2/ip/pmi/pmi_fifo.v. VERI-1328
+INFO <35901328> - synthesis: c:/lscc/radiant/2025.2/ip/pmi/pmi_fifo.v(44): analyzing included file c:/lscc/radiant/2025.2/ip/pmi/../common/fifo/rtl/lscc_fifo.v. VERI-1328
+INFO <35901328> - synthesis: c:/lscc/radiant/2025.2/ip/pmi/pmi_ice40up.v(6): analyzing included file c:/lscc/radiant/2025.2/ip/pmi/pmi_fifo_dc.v. VERI-1328
+INFO <35901328> - synthesis: c:/lscc/radiant/2025.2/ip/pmi/pmi_fifo_dc.v(47): analyzing included file c:/lscc/radiant/2025.2/ip/pmi/../common/fifo_dc/rtl/lscc_fifo_dc.v. VERI-1328
+INFO <35901328> - synthesis: c:/lscc/radiant/2025.2/ip/pmi/pmi_ice40up.v(7): analyzing included file c:/lscc/radiant/2025.2/ip/pmi/pmi_mac.v. VERI-1328
+INFO <35901328> - synthesis: c:/lscc/radiant/2025.2/ip/pmi/pmi_mac.v(52): analyzing included file c:/lscc/radiant/2025.2/ip/pmi/../common/mult_accumulate/rtl/lscc_mult_accumulate.v. VERI-1328
+INFO <35901328> - synthesis: c:/lscc/radiant/2025.2/ip/pmi/pmi_ice40up.v(8): analyzing included file c:/lscc/radiant/2025.2/ip/pmi/pmi_multaddsubsum.v. VERI-1328
+INFO <35901328> - synthesis: c:/lscc/radiant/2025.2/ip/pmi/pmi_multaddsubsum.v(53): analyzing included file c:/lscc/radiant/2025.2/ip/pmi/../common/mult_add_sub_sum/rtl/lscc_mult_add_sub_sum.v. VERI-1328
+INFO <35901328> - synthesis: c:/lscc/radiant/2025.2/ip/pmi/pmi_ice40up.v(9): analyzing included file c:/lscc/radiant/2025.2/ip/pmi/pmi_multaddsub.v. VERI-1328
+INFO <35901328> - synthesis: c:/lscc/radiant/2025.2/ip/pmi/pmi_multaddsub.v(52): analyzing included file c:/lscc/radiant/2025.2/ip/pmi/../common/mult_add_sub/rtl/lscc_mult_add_sub.v. VERI-1328
+INFO <35901328> - synthesis: c:/lscc/radiant/2025.2/ip/pmi/pmi_ice40up.v(10): analyzing included file c:/lscc/radiant/2025.2/ip/pmi/pmi_mult.v. VERI-1328
+INFO <35901328> - synthesis: c:/lscc/radiant/2025.2/ip/pmi/pmi_mult.v(51): analyzing included file c:/lscc/radiant/2025.2/ip/pmi/../common/multiplier/rtl/lscc_multiplier.v. VERI-1328
+INFO <35901328> - synthesis: c:/lscc/radiant/2025.2/ip/pmi/pmi_ice40up.v(11): analyzing included file c:/lscc/radiant/2025.2/ip/pmi/pmi_ram_dp.v. VERI-1328
+INFO <35901328> - synthesis: c:/lscc/radiant/2025.2/ip/pmi/pmi_ram_dp.v(48): analyzing included file c:/lscc/radiant/2025.2/ip/pmi/../common/ram_dp/rtl/lscc_ram_dp.v. VERI-1328
+INFO <35901328> - synthesis: c:/lscc/radiant/2025.2/ip/pmi/pmi_ram_dp.v(49): analyzing included file c:/lscc/radiant/2025.2/ip/pmi/../LFMXO4/ram_dp/rtl/lscc_lfmxo4_ram_dp.v. VERI-1328
+INFO <35901328> - synthesis: c:/lscc/radiant/2025.2/ip/pmi/pmi_ice40up.v(12): analyzing included file c:/lscc/radiant/2025.2/ip/pmi/pmi_ram_dq.v. VERI-1328
+INFO <35901328> - synthesis: c:/lscc/radiant/2025.2/ip/pmi/pmi_ram_dq.v(45): analyzing included file c:/lscc/radiant/2025.2/ip/pmi/../common/ram_dq/rtl/lscc_ram_dq.v. VERI-1328
+INFO <35901328> - synthesis: c:/lscc/radiant/2025.2/ip/pmi/pmi_ram_dq.v(46): analyzing included file c:/lscc/radiant/2025.2/ip/pmi/../LFMXO4/ram_dq/rtl/lscc_lfmxo4_ram_dq.v. VERI-1328
+INFO <35901328> - synthesis: c:/lscc/radiant/2025.2/ip/pmi/pmi_ice40up.v(13): analyzing included file c:/lscc/radiant/2025.2/ip/pmi/pmi_rom.v. VERI-1328
+INFO <35901328> - synthesis: c:/lscc/radiant/2025.2/ip/pmi/pmi_rom.v(45): analyzing included file c:/lscc/radiant/2025.2/ip/pmi/../common/rom/rtl/lscc_rom.v. VERI-1328
+INFO <35901328> - synthesis: c:/lscc/radiant/2025.2/ip/pmi/pmi_ice40up.v(14): analyzing included file c:/lscc/radiant/2025.2/ip/pmi/pmi_sub.v. VERI-1328
+INFO <35901328> - synthesis: c:/lscc/radiant/2025.2/ip/pmi/pmi_sub.v(50): analyzing included file c:/lscc/radiant/2025.2/ip/pmi/../common/subtractor/rtl/lscc_subtractor.v. VERI-1328
+INFO <35901328> - synthesis: c:/lscc/radiant/2025.2/ip/pmi/pmi_ice40up.v(15): analyzing included file c:/lscc/radiant/2025.2/ip/pmi/pmi_ram_dp_be.v. VERI-1328
+INFO <35901328> - synthesis: c:/lscc/radiant/2025.2/ip/pmi/pmi_ram_dp_be.v(49): analyzing included file c:/lscc/radiant/2025.2/ip/pmi/../common/ram_dp/rtl/lscc_ram_dp.v. VERI-1328
+INFO <35901328> - synthesis: c:/lscc/radiant/2025.2/ip/pmi/pmi_ram_dp_be.v(50): analyzing included file c:/lscc/radiant/2025.2/ip/pmi/../LFMXO4/ram_dp/rtl/lscc_lfmxo4_ram_dp.v. VERI-1328
+INFO <35901328> - synthesis: c:/lscc/radiant/2025.2/ip/pmi/pmi_ice40up.v(16): analyzing included file c:/lscc/radiant/2025.2/ip/pmi/pmi_ram_dq_be.v. VERI-1328
+INFO <35901328> - synthesis: c:/lscc/radiant/2025.2/ip/pmi/pmi_ram_dq_be.v(45): analyzing included file c:/lscc/radiant/2025.2/ip/pmi/../common/ram_dq/rtl/lscc_ram_dq.v. VERI-1328
+INFO <35901328> - synthesis: c:/lscc/radiant/2025.2/ip/pmi/pmi_ram_dq_be.v(46): analyzing included file c:/lscc/radiant/2025.2/ip/pmi/../LFMXO4/ram_dq/rtl/lscc_lfmxo4_ram_dq.v. VERI-1328
+INFO <35901328> - synthesis: c:/lscc/radiant/2025.2/ip/pmi/pmi_ice40up.v(17): analyzing included file c:/lscc/radiant/2025.2/ip/pmi/pmi_dsp.v. VERI-1328
+Analyzing VHDL file c:/lscc/radiant/2025.2/ip/pmi/pmi_ice40up.vhd. VHDL-1481
+Analyzing VHDL file c:/lscc/radiant/2025.2/ip/pmi/pmi_ice40up.vhd
+
+INFO <35921014> - synthesis: c:/lscc/radiant/2025.2/ip/pmi/pmi_ice40up.vhd(4): analyzing package components. VHDL-1014
+Analyzing VHDL file c:/users/felix/documents/master_1ecam/fpga/lab3_files/led.vhd. VHDL-1481
+Analyzing VHDL file c:/users/felix/documents/master_1ecam/fpga/lab3_files/led.vhd
+
+INFO <35921012> - synthesis: c:/users/felix/documents/master_1ecam/fpga/lab3_files/led.vhd(6): analyzing entity led. VHDL-1012
+INFO <35921010> - synthesis: c:/users/felix/documents/master_1ecam/fpga/lab3_files/led.vhd(13): analyzing architecture rtl. VHDL-1010
+INFO <35921504> - synthesis: The default VHDL library search path is now "C:/Users/felix/Documents/Master_1ECAM/FPGA/lab/lab_1". VHDL-1504
+Top module language type = VHDL.
+Top module name (VHDL, mixed language): led
+LSE: Compile Design done
+

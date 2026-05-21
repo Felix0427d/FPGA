@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<RadiantProject version="4.2" radiant="2025.2.0.48.0" title="lab" device="iCE40UP5K-SG48I" performance_grade="High-Performance_1.2V" family_int="ice40tp" device_int="itpa08" package_int="SG48" operation_int="IND" speed_int="6" default_implementation="lab_1">
+    <Options/>
+    <Implementation title="lab_1" dir="lab_1" description="lab_1" synthesis="synplify" default_strategy="Strategy1">
+        <Options def_top="led"/>
+        <Source name="../lab3_files/led.vhd" type="VHDL" type_short="VHDL">
+            <Options top_module="led"/>
+        </Source>
+        <Source name="lab3.sdc" type="Pre-Synthesis Constraints File" type_short="SDC">
+            <Options/>
+        </Source>
+        <Source name="lab3.pdc" type="Physical Constraints File" type_short="PDC">
+            <Options/>
+        </Source>
+    </Implementation>
+    <Strategy name="Strategy1" file="lab1.sty"/>
+</RadiantProject>

@@ -1,0 +1,24 @@
+<Project Date="2025-03-20" ModBy="Inserter" Name="/home/seb/devel/ecam/robot/project/robot/robot.rvl" SigType="0">
+    <IP Version="1_6_042617"/>
+    <Design DesignEntry="Schematic/VHDL" DesignName="robot" DeviceFamily="iCE40UP" DeviceName="iCE40UP5K" JTAG="soft" Stage="postsyn" Synthesis="lse"/>
+    <Core ID="0" Insert="1" InsertDataset="0" Name="top_LA0" Reveal_sig="619267704">
+        <Setting>
+            <Clock EnableClk="" EnableClk_Pri="0" SampleClk="clk_c" SampleEnable="0"/>
+            <TraceBuffer BitTimeStamp="0" BufferDepth="512" Implementation="0" IncTrigSig="0" hasTimeStamp="0"/>
+            <Capture MinSamplesPerTrig="8" Mode="0"/>
+            <Event CntEnable="0" MaxEventCnt="8"/>
+            <TrigOut EnableTrigOut="0" MinPulseWidth="0" Polarity="0" TrigOutNet="reveal_debug_top_LA0_net" TrigOutNetType="0"/>
+            <DistRAM Disable="1"/>
+        </Setting>
+        <Dataset Name="Base">
+            <Trace>
+                <Sig Name="uart_rxd_c" Type="SIG"/>
+                <Sig Name="uart_txd_c" Type="SIG"/>
+            </Trace>
+            <Trigger>
+                <TU ID="1" Serialbits="0" Sig="" Type="0"/>
+                <TE ID="1" MaxEvnCnt="1" MaxSequence="1" Resource="1"/>
+            </Trigger>
+        </Dataset>
+    </Core>
+</Project>

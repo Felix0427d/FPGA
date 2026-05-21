@@ -1,0 +1,104 @@
+{
+"Synplify Pro (R) Job Log" : {
+	"Date" : "10:25:10    04-May-2026",
+	"Working Directory" : "C:/Users/felix/Documents/Master_1ECAM/FPGA/lab/lab_1",
+	"Install" : "C:/lscc/radiant/2025.2/synpbase"
+},
+"hdl_info_gen" :{
+   "Job Flow" : "Sequential",
+   "Start Time" : "10:24:52",
+   "Runtime" : "00s",
+   "Executable Run Time" : "00s",
+   "hdl_info_gen" : {
+      "executable" : "bin64/c_vhdl.exe",
+      "Run Directory" : "C:/Users/felix/Documents/Master_1ECAM/FPGA/lab/lab_1",
+      "Run State" : "Complete",
+      "Return Code" : "0",
+      "Run Success" : "yes",
+      "Run Start Time" : "10:24:52",
+      "Run Time" : "00s",
+      "Exe Run Time" : "00s",
+      "Memory Usage" : "-",
+      "Up-to-date (run skipped)" : "no"
+   }
+},
+"lab_1" :{
+   "Job Flow" : "Sequential",
+   "Start Time" : "10:24:53",
+   "Runtime" : "17s",
+   "Executable Run Time" : "15s",
+   "synthesis" : {
+      "Job Flow" : "Sequential",
+      "Start Time" : "10:24:53",
+      "Runtime" : "17s",
+      "Executable Run Time" : "15s",
+      "compile" : {
+         "Job Flow" : "Sequential",
+         "Start Time" : "10:24:53",
+         "Runtime" : "08s",
+         "Executable Run Time" : "07s",
+         "compile_flow" : {
+            "Job Flow" : "Sequential",
+            "Start Time" : "10:24:53",
+            "Runtime" : "03s",
+            "Executable Run Time" : "02s",
+            "compiler" : {
+               "executable" : "bin64/c_hdl.exe",
+               "Run Directory" : "C:/Users/felix/Documents/Master_1ECAM/FPGA/lab/lab_1",
+               "Run State" : "Complete",
+               "Return Code" : "0",
+               "Run Success" : "yes",
+               "Run Start Time" : "10:24:53",
+               "Run Time" : "03s",
+               "Exe Run Time" : "02s",
+               "max_parallel_jobs" : "4",
+               "Memory Usage" : "-",
+               "Up-to-date (run skipped)" : "no"
+            },
+            "multi_srs_gen" : {
+               "executable" : "bin64/syn_nfilter.exe",
+               "Run Directory" : "C:/Users/felix/Documents/Master_1ECAM/FPGA/lab/lab_1",
+               "Run State" : "Complete",
+               "Return Code" : "0",
+               "Run Success" : "yes",
+               "Run Start Time" : "10:24:56",
+               "Run Time" : "00s",
+               "Exe Run Time" : "00s",
+               "Memory Usage" : "-",
+               "Up-to-date (run skipped)" : "no"
+            }
+         },
+         "premap" : {
+            "executable" : "bin64/m_generic.exe",
+            "Run Directory" : "C:/Users/felix/Documents/Master_1ECAM/FPGA/lab/lab_1",
+            "Run State" : "Complete",
+            "Return Code" : "1",
+            "Run Success" : "yes",
+            "Run Start Time" : "10:24:56",
+            "Run Time" : "05s",
+            "Exe Run Time" : "05s",
+            "Memory Usage" : "-",
+            "Up-to-date (run skipped)" : "no"
+         }
+      },
+      "map" : {
+         "Job Flow" : "Sequential",
+         "Start Time" : "10:25:01",
+         "Runtime" : "09s",
+         "Executable Run Time" : "08s",
+         "fpga_mapper" : {
+            "executable" : "bin64/m_generic.exe",
+            "Run Directory" : "C:/Users/felix/Documents/Master_1ECAM/FPGA/lab/lab_1",
+            "Run State" : "Complete",
+            "Return Code" : "1",
+            "Run Success" : "yes",
+            "Run Start Time" : "10:25:01",
+            "Run Time" : "09s",
+            "Exe Run Time" : "08s",
+            "Memory Usage" : "-",
+            "Up-to-date (run skipped)" : "no"
+         }
+      }
+   }
+}
+}

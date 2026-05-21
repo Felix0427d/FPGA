@@ -1,0 +1,221 @@
+
+Copyright (C) 1994-2025 Synopsys, Inc.
+This Synopsys software and all associated documentation are proprietary to Synopsys, Inc.
+and may only be used pursuant to the terms and conditions of a written license agreement
+with Synopsys, Inc. All other use, reproduction, modification, or distribution of the
+Synopsys software or the associated documentation is strictly prohibited.
+Tool: Synplify Pro (R)
+Build: W-2025.03LR-SP1
+Install: C:\lscc\radiant\2025.2\synpbase
+OS: Windows 10 or later
+Hostname: PCDEFÉLIX
+
+Implementation : lab_1
+Synopsys HDL Compiler, Version comp202503synp2, Build 178R, Built Nov 11 2025 09:38:30, @
+
+@N|Running in 64-bit mode
+###########################################################[
+
+Copyright (C) 1994-2025 Synopsys, Inc.
+This Synopsys software and all associated documentation are proprietary to Synopsys, Inc.
+and may only be used pursuant to the terms and conditions of a written license agreement
+with Synopsys, Inc. All other use, reproduction, modification, or distribution of the
+Synopsys software or the associated documentation is strictly prohibited.
+Tool: Synplify Pro (R)
+Build: W-2025.03LR-SP1
+Install: C:\lscc\radiant\2025.2\synpbase
+OS: Windows 10 or later
+Hostname: PCDEFÉLIX
+
+Implementation : lab_1
+Synopsys VHDL Compiler, Version comp202503synp2, Build 178R, Built Nov 11 2025 09:38:30, @
+
+@N|Running in 64-bit mode
+@N:"C:\Users\felix\Documents\Master_1ECAM\FPGA\lab3_files\led.vhd":5:7:5:9|Top entity is set to led.
+@N: CD140 :	| Using the VHDL 1993 Standard for file 'C:\lscc\radiant\2025.2\ip\pmi\pmi_iCE40UP.vhd'.
+@N: CD140 :	| Using the VHDL 1993 Standard for file 'C:\Users\felix\Documents\Master_1ECAM\FPGA\lab3_files\led.vhd'.
+@N: CD140 :	| Using the VHDL 1993 Standard for file 'C:\lscc\radiant\2025.2\cae_library\synthesis\vhdl\iCE40UP.vhd'.
+VHDL syntax check successful!
+File C:\Users\felix\Documents\Master_1ECAM\FPGA\lab3_files\led.vhd changed - recompiling
+File C:\lscc\radiant\2025.2\synpbase\lib\vhd\math_real.vhd changed - recompiling
+File C:\lscc\radiant\2025.2\cae_library\synthesis\vhdl\iCE40UP.vhd changed - recompiling
+
+At c_vhdl Exit (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 149MB peak: 150MB)
+
+
+Process completed successfully.
+# Mon May  4 11:43:41 2026
+
+###########################################################]
+###########################################################[
+
+Copyright (C) 1994-2025 Synopsys, Inc.
+This Synopsys software and all associated documentation are proprietary to Synopsys, Inc.
+and may only be used pursuant to the terms and conditions of a written license agreement
+with Synopsys, Inc. All other use, reproduction, modification, or distribution of the
+Synopsys software or the associated documentation is strictly prohibited.
+Tool: Synplify Pro (R)
+Build: W-2025.03LR-SP1
+Install: C:\lscc\radiant\2025.2\synpbase
+OS: Windows 10 or later
+Hostname: PCDEFÉLIX
+
+Implementation : lab_1
+Synopsys Verilog Compiler, Version comp202503synp2, Build 178R, Built Nov 11 2025 09:38:30, @
+
+@N|Running in 64-bit mode
+@I::"C:\lscc\radiant\2025.2\synpbase\lib\generic\ice40up.v" (library work)
+@I::"C:\lscc\radiant\2025.2\synpbase\lib\vlog\hypermods.v" (library __hyper__lib__)
+@I::"C:\lscc\radiant\2025.2\ip\pmi\pmi_iCE40UP.v" (library work)
+@I:"C:\lscc\radiant\2025.2\ip\pmi\pmi_iCE40UP.v":"C:\lscc\radiant\2025.2\ip\pmi\pmi_addsub.v" (library work)
+@I:"C:\lscc\radiant\2025.2\ip\pmi\pmi_addsub.v":"C:\lscc\radiant\2025.2\ip\pmi\../common/adder_subtractor/rtl\lscc_add_sub.v" (library work)
+@N: CG334 :"C:\lscc\radiant\2025.2\ip\pmi\../common/adder_subtractor/rtl\lscc_add_sub.v":313:13:313:25|Read directive translate_off.
+@N: CG333 :"C:\lscc\radiant\2025.2\ip\pmi\../common/adder_subtractor/rtl\lscc_add_sub.v":333:13:333:24|Read directive translate_on.
+@I:"C:\lscc\radiant\2025.2\ip\pmi\pmi_iCE40UP.v":"C:\lscc\radiant\2025.2\ip\pmi\pmi_add.v" (library work)
+@I:"C:\lscc\radiant\2025.2\ip\pmi\pmi_add.v":"C:\lscc\radiant\2025.2\ip\pmi\../common/adder/rtl\lscc_adder.v" (library work)
+@I:"C:\lscc\radiant\2025.2\ip\pmi\pmi_iCE40UP.v":"C:\lscc\radiant\2025.2\ip\pmi\pmi_complex_mult.v" (library work)
+@I:"C:\lscc\radiant\2025.2\ip\pmi\pmi_complex_mult.v":"C:\lscc\radiant\2025.2\ip\pmi\../common/complex_mult/rtl\lscc_complex_mult.v" (library work)
+@N: CG334 :"C:\lscc\radiant\2025.2\ip\pmi\pmi_complex_mult.v":92:11:92:23|Read directive translate_off.
+@N: CG333 :"C:\lscc\radiant\2025.2\ip\pmi\pmi_complex_mult.v":101:11:101:22|Read directive translate_on.
+@I:"C:\lscc\radiant\2025.2\ip\pmi\pmi_iCE40UP.v":"C:\lscc\radiant\2025.2\ip\pmi\pmi_counter.v" (library work)
+@I:"C:\lscc\radiant\2025.2\ip\pmi\pmi_counter.v":"C:\lscc\radiant\2025.2\ip\pmi\../common/counter/rtl\lscc_cntr.v" (library work)
+@N: CG334 :"C:\lscc\radiant\2025.2\ip\pmi\../common/counter/rtl\lscc_cntr.v":129:13:129:25|Read directive translate_off.
+@N: CG333 :"C:\lscc\radiant\2025.2\ip\pmi\../common/counter/rtl\lscc_cntr.v":143:13:143:24|Read directive translate_on.
+@I:"C:\lscc\radiant\2025.2\ip\pmi\pmi_iCE40UP.v":"C:\lscc\radiant\2025.2\ip\pmi\pmi_fifo.v" (library work)
+@I:"C:\lscc\radiant\2025.2\ip\pmi\pmi_fifo.v":"C:\lscc\radiant\2025.2\ip\pmi\../common/fifo/rtl\lscc_fifo.v" (library work)
+@N: CG334 :"C:\lscc\radiant\2025.2\ip\pmi\../common/fifo/rtl\lscc_fifo.v":3275:17:3275:29|Read directive translate_off.
+@N: CG333 :"C:\lscc\radiant\2025.2\ip\pmi\../common/fifo/rtl\lscc_fifo.v":3282:17:3282:28|Read directive translate_on.
+@N: CG334 :"C:\lscc\radiant\2025.2\ip\pmi\../common/fifo/rtl\lscc_fifo.v":3339:17:3339:29|Read directive translate_off.
+@N: CG333 :"C:\lscc\radiant\2025.2\ip\pmi\../common/fifo/rtl\lscc_fifo.v":3346:17:3346:28|Read directive translate_on.
+@N: CG334 :"C:\lscc\radiant\2025.2\ip\pmi\../common/fifo/rtl\lscc_fifo.v":3401:17:3401:29|Read directive translate_off.
+@N: CG333 :"C:\lscc\radiant\2025.2\ip\pmi\../common/fifo/rtl\lscc_fifo.v":3408:17:3408:28|Read directive translate_on.
+@I:"C:\lscc\radiant\2025.2\ip\pmi\pmi_iCE40UP.v":"C:\lscc\radiant\2025.2\ip\pmi\pmi_fifo_dc.v" (library work)
+@I:"C:\lscc\radiant\2025.2\ip\pmi\pmi_fifo_dc.v":"C:\lscc\radiant\2025.2\ip\pmi\../common/fifo_dc/rtl\lscc_fifo_dc.v" (library work)
+@N: CG334 :"C:\lscc\radiant\2025.2\ip\pmi\../common/fifo_dc/rtl\lscc_fifo_dc.v":5142:25:5142:37|Read directive translate_off.
+@N: CG333 :"C:\lscc\radiant\2025.2\ip\pmi\../common/fifo_dc/rtl\lscc_fifo_dc.v":5146:25:5146:36|Read directive translate_on.
+@N: CG334 :"C:\lscc\radiant\2025.2\ip\pmi\../common/fifo_dc/rtl\lscc_fifo_dc.v":5177:29:5177:41|Read directive translate_off.
+@N: CG333 :"C:\lscc\radiant\2025.2\ip\pmi\../common/fifo_dc/rtl\lscc_fifo_dc.v":5181:29:5181:40|Read directive translate_on.
+@I:"C:\lscc\radiant\2025.2\ip\pmi\pmi_iCE40UP.v":"C:\lscc\radiant\2025.2\ip\pmi\pmi_mac.v" (library work)
+@I:"C:\lscc\radiant\2025.2\ip\pmi\pmi_mac.v":"C:\lscc\radiant\2025.2\ip\pmi\../common/mult_accumulate/rtl\lscc_mult_accumulate.v" (library work)
+@N: CG334 :"C:\lscc\radiant\2025.2\ip\pmi\pmi_mac.v":94:11:94:23|Read directive translate_off.
+@N: CG333 :"C:\lscc\radiant\2025.2\ip\pmi\pmi_mac.v":109:11:109:22|Read directive translate_on.
+@I:"C:\lscc\radiant\2025.2\ip\pmi\pmi_iCE40UP.v":"C:\lscc\radiant\2025.2\ip\pmi\pmi_multaddsubsum.v" (library work)
+@I:"C:\lscc\radiant\2025.2\ip\pmi\pmi_multaddsubsum.v":"C:\lscc\radiant\2025.2\ip\pmi\../common/mult_add_sub_sum/rtl\lscc_mult_add_sub_sum.v" (library work)
+@N: CG334 :"C:\lscc\radiant\2025.2\ip\pmi\../common/mult_add_sub_sum/rtl\lscc_mult_add_sub_sum.v":210:13:210:25|Read directive translate_off.
+@N: CG333 :"C:\lscc\radiant\2025.2\ip\pmi\../common/mult_add_sub_sum/rtl\lscc_mult_add_sub_sum.v":227:13:227:24|Read directive translate_on.
+@N: CG334 :"C:\lscc\radiant\2025.2\ip\pmi\pmi_multaddsubsum.v":84:11:84:23|Read directive translate_off.
+@N: CG333 :"C:\lscc\radiant\2025.2\ip\pmi\pmi_multaddsubsum.v":93:11:93:22|Read directive translate_on.
+@I:"C:\lscc\radiant\2025.2\ip\pmi\pmi_iCE40UP.v":"C:\lscc\radiant\2025.2\ip\pmi\pmi_multaddsub.v" (library work)
+@I:"C:\lscc\radiant\2025.2\ip\pmi\pmi_multaddsub.v":"C:\lscc\radiant\2025.2\ip\pmi\../common/mult_add_sub/rtl\lscc_mult_add_sub.v" (library work)
+@N: CG334 :"C:\lscc\radiant\2025.2\ip\pmi\pmi_multaddsub.v":91:11:91:23|Read directive translate_off.
+@N: CG333 :"C:\lscc\radiant\2025.2\ip\pmi\pmi_multaddsub.v":100:11:100:22|Read directive translate_on.
+@I:"C:\lscc\radiant\2025.2\ip\pmi\pmi_iCE40UP.v":"C:\lscc\radiant\2025.2\ip\pmi\pmi_mult.v" (library work)
+@I:"C:\lscc\radiant\2025.2\ip\pmi\pmi_mult.v":"C:\lscc\radiant\2025.2\ip\pmi\../common/multiplier/rtl\lscc_multiplier.v" (library work)
+@N: CG334 :"C:\lscc\radiant\2025.2\ip\pmi\pmi_mult.v":87:11:87:23|Read directive translate_off.
+@N: CG333 :"C:\lscc\radiant\2025.2\ip\pmi\pmi_mult.v":96:11:96:22|Read directive translate_on.
+@I:"C:\lscc\radiant\2025.2\ip\pmi\pmi_iCE40UP.v":"C:\lscc\radiant\2025.2\ip\pmi\pmi_ram_dp.v" (library work)
+@I:"C:\lscc\radiant\2025.2\ip\pmi\pmi_ram_dp.v":"C:\lscc\radiant\2025.2\ip\pmi\../common/ram_dp/rtl\lscc_ram_dp.v" (library work)
+@N: CG334 :"C:\lscc\radiant\2025.2\ip\pmi\../common/ram_dp/rtl\lscc_ram_dp.v":1060:25:1060:37|Read directive translate_off.
+@N: CG333 :"C:\lscc\radiant\2025.2\ip\pmi\../common/ram_dp/rtl\lscc_ram_dp.v":1064:25:1064:36|Read directive translate_on.
+@N: CG334 :"C:\lscc\radiant\2025.2\ip\pmi\../common/ram_dp/rtl\lscc_ram_dp.v":1095:29:1095:41|Read directive translate_off.
+@N: CG333 :"C:\lscc\radiant\2025.2\ip\pmi\../common/ram_dp/rtl\lscc_ram_dp.v":1099:29:1099:40|Read directive translate_on.
+@I:"C:\lscc\radiant\2025.2\ip\pmi\pmi_ram_dp.v":"C:\lscc\radiant\2025.2\ip\pmi\../LFMXO4/ram_dp/rtl\lscc_lfmxo4_ram_dp.v" (library work)
+@N: CG334 :"C:\lscc\radiant\2025.2\ip\pmi\../LFMXO4/ram_dp/rtl\lscc_lfmxo4_ram_dp.v":2040:25:2040:37|Read directive translate_off.
+@N: CG333 :"C:\lscc\radiant\2025.2\ip\pmi\../LFMXO4/ram_dp/rtl\lscc_lfmxo4_ram_dp.v":2048:25:2048:36|Read directive translate_on.
+@N: CG334 :"C:\lscc\radiant\2025.2\ip\pmi\../LFMXO4/ram_dp/rtl\lscc_lfmxo4_ram_dp.v":2114:29:2114:41|Read directive translate_off.
+@N: CG333 :"C:\lscc\radiant\2025.2\ip\pmi\../LFMXO4/ram_dp/rtl\lscc_lfmxo4_ram_dp.v":2122:29:2122:40|Read directive translate_on.
+@I:"C:\lscc\radiant\2025.2\ip\pmi\pmi_iCE40UP.v":"C:\lscc\radiant\2025.2\ip\pmi\pmi_ram_dq.v" (library work)
+@I:"C:\lscc\radiant\2025.2\ip\pmi\pmi_ram_dq.v":"C:\lscc\radiant\2025.2\ip\pmi\../common/ram_dq/rtl\lscc_ram_dq.v" (library work)
+@N: CG334 :"C:\lscc\radiant\2025.2\ip\pmi\../common/ram_dq/rtl\lscc_ram_dq.v":1485:25:1485:37|Read directive translate_off.
+@N: CG333 :"C:\lscc\radiant\2025.2\ip\pmi\../common/ram_dq/rtl\lscc_ram_dq.v":1491:25:1491:36|Read directive translate_on.
+@I:"C:\lscc\radiant\2025.2\ip\pmi\pmi_ram_dq.v":"C:\lscc\radiant\2025.2\ip\pmi\../LFMXO4/ram_dq/rtl\lscc_lfmxo4_ram_dq.v" (library work)
+@I:"C:\lscc\radiant\2025.2\ip\pmi\pmi_iCE40UP.v":"C:\lscc\radiant\2025.2\ip\pmi\pmi_rom.v" (library work)
+@I:"C:\lscc\radiant\2025.2\ip\pmi\pmi_rom.v":"C:\lscc\radiant\2025.2\ip\pmi\../common/rom/rtl\lscc_rom.v" (library work)
+@N: CG334 :"C:\lscc\radiant\2025.2\ip\pmi\../common/rom/rtl\lscc_rom.v":970:25:970:37|Read directive translate_off.
+@N: CG333 :"C:\lscc\radiant\2025.2\ip\pmi\../common/rom/rtl\lscc_rom.v":976:25:976:36|Read directive translate_on.
+@I:"C:\lscc\radiant\2025.2\ip\pmi\pmi_iCE40UP.v":"C:\lscc\radiant\2025.2\ip\pmi\pmi_sub.v" (library work)
+@I:"C:\lscc\radiant\2025.2\ip\pmi\pmi_sub.v":"C:\lscc\radiant\2025.2\ip\pmi\../common/subtractor/rtl\lscc_subtractor.v" (library work)
+@I:"C:\lscc\radiant\2025.2\ip\pmi\pmi_iCE40UP.v":"C:\lscc\radiant\2025.2\ip\pmi\pmi_ram_dp_be.v" (library work)
+@N: CG334 :"C:\lscc\radiant\2025.2\ip\pmi\pmi_ram_dp_be.v":194:11:194:23|Read directive translate_off.
+@N: CG333 :"C:\lscc\radiant\2025.2\ip\pmi\pmi_ram_dp_be.v":203:11:203:22|Read directive translate_on.
+@I:"C:\lscc\radiant\2025.2\ip\pmi\pmi_iCE40UP.v":"C:\lscc\radiant\2025.2\ip\pmi\pmi_ram_dq_be.v" (library work)
+@N: CG334 :"C:\lscc\radiant\2025.2\ip\pmi\pmi_ram_dq_be.v":92:11:92:23|Read directive translate_off.
+@N: CG333 :"C:\lscc\radiant\2025.2\ip\pmi\pmi_ram_dq_be.v":100:11:100:22|Read directive translate_on.
+@I:"C:\lscc\radiant\2025.2\ip\pmi\pmi_iCE40UP.v":"C:\lscc\radiant\2025.2\ip\pmi\pmi_dsp.v" (library work)
+Verilog syntax check successful!
+
+At c_ver Exit (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 177MB peak: 178MB)
+
+
+Process completed successfully.
+# Mon May  4 11:43:42 2026
+
+###########################################################]
+###########################################################[
+@N:"C:\Users\felix\Documents\Master_1ECAM\FPGA\lab3_files\led.vhd":5:7:5:9|Top entity is set to led.
+@N: CD140 :	| Using the VHDL 1993 Standard for file 'C:\lscc\radiant\2025.2\ip\pmi\pmi_iCE40UP.vhd'.
+@N: CD140 :	| Using the VHDL 1993 Standard for file 'C:\Users\felix\Documents\Master_1ECAM\FPGA\lab3_files\led.vhd'.
+@N: CD140 :	| Using the VHDL 1993 Standard for file 'C:\lscc\radiant\2025.2\cae_library\synthesis\vhdl\iCE40UP.vhd'.
+VHDL syntax check successful!
+Options changed - recompiling
+@N: CD630 :"C:\Users\felix\Documents\Master_1ECAM\FPGA\lab3_files\led.vhd":5:7:5:9|Synthesizing work.led.rtl.
+Post processing for work.led.rtl
+Running optimization stage 1 on led .......
+Finished optimization stage 1 on led (CPU Time 0h:00m:00s, Memory Used current: 151MB peak: 152MB)
+Running optimization stage 2 on led .......
+Finished optimization stage 2 on led (CPU Time 0h:00m:00s, Memory Used current: 151MB peak: 152MB)
+
+For a summary of runtime per design unit, please see file:
+==========================================================
+@L: C:\Users\felix\Documents\Master_1ECAM\FPGA\lab\lab_1\synwork\layer0.duruntime
+
+
+
+At c_vhdl Exit (Real Time elapsed 0h:00m:01s; CPU Time elapsed 0h:00m:01s; Memory used current: 151MB peak: 152MB)
+
+
+Process completed successfully.
+# Mon May  4 11:43:43 2026
+
+###########################################################]
+###########################################################[
+
+Copyright (C) 1994-2025 Synopsys, Inc.
+This Synopsys software and all associated documentation are proprietary to Synopsys, Inc.
+and may only be used pursuant to the terms and conditions of a written license agreement
+with Synopsys, Inc. All other use, reproduction, modification, or distribution of the
+Synopsys software or the associated documentation is strictly prohibited.
+Tool: Synplify Pro (R)
+Build: W-2025.03LR-SP1
+Install: C:\lscc\radiant\2025.2\synpbase
+OS: Windows 10 or later
+Hostname: PCDEFÉLIX
+
+Implementation : lab_1
+Synopsys Synopsys Netlist Linker, Version comp202503synp2, Build 178R, Built Nov 11 2025 09:38:30, @
+
+@N|Running in 64-bit mode
+
+At syn_nfilter Exit (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 152MB peak: 153MB)
+
+Process took 0h:00m:01s realtime, 0h:00m:01s cputime
+
+Process completed successfully.
+# Mon May  4 11:43:43 2026
+
+###########################################################]
+
+For a summary of runtime and memory usage for all design units, please see file:
+==========================================================
+@L: C:\Users\felix\Documents\Master_1ECAM\FPGA\lab\lab_1\synwork\lab_lab_1_comp.rt.csv
+
+@END
+
+At c_hdl Exit (Real Time elapsed 0h:00m:02s; CPU Time elapsed 0h:00m:03s; Memory used current: 83MB peak: 84MB)
+
+Process took 0h:00m:03s realtime, 0h:00m:03s cputime
+
+Process completed successfully.
+# Mon May  4 11:43:44 2026
+
+###########################################################]

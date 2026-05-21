@@ -1,0 +1,21 @@
+#Start recording tcl command: 3/20/2025 15:53:00
+#Project Location: /home/seb/devel/ecam/robot/project/robot; Project name: robot
+prj_open "/home/seb/devel/ecam/robot/project/robot/robot.rdf"
+prj_add_source "/home/seb/devel/ecam/robot/project/robot/timing.sdc"
+prj_enable_source "/home/seb/devel/ecam/robot/project/robot/timing.sdc"
+prj_save 
+prj_add_source "/home/seb/devel/ecam/robot/project/robot/timing.pdc"
+prj_enable_source "/home/seb/devel/ecam/robot/project/robot/timing.pdc"
+prj_run PAR -impl impl_1
+prj_remove_source "/home/seb/devel/ecam/robot/project/robot/timing.pdc"
+prj_run PAR -impl impl_1
+prj_run PAR -impl impl_1
+prj_run PAR -impl impl_1
+prj_add_source "/home/seb/devel/ecam/robot/project/robot/robot.pdc"
+prj_enable_source "/home/seb/devel/ecam/robot/project/robot/robot.pdc"
+prj_run PAR -impl impl_1
+prj_run PAR -impl impl_1
+prj_run PAR -impl impl_1
+prj_save 
+prj_close
+#Stop recording: 3/20/2025 16:12:39

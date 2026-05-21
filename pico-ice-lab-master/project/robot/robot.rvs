@@ -1,0 +1,19 @@
+<Project Date="2025-03-20" ModBy="Inserter" Name="/home/seb/devel/ecam/robot/project/robot/robot.rvl">
+    <Core Name="top_LA0">
+        <Setting>
+            <Capture NumTrigsCap="" SamplesPerTrig="1"/>
+            <Event CntEnableRun="" EventCnt=""/>
+            <TrigSetting AND_ALL="" PostTrgSamples="" PreTrgSamples="" TURadix="0"/>
+        </Setting>
+        <Dataset Name="Base">
+            <Trace>
+                <Sig Name="uart_rxd_c"/>
+                <Sig Name="uart_txd_c"/>
+            </Trace>
+            <Trigger>
+                <TU ID="1" Index="1" Name="TU1" Operator="0" Radix="0" Value="0"/>
+                <TE Enable="1" Expression="" ID="1" Index="1" Name="TE1"/>
+            </Trigger>
+        </Dataset>
+    </Core>
+</Project>

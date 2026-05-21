@@ -1,0 +1,2 @@
+set_option -top_module work.led
+project -fileorder "C:/lscc/radiant/2025.2/ip/pmi/pmi_iCE40UP.vhd" "C:/Users/felix/Documents/Master_1ECAM/FPGA/lab3_files/led.vhd" "C:/lscc/radiant/2025.2/cae_library/synthesis/vhdl/iCE40UP.vhd" 

@@ -1,0 +1,15 @@
+Property_Name=CLOCK_NAME_main
+Property_Type=String
+Property_Value=main
+Property_Name=CLOCK_POINT_NAME_main
+Property_Type=String
+Property_Value=
+Property_Name=CLOCK_NETNAME_main
+Property_Type=String
+Property_Value=
+Property_Name=REQUIRED_FREQUENCY_main
+Property_Type=Float
+Property_Value=12
+Property_Name=ACTUAL_FREQUENCY_main
+Property_Type=Float
+Property_Value=-1

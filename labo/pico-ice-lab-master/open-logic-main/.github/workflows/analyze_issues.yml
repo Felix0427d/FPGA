@@ -1,0 +1,31 @@
+name: analyze-issues
+run-name: ${{ github.actor }} triggered Analyzing Issues
+on:
+  workflow_dispatch:
+  schedule:
+    - cron: '0 3 * * *'
+  
+jobs:
+  analyze-issues:
+    runs-on: ubuntu-latest
+    steps:
+      #General Setup
+      - name: Setup node
+        uses: actions/setup-node@v4
+      - name: Checkout repo
+        uses: actions/checkout@v4
+      #Setup environment
+      - name: Setup environment
+        uses: ./.github/actions/setup-environment
+        with:
+          os: ${{ runner.os }}
+      #Analyze Issues
+      - name: Analyze Issues
+        env:
+          TEST_SECRET: ${{ secrets.TEST_SECRET }}
+          ISSUES_TOKEN: ${{ secrets.ISSUES_TOKEN }}
+          GCS_PASSPHRASE: ${{ secrets.GCS_PASSPHRASE }}
+        run: |
+         source ./.github/workflows/install_gcs_key.sh
+         source ./.github/workflows/analyze_issues.sh
+         echo "Issues updated"

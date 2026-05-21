@@ -1,0 +1,10 @@
+---------------------------------------------------
+Report for cell led
+   Instance path: led
+                     Cell usage:
+                                  cell	      count    Res Usage(%)
+                                  LUT4	         66        100.0
+                               LUTGATE	         22        100.0
+                                LUTCCU	         44        100.0
+                                 IOBUF	          5        100.0
+                                PFUREG	         44        100.0
