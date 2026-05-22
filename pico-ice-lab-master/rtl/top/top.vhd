@@ -58,6 +58,12 @@ architecture rtl of top is
     signal led_out_g : STD_LOGIC := '0';
     signal led_out_b : STD_LOGIC := '0';
 
+    -- PWM control words coming from the APB register bank.
+    signal pwm1_direction : std_logic;
+    signal pwm1_speed     : std_logic_vector(14 downto 0);
+    signal pwm2_direction : std_logic;
+    signal pwm2_speed     : std_logic_vector(14 downto 0);
+
     signal counter : unsigned(23 downto 0) := (others => '0');
 begin
     -- *** Reset resynchronization ***
@@ -123,7 +129,38 @@ begin
         s_prdata  => apb_prdata,
         led_r     => led_out_r,
         led_g     => led_out_g,
-        led_b     => led_out_b
+        led_b     => led_out_b,
+        pwm1_direction => pwm1_direction,
+        pwm1_speed     => pwm1_speed,
+        pwm2_direction => pwm2_direction,
+        pwm2_speed     => pwm2_speed
+    );
+
+    -- *** PWM generators ***
+    -- One channel is instantiated per motor. Each channel generates two logic
+    -- outputs compatible with one half-bridge input pair of the L298N.
+    pwm_motor1_inst : entity work.pwm_motor_channel
+    generic map (
+        PwmPeriod_g => 480
+    )
+    port map (
+        clk       => clk,
+        reset     => reset,
+        direction => pwm1_direction,
+        speed     => pwm1_speed,
+        pwm_out   => pwm_mot1
+    );
+
+    pwm_motor2_inst : entity work.pwm_motor_channel
+    generic map (
+        PwmPeriod_g => 480
+    )
+    port map (
+        clk       => clk,
+        reset     => reset,
+        direction => pwm2_direction,
+        speed     => pwm2_speed,
+        pwm_out   => pwm_mot2
     );
 
 
@@ -134,7 +171,5 @@ begin
 
     -- Unused outputs are driven to a safe idle value for now.
     us_trig  <= '0';
-    pwm_mot1 <= (others => '0');
-    pwm_mot2 <= (others => '0');
 
 end architecture;

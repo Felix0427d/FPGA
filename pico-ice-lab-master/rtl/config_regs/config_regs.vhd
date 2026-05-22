@@ -26,7 +26,13 @@ entity config_regs is
         -- Outputs controlled by software-visible registers.
         led_r : out std_logic;
         led_g : out std_logic;
-        led_b : out std_logic
+        led_b : out std_logic;
+
+        -- PWM motor control registers.
+        pwm1_direction : out std_logic;
+        pwm1_speed     : out std_logic_vector(14 downto 0);
+        pwm2_direction : out std_logic;
+        pwm2_speed     : out std_logic_vector(14 downto 0)
     );
 end entity config_regs;
 
@@ -43,6 +49,8 @@ architecture rtl of config_regs is
     signal led_r_reg : std_logic := '0';
     signal led_g_reg : std_logic := '0';
     signal led_b_reg : std_logic := '0';
+    signal pwm1_reg  : std_logic_vector(15 downto 0) := (others => '0');
+    signal pwm2_reg  : std_logic_vector(15 downto 0) := (others => '0');
 
     -- Read data mux output.
     signal prdata_i : std_logic_vector(15 downto 0) := (others => '0');
@@ -58,6 +66,8 @@ begin
                 led_r_reg <= '0';
                 led_g_reg <= '0';
                 led_b_reg <= '0';
+                pwm1_reg  <= (others => '0');
+                pwm2_reg  <= (others => '0');
             elsif s_psel = '1' and s_penable = '1' and s_pwrite = '1' then
                 -- APB data is actually written during the access phase, i.e.
                 -- when both PSEL and PENABLE are high on a write transfer.
@@ -71,6 +81,14 @@ begin
                     when x"04" =>
                         led_b_reg <= s_pwdata(0);
 
+                    when x"06" =>
+                        -- bit 15 = direction, bits 14:0 = speed command
+                        pwm1_reg <= s_pwdata;
+
+                    when x"08" =>
+                        -- bit 15 = direction, bits 14:0 = speed command
+                        pwm2_reg <= s_pwdata;
+
                     when others =>
                         null;
                 end case;
@@ -81,7 +99,7 @@ begin
     -- Read mux.
     -- Read data is made available combinatorially from the addressed register.
     -- The APB master samples it during the access phase of a read transfer.
-    process (s_paddr, led_r_reg, led_g_reg, led_b_reg)
+    process (s_paddr, led_r_reg, led_g_reg, led_b_reg, pwm1_reg, pwm2_reg)
     begin
         prdata_i <= (others => '0');
 
@@ -95,6 +113,12 @@ begin
             when x"04" =>
                 prdata_i(0) <= led_b_reg;
 
+            when x"06" =>
+                prdata_i <= pwm1_reg;
+
+            when x"08" =>
+                prdata_i <= pwm2_reg;
+
             when others =>
                 prdata_i <= (others => '0');
         end case;
@@ -106,6 +130,10 @@ begin
     led_r <= led_r_reg;
     led_g <= led_g_reg;
     led_b <= led_b_reg;
+    pwm1_direction <= pwm1_reg(15);
+    pwm1_speed     <= pwm1_reg(14 downto 0);
+    pwm2_direction <= pwm2_reg(15);
+    pwm2_speed     <= pwm2_reg(14 downto 0);
 
 
 end architecture;
