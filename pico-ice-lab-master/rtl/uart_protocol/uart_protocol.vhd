@@ -115,12 +115,6 @@ begin
         m_psel_i    <= '0';
         m_penable_i <= '0';
 
-        -- The TX valid flag is held high only while a byte is actively waiting
-        -- to be accepted by olo_intf_uart.
-        if tx_valid_i = '1' and tx_ready = '1' then
-          tx_valid_i <= '0';
-        end if;
-
         case state is
           when IDLE =>
             -- Wait for the frame header byte.
@@ -196,41 +190,51 @@ begin
 
           when TX_WRITE_HEADER =>
             -- Send the fixed write-response header 0xAA.
-            tx_data_i  <= x"AA";
-            tx_valid_i <= '1';
-            if tx_ready = '1' then
+            if tx_valid_i = '0' then
+              tx_data_i  <= x"AA";
+              tx_valid_i <= '1';
+            elsif tx_ready = '1' then
+              tx_valid_i <= '0';
               state <= TX_WRITE_STATUS;
             end if;
 
           when TX_WRITE_STATUS =>
             -- Send the fixed write acknowledgement code 0x00.
-            tx_data_i  <= x"00";
-            tx_valid_i <= '1';
-            if tx_ready = '1' then
+            if tx_valid_i = '0' then
+              tx_data_i  <= x"00";
+              tx_valid_i <= '1';
+            elsif tx_ready = '1' then
+              tx_valid_i <= '0';
               state <= IDLE;
             end if;
 
           when TX_READ_HEADER =>
             -- Send the fixed read-response header 0x55.
-            tx_data_i  <= x"55";
-            tx_valid_i <= '1';
-            if tx_ready = '1' then
+            if tx_valid_i = '0' then
+              tx_data_i  <= x"55";
+              tx_valid_i <= '1';
+            elsif tx_ready = '1' then
+              tx_valid_i <= '0';
               state <= TX_READ_DATA_HI;
             end if;
 
           when TX_READ_DATA_HI =>
             -- Send the upper data byte read back from APB.
-            tx_data_i  <= rd_data(15 downto 8);
-            tx_valid_i <= '1';
-            if tx_ready = '1' then
+            if tx_valid_i = '0' then
+              tx_data_i  <= rd_data(15 downto 8);
+              tx_valid_i <= '1';
+            elsif tx_ready = '1' then
+              tx_valid_i <= '0';
               state <= TX_READ_DATA_LO;
             end if;
 
           when TX_READ_DATA_LO =>
             -- Send the lower data byte read back from APB.
-            tx_data_i  <= rd_data(7 downto 0);
-            tx_valid_i <= '1';
-            if tx_ready = '1' then
+            if tx_valid_i = '0' then
+              tx_data_i  <= rd_data(7 downto 0);
+              tx_valid_i <= '1';
+            elsif tx_ready = '1' then
+              tx_valid_i <= '0';
               state <= IDLE;
             end if;
 

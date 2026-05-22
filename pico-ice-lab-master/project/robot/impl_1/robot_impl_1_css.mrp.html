@@ -1,0 +1,311 @@
+<HTML>
+<HEAD>
+<TITLE>Map Report</TITLE>
+<link href="file:///C:/lscc/radiant/2025.2/data/theme/css/light/report.css" rel="stylesheet" type="text/css" media="screen"/>
+<link href="file:///C:/lscc/radiant/2025.2/data/theme/css/print/report.css" rel="stylesheet" type="text/css" media="print"/>
+<style type="text/css">
+#toc {
+  position: fixed;
+  right: 2px;
+  top: 2px;
+  padding: 2px 5px 2px 5px;
+  background-color:rgba(210,210,210,0.1);
+  border-style: solid;
+  border-color: rgba(192,192,192,0.8);
+  border-width:1px;
+}
+#toc_list {
+  display: none;
+  }
+</style>
+
+<script type="text/javascript">
+<!--
+function showTocList() {
+var a = document.getElementById("toc_list");
+a.style.display = "block";
+}
+
+function hideTocList() {
+var a = document.getElementById("toc_list");
+if (a)
+    a.style.display = "none";
+}
+
+//-->
+</script>
+
+</HEAD>
+
+<BODY>
+
+<DIV id="content" onclick="hideTocList()"><PRE>
+<A name="Mrp"></A>                         Lattice Mapping Report File
+
+Design:  top
+Family:  iCE40UP
+Device:  iCE40UP5K
+Package: SG48
+Performance Grade:  High-Performance_1.2V
+
+Mapper:    version Radiant Software (64-bit) 2025.2.0.48.0
+Mapped on: Fri May 22 16:13:10 2026
+
+<A name="mrp_di"></A><B><U><big>Design Information</big></U></B>
+
+Command line:   map -pdc C:/Users/felix/Documents/Master_1ECAM/FPGA/pico-ice-lab
+     -master/project/robot/robot.pdc -i robot_impl_1_syn.udb -o
+     robot_impl_1_map.udb -mp robot_impl_1.mrp -hierrpt -gui -msgset C:/Users/fe
+     lix/Documents/Master_1ECAM/FPGA/pico-ice-lab-master/project/robot/promote.x
+     ml
+
+<A name="mrp_ds"></A><B><U><big>Design Summary</big></U></B>
+
+   Number of slice registers: 350 out of  5280 (7%)
+   Number of I/O registers:      0 out of   117 (0%)
+   Number of LUT4s:           904 out of  5280 (17%)
+      Number of logic LUT4s:             572
+      Number of inserted feedthru LUT4s: 181
+      Number of replicated LUT4s:          3
+      Number of ripple logic:             74 (148 LUT4s)
+   Number of IO sites used:   12 out of 39 (31%)
+      Number of IO sites used for general PIO: 9
+      Number of IO sites used for I3C: 0 out of 2 (0%)
+      (note: If I3C is not used, its site can be used as general PIO)
+      Number of IO sites used for PIO+I3C: 9 out of 36 (25%)
+      Number of IO sites used for OD+RGB IO buffers: 3 out of 3 (100%)
+      (note: If RGB LED drivers are not used, sites can be used as OD outputs,
+       see TN1288 iCE40 LED Driver Usage Guide)
+      Number of IO sites used for PIO+I3C+OD+RGB: 12 out of 39 (31%)
+   Number of DSPs:             0 out of 8 (0%)
+   Number of I2Cs:             0 out of 2 (0%)
+   Number of High Speed OSCs:  0 out of 1 (0%)
+   Number of Low Speed OSCs:   0 out of 1 (0%)
+   Number of RGB PWM:          0 out of 1 (0%)
+   Number of RGB Drivers:      0 out of 1 (0%)
+   Number of SCL FILTERs:      0 out of 2 (0%)
+   Number of SRAMs:            0 out of 4 (0%)
+   Number of WARMBOOTs:        0 out of 1 (0%)
+   Number of SPIs:             0 out of 2 (0%)
+   Number of EBRs:             0 out of 30 (0%)
+   Number of PLLs:             0 out of 1 (0%)
+   Number of Clocks:  1
+      Net clk_c: 325 loads, 325 rising, 0 falling (Driver: Port clk)
+   Number of Clock Enables:  25
+      Net n4035: 1 loads, 1 SLICEs
+      Net n4033: 1 loads, 1 SLICEs
+      Net n4170: 8 loads, 8 SLICEs
+      Net n4186: 16 loads, 16 SLICEs
+      Net n4180: 8 loads, 8 SLICEs
+      Net n4148: 16 loads, 16 SLICEs
+      Net n4007: 8 loads, 8 SLICEs
+      Net n4133: 16 loads, 16 SLICEs
+      Net ramp_generator_inst.n3859: 16 loads, 16 SLICEs
+      Net n4173: 2 loads, 2 SLICEs
+      Net n4171: 1 loads, 1 SLICEs
+      Net uart_protocol_inst.n2752: 25 loads, 25 SLICEs
+      Net uart_protocol_inst.n3905: 8 loads, 8 SLICEs
+      Net n4049: 1 loads, 1 SLICEs
+      Net n4048: 1 loads, 1 SLICEs
+      Net config_regs_inst.n4117: 16 loads, 16 SLICEs
+      Net config_regs_inst.n4102: 16 loads, 16 SLICEs
+      Net config_regs_inst.n4087: 16 loads, 16 SLICEs
+      Net config_regs_inst.n4072: 16 loads, 16 SLICEs
+      Net config_regs_inst.n4057: 16 loads, 16 SLICEs
+      Net config_regs_inst.n4163: 16 loads, 16 SLICEs
+      Net uart_inst.n3843: 7 loads, 7 SLICEs
+      Net uart_inst.n1575: 9 loads, 9 SLICEs
+      Net uart_inst.n3858: 5 loads, 5 SLICEs
+      Net uart_inst.n7595: 1 loads, 1 SLICEs
+   Number of LSRs:  17
+      Net reset: 235 loads, 235 SLICEs
+      Net ramp_generator_inst.n3956: 9 loads, 9 SLICEs
+      Net n3176: 1 loads, 1 SLICEs
+      Net uart_inst.n3946: 1 loads, 1 SLICEs
+      Net uart_inst.n3957: 1 loads, 1 SLICEs
+      Net uart_inst.n3955: 5 loads, 5 SLICEs
+      Net uart_inst.n3953: 1 loads, 1 SLICEs
+      Net uart_inst.n6_adj_423: 1 loads, 1 SLICEs
+      Net uart_inst.n6_adj_425: 1 loads, 1 SLICEs
+      Net uart_inst.n6_adj_427: 1 loads, 1 SLICEs
+      Net uart_inst.n6: 1 loads, 1 SLICEs
+      Net uart_inst.n3944: 1 loads, 1 SLICEs
+      Net uart_inst.i_strb_tx.n1552: 6 loads, 6 SLICEs
+      Net uart_inst.i_strb_rx.n1556: 6 loads, 6 SLICEs
+      Net reset_gen_inst.RstSyncChain_0__N_230: 3 loads, 3 SLICEs
+      Net pwm_motor2_inst.n1548: 5 loads, 5 SLICEs
+      Net pwm_motor1_inst.n1544: 5 loads, 5 SLICEs
+   Top 10 highest fanout non-clock nets:
+      Net reset: 274 loads
+      Net config_regs_inst.n3067: 46 loads
+      Net pwm1_speed_cmd_14__N_103[0]: 40 loads
+      Net pwm1_speed_cmd_14__N_103[2]: 38 loads
+      Net config_regs_inst.n3088: 31 loads
+      Net n1184.sig_001.FeedThruLUT: 28 loads
+      Net apb_paddr[1]: 27 loads
+      Net apb_paddr[3]: 25 loads
+      Net uart_protocol_inst.n2752: 25 loads
+      Net pwm_mot2_pad[0].vcc: 23 loads
+
+   Number of warnings:  10
+   Number of criticals: 0
+   Number of errors:    0
+
+<A name="mrp_dwe"></A><B><U><big>Design Errors/Criticals/Warnings</big></U></B>
+
+INFO &lt;52291017&gt; - map: Port &apos;led_r&apos; is located on BB_OD pad &apos;41&apos;. Its IO buffer
+     is mapped to BB_OD accordingly. Please notice PULLMODE is not applicable to
+     BB_OD.
+INFO &lt;52291017&gt; - map: Port &apos;led_g&apos; is located on BB_OD pad &apos;39&apos;. Its IO buffer
+     is mapped to BB_OD accordingly. Please notice PULLMODE is not applicable to
+     BB_OD.
+INFO &lt;52291017&gt; - map: Port &apos;led_b&apos; is located on BB_OD pad &apos;40&apos;. Its IO buffer
+     is mapped to BB_OD accordingly. Please notice PULLMODE is not applicable to
+     BB_OD.
+WARNING &lt;71003020&gt; - map: Top module port &apos;us_echo&apos; does not connect to
+     anything.
+WARNING &lt;71003020&gt; - map: Top module port &apos;quad1[1]&apos; does not connect to
+     anything.
+WARNING &lt;71003020&gt; - map: Top module port &apos;quad1[0]&apos; does not connect to
+     anything.
+WARNING &lt;71003020&gt; - map: Top module port &apos;quad2[1]&apos; does not connect to
+     anything.
+WARNING &lt;71003020&gt; - map: Top module port &apos;quad2[0]&apos; does not connect to
+     anything.
+WARNING &lt;71003020&gt; - map: Top module port &apos;us_echo&apos; does not connect to
+     anything.
+WARNING &lt;71003020&gt; - map: Top module port &apos;quad1[1]&apos; does not connect to
+     anything.
+WARNING &lt;71003020&gt; - map: Top module port &apos;quad1[0]&apos; does not connect to
+     anything.
+WARNING &lt;71003020&gt; - map: Top module port &apos;quad2[1]&apos; does not connect to
+     anything.
+WARNING &lt;71003020&gt; - map: Top module port &apos;quad2[0]&apos; does not connect to
+     anything.
+
+<A name="mrp_ioa"></A><B><U><big>IO (PIO) Attributes</big></U></B>
+
++---------------------+-----------+-----------+-------+-------+-----------+
+| IO Name             | Direction | Levelmode |  IO   |  IO   | Special   |
+|                     |           |  IO_TYPE  |  REG  |  DDR  | IO Buffer |
++---------------------+-----------+-----------+-------+-------+-----------+
+| pwm_mot2[0]         | OUTPUT    |           |       |       |           |
++---------------------+-----------+-----------+-------+-------+-----------+
+| pwm_mot2[1]         | OUTPUT    |           |       |       |           |
++---------------------+-----------+-----------+-------+-------+-----------+
+| pwm_mot1[0]         | OUTPUT    |           |       |       |           |
++---------------------+-----------+-----------+-------+-------+-----------+
+| pwm_mot1[1]         | OUTPUT    |           |       |       |           |
++---------------------+-----------+-----------+-------+-------+-----------+
+| us_trig             | OUTPUT    |           |       |       |           |
++---------------------+-----------+-----------+-------+-------+-----------+
+| uart_txd            | OUTPUT    |           |       |       |           |
++---------------------+-----------+-----------+-------+-------+-----------+
+| uart_rxd            | INPUT     |           |       |       |           |
++---------------------+-----------+-----------+-------+-------+-----------+
+| rstn                | INPUT     |           |       |       |           |
++---------------------+-----------+-----------+-------+-------+-----------+
+| clk                 | INPUT     |           |       |       |           |
++---------------------+-----------+-----------+-------+-------+-----------+
+| led_r               | OUTPUT    |           |       |       | OD        |
++---------------------+-----------+-----------+-------+-------+-----------+
+| led_g               | OUTPUT    |           |       |       | OD        |
++---------------------+-----------+-----------+-------+-------+-----------+
+| led_b               | OUTPUT    |           |       |       | OD        |
++---------------------+-----------+-----------+-------+-------+-----------+
+
+<A name="mrp_rm"></A><B><U><big>Removed logic</big></U></B>
+
+Block uart_protocol_inst/i4970_3_lut_4_lut was optimized away.
+
+<A name="mrp_asic"></A><B><U><big>ASIC Components</big></U></B>
+
+
+<A name="mrp_consum"></A><B><U><big>Constraint Summary</big></U></B>
+
+   Total number of constraints: 23
+   Total number of constraints dropped: 0
+
+<A name="mrp_runtime"></A><B><U><big>Run Time and Memory Usage</big></U></B>
+
+   Total CPU Time: 0 secs
+   Total REAL Time: 0 secs
+   Peak Memory Usage: 79 MB
+Checksum -- map: ca77865dc045fc455f2c822e53b4ac9a1dba81b2
+Copyright (c) 1991-1994 by NeoCAD Inc. All rights reserved.
+Copyright (c) 1995
+     AT&amp;T Corp.   All rights reserved.
+Copyright (c) 1995-2001 Lucent
+     Technologies Inc.  All rights reserved.
+Copyright (c) 2001 Agere Systems
+     All rights reserved.
+Copyright (c) 2002-2025 Lattice Semiconductor
+     Corporation,  All rights reserved.
+</PRE></DIV>
+<DIV id="toc" class="radiant"><span onmousemove="showTocList()">Contents</span>
+<UL id="toc_list">
+<LI><A href=#mrp_di>Design Information</A></LI>
+<LI><A href=#mrp_ds>Design Summary</A></LI>
+<LI><A href=#mrp_dwe>Design Errors/Criticals/Warnings</A></LI>
+<LI><A href=#mrp_ioa>IO (PIO) Attributes</A></LI>
+<LI><A href=#mrp_rm>Removed logic</A></LI>
+<LI><A href=#mrp_asic>ASIC Components</A></LI>
+<LI><A href=#mrp_consum>Constraint Summary</A></LI>
+<LI><A href=#mrp_runtime>Run Time and Memory Usage</A></LI>
+</UL>
+</DIV>
+
+<button id="back_to_top" class="radiant" onclick="scrollToTop()">&lt;</button>
+<script type="text/javascript">
+<!--
+var scrollStep = 0;
+function scrollToTop(){
+  var funScroll = function() {
+    var top = document.body.scrollTop;
+    if (top == 0) {
+      scrollStep = 0;
+      return;
+    }
+    if (scrollStep == 0)
+      scrollStep = top/20 + 1;
+    top -= scrollStep;
+    if (top < 0)
+      top = 0;
+    document.body.scrollTop = top;
+    requestAnimationFrame(funScroll);
+  };
+  funScroll();
+}
+
+window.addEventListener('scroll', function(e) {
+  var backToTop = document.getElementById('back_to_top')
+  if (document.body.scrollTop > 0) {
+    backToTop.style.display = 'block';
+  } else {	backToTop.style.display = 'none'  }});
+
+//-->
+</script>
+
+<style type="text/css">
+#back_to_top {
+  bottom:20px; right:20px;
+  width:30px; height:30px;
+  font-size: 20px;
+  padding: 2px 5px 2px 5px;
+  position:fixed;
+  background-color:rgba(210,210,210,0.1);
+  border-style: solid;
+  border-color: rgba(192,192,192,0.8);
+  border-width:1px;
+  display:none;
+  -webkit-transform: rotate(90deg);
+  -webkit-transform-origin:50% 50%;
+}
+#back_to_top:focus {
+  outline-width:0px;
+}
+</style>
+
+</BODY>
+
+

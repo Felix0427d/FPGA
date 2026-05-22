@@ -1,0 +1,65 @@
+-a "iCE40UP"
+-p iCE40UP5K
+-t SG48
+-sp "High-Performance_1.2V"
+-frequency 12
+-optimization_goal Area
+-bram_utilization 100
+-ramstyle Auto
+-romstyle auto
+-dsp_utilization 100
+-use_dsp 1
+-use_carry_chain 1
+-carry_chain_length 0
+-resource_sharing 1
+-propagate_constants 1
+-remove_duplicate_regs 1
+
+-max_fanout 1000
+-fsm_encoding_style Auto
+
+-fix_gated_clocks 1
+-loop_limit 1950
+
+
+
+
+
+
+-use_io_reg auto
+
+-vh2008
+
+
+
+
+
+
+
+-drc_cfg 35103300 20
+-use_io_insertion 1
+
+-resolve_mixed_drivers 0
+-sdc "C:/Users/felix/Documents/Master_1ECAM/FPGA/pico-ice-lab-master/project/robot/timing.sdc"
+-path "C:/lscc/radiant/2025.2/ispfpga/ice40tp/data" "C:/Users/felix/Documents/Master_1ECAM/FPGA/pico-ice-lab-master/project/robot/impl_1" "C:/Users/felix/Documents/Master_1ECAM/FPGA/pico-ice-lab-master/project/robot" "C:/Users/felix/Documents/Master_1ECAM/FPGA/pico-ice-lab-master/rtl/top" "C:/Users/felix/Documents/Master_1ECAM/FPGA/pico-ice-lab-master/rtl/uart_protocol" "C:/Users/felix/Documents/Master_1ECAM/FPGA/pico-ice-lab-master/rtl/config_regs" "C:/Users/felix/Documents/Master_1ECAM/FPGA/pico-ice-lab-master/open-logic-main/src/base/vhdl" "C:/Users/felix/Documents/Master_1ECAM/FPGA/pico-ice-lab-master/open-logic-main/src/intf/vhdl"
+-ver "C:/lscc/radiant/2025.2/ip/pmi/pmi_iCE40UP.v"
+-lib pmi -vhd "C:/lscc/radiant/2025.2/ip/pmi/pmi_iCE40UP.vhd"
+-lib "work" -vhd "C:/Users/felix/Documents/Master_1ECAM/FPGA/pico-ice-lab-master/rtl/top/top.vhd"
+"C:/Users/felix/Documents/Master_1ECAM/FPGA/pico-ice-lab-master/rtl/uart_protocol/uart_protocol.vhd"
+"C:/Users/felix/Documents/Master_1ECAM/FPGA/pico-ice-lab-master/rtl/config_regs/config_regs.vhd"
+"C:/Users/felix/Documents/Master_1ECAM/FPGA/pico-ice-lab-master/rtl/top/pwm_motor_channel.vhd"
+"C:/Users/felix/Documents/Master_1ECAM/FPGA/pico-ice-lab-master/rtl/top/ramp_generator.vhd"
+"C:/Users/felix/Documents/Master_1ECAM/FPGA/pico-ice-lab-master/open-logic-main/src/base/vhdl/olo_base_pkg_array.vhd"
+"C:/Users/felix/Documents/Master_1ECAM/FPGA/pico-ice-lab-master/open-logic-main/src/base/vhdl/olo_base_pkg_attribute.vhd"
+"C:/Users/felix/Documents/Master_1ECAM/FPGA/pico-ice-lab-master/open-logic-main/src/base/vhdl/olo_base_pkg_logic.vhd"
+"C:/Users/felix/Documents/Master_1ECAM/FPGA/pico-ice-lab-master/open-logic-main/src/base/vhdl/olo_base_pkg_math.vhd"
+"C:/Users/felix/Documents/Master_1ECAM/FPGA/pico-ice-lab-master/open-logic-main/src/base/vhdl/olo_base_reset_gen.vhd"
+"C:/Users/felix/Documents/Master_1ECAM/FPGA/pico-ice-lab-master/open-logic-main/src/intf/vhdl/olo_intf_uart.vhd"
+"C:/Users/felix/Documents/Master_1ECAM/FPGA/pico-ice-lab-master/open-logic-main/src/intf/vhdl/olo_intf_sync.vhd"
+"C:/Users/felix/Documents/Master_1ECAM/FPGA/pico-ice-lab-master/open-logic-main/src/base/vhdl/olo_base_strobe_gen.vhd"
+
+
+-top top
+-udb "robot_impl_1_rtl.udb"
+-output_hdl "robot_impl_1.vm"
+

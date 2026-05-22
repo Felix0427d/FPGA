@@ -1,0 +1,8 @@
+DRC: Design Rule Check Radiant Software (64-bit) 2025.2.0.48.0
+Fri May 22 14:50:06 2026
+
+WARNING <71003020> - Top module port 'us_echo' does not connect to anything.
+WARNING <71003020> - Top module port 'quad1[1]' does not connect to anything.
+WARNING <71003020> - Top module port 'quad1[0]' does not connect to anything.
+WARNING <71003020> - Top module port 'quad2[1]' does not connect to anything.
+WARNING <71003020> - Top module port 'quad2[0]' does not connect to anything.

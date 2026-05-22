@@ -1,0 +1,9 @@
+-w
+-gui
+-msgset "C:/Users/felix/Documents/Master_1ECAM/FPGA/pico-ice-lab-master/project/robot/promote.xml"
+-n 1
+-t 1
+-s 1
+-cores 1
+-hsp m
+-exp parPathBased=ON

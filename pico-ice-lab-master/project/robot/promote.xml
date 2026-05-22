@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<userSetting name="C:/Users/felix/Documents/Master_1ECAM/FPGA/pico-ice-lab-master/project/robot/promote.xml" version="Diamond (64-bit) 2025.2.0.48.0" date="Fri May 22 16:13:57 2026" vendor="Lattice Semiconductor Corporation" >
+  <msg mid="2046010" type="Info" internal="true" />
+  <msg mid="35911015" type="Info" internal="true" />
+  <msg mid="2046012" type="Info" internal="true" />
+  <msg mid="2046014" type="Info" internal="true" />
+  <msg mid="2046013" type="Info" internal="true" />
+  <msg mid="2045003" type="Info" internal="true" />
+  <msg mid="2046200" type="Warning" internal="true" />
+  <msg mid="35901328" type="Info" internal="true" />
+  <msg mid="35901206" type="Warning" internal="true" />
+  <msg mid="35911012" type="Info" internal="true" />
+  <msg mid="35911026" type="Warning" internal="true" />
+  <msg mid="35921504" type="Info" internal="true" />
+  <msg mid="35921200" type="Warning" internal="true" />
+</userSetting>

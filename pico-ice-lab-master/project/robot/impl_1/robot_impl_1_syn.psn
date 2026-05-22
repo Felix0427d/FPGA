@@ -1,0 +1,125 @@
+POSTSYN: Post Synthesis Process Radiant Software (64-bit) 2025.2.0.48.0
+Command Line: postsyn -a iCE40UP -p iCE40UP5K -t SG48 -sp High-Performance_1.2V -oc Industrial -top -w -o robot_impl_1_syn.udb -ldc robot_impl_1.ldc -gui -msgset C:/Users/felix/Documents/Master_1ECAM/FPGA/pico-ice-lab-master/project/robot/promote.xml robot_impl_1.vm 
+   Architecture:     iCE40UP
+   Device:           iCE40UP5K
+   Package:          SG48
+   Performance:      High-Performance_1.2V
+Reading input file 'robot_impl_1.vm' ...
+WARNING <35811117> - Attribute 'shreg_extract' on Wire 'reset' in Module 'top' cannot be supported. It will be ignored.
+WARNING <35811117> - Attribute 'dont_merge' on Wire 'reset' in Module 'top' cannot be supported. It will be ignored.
+WARNING <35811117> - Attribute 'preserve' on Wire 'reset' in Module 'top' cannot be supported. It will be ignored.
+WARNING <35811117> - Attribute 'async_reg' on Wire 'reset' in Module 'top' cannot be supported. It will be ignored.
+WARNING <35811117> - Attribute 'shreg_extract' on Port 'reset' in Module 'ramp_generator' cannot be supported. It will be ignored.
+WARNING <35811117> - Attribute 'dont_merge' on Port 'reset' in Module 'ramp_generator' cannot be supported. It will be ignored.
+WARNING <35811117> - Attribute 'preserve' on Port 'reset' in Module 'ramp_generator' cannot be supported. It will be ignored.
+WARNING <35811117> - Attribute 'async_reg' on Port 'reset' in Module 'ramp_generator' cannot be supported. It will be ignored.
+WARNING <35811117> - Attribute 'shreg_extract' on Wire 'reset' in Module 'ramp_generator' cannot be supported. It will be ignored.
+WARNING <35811117> - Attribute 'dont_merge' on Wire 'reset' in Module 'ramp_generator' cannot be supported. It will be ignored.
+WARNING <35811117> - Attribute 'preserve' on Wire 'reset' in Module 'ramp_generator' cannot be supported. It will be ignored.
+WARNING <35811117> - Attribute 'async_reg' on Wire 'reset' in Module 'ramp_generator' cannot be supported. It will be ignored.
+WARNING <35811117> - Attribute 'shreg_extract' on Port 'reset' in Module 'uart_protocol' cannot be supported. It will be ignored.
+WARNING <35811117> - Attribute 'dont_merge' on Port 'reset' in Module 'uart_protocol' cannot be supported. It will be ignored.
+WARNING <35811117> - Attribute 'preserve' on Port 'reset' in Module 'uart_protocol' cannot be supported. It will be ignored.
+WARNING <35811117> - Attribute 'async_reg' on Port 'reset' in Module 'uart_protocol' cannot be supported. It will be ignored.
+WARNING <35811117> - Attribute 'shreg_extract' on Wire 'reset' in Module 'uart_protocol' cannot be supported. It will be ignored.
+WARNING <35811117> - Attribute 'dont_merge' on Wire 'reset' in Module 'uart_protocol' cannot be supported. It will be ignored.
+WARNING <35811117> - Attribute 'preserve' on Wire 'reset' in Module 'uart_protocol' cannot be supported. It will be ignored.
+WARNING <35811117> - Attribute 'async_reg' on Wire 'reset' in Module 'uart_protocol' cannot be supported. It will be ignored.
+WARNING <35811117> - Attribute 'shreg_extract' on Port 'reset' in Module 'config_regs' cannot be supported. It will be ignored.
+WARNING <35811117> - Attribute 'dont_merge' on Port 'reset' in Module 'config_regs' cannot be supported. It will be ignored.
+WARNING <35811117> - Attribute 'preserve' on Port 'reset' in Module 'config_regs' cannot be supported. It will be ignored.
+WARNING <35811117> - Attribute 'async_reg' on Port 'reset' in Module 'config_regs' cannot be supported. It will be ignored.
+WARNING <35811117> - Attribute 'shreg_extract' on Wire 'reset' in Module 'config_regs' cannot be supported. It will be ignored.
+WARNING <35811117> - Attribute 'dont_merge' on Wire 'reset' in Module 'config_regs' cannot be supported. It will be ignored.
+WARNING <35811117> - Attribute 'preserve' on Wire 'reset' in Module 'config_regs' cannot be supported. It will be ignored.
+WARNING <35811117> - Attribute 'async_reg' on Wire 'reset' in Module 'config_regs' cannot be supported. It will be ignored.
+WARNING <35811117> - Attribute 'shreg_extract' on Port 'reset' in Module 'olo_intf_uart(clkfreq_g=12000000.0)(1,1)(1,4)' cannot be supported. It will be ignored.
+WARNING <35811117> - Attribute 'dont_merge' on Port 'reset' in Module 'olo_intf_uart(clkfreq_g=12000000.0)(1,1)(1,4)' cannot be supported. It will be ignored.
+WARNING <35811117> - Attribute 'preserve' on Port 'reset' in Module 'olo_intf_uart(clkfreq_g=12000000.0)(1,1)(1,4)' cannot be supported. It will be ignored.
+WARNING <35811117> - Attribute 'async_reg' on Port 'reset' in Module 'olo_intf_uart(clkfreq_g=12000000.0)(1,1)(1,4)' cannot be supported. It will be ignored.
+WARNING <35811117> - Attribute 'shreg_extract' on Wire 'reset' in Module 'olo_intf_uart(clkfreq_g=12000000.0)(1,1)(1,4)' cannot be supported. It will be ignored.
+WARNING <35811117> - Attribute 'dont_merge' on Wire 'reset' in Module 'olo_intf_uart(clkfreq_g=12000000.0)(1,1)(1,4)' cannot be supported. It will be ignored.
+WARNING <35811117> - Attribute 'preserve' on Wire 'reset' in Module 'olo_intf_uart(clkfreq_g=12000000.0)(1,1)(1,4)' cannot be supported. It will be ignored.
+WARNING <35811117> - Attribute 'async_reg' on Wire 'reset' in Module 'olo_intf_uart(clkfreq_g=12000000.0)(1,1)(1,4)' cannot be supported. It will be ignored.
+WARNING <35811117> - Attribute 'shreg_extract' on Wire 'UartRxInt' in Module 'olo_intf_uart(clkfreq_g=12000000.0)(1,1)(1,4)' cannot be supported. It will be ignored.
+WARNING <35811117> - Attribute 'dont_merge' on Wire 'UartRxInt' in Module 'olo_intf_uart(clkfreq_g=12000000.0)(1,1)(1,4)' cannot be supported. It will be ignored.
+WARNING <35811117> - Attribute 'preserve' on Wire 'UartRxInt' in Module 'olo_intf_uart(clkfreq_g=12000000.0)(1,1)(1,4)' cannot be supported. It will be ignored.
+WARNING <35811117> - Attribute 'async_reg' on Wire 'UartRxInt' in Module 'olo_intf_uart(clkfreq_g=12000000.0)(1,1)(1,4)' cannot be supported. It will be ignored.
+WARNING <35811117> - Attribute 'shreg_extract' on Port 'UartRxInt' in Module 'olo_intf_sync' cannot be supported. It will be ignored.
+WARNING <35811117> - Attribute 'dont_merge' on Port 'UartRxInt' in Module 'olo_intf_sync' cannot be supported. It will be ignored.
+WARNING <35811117> - Attribute 'preserve' on Port 'UartRxInt' in Module 'olo_intf_sync' cannot be supported. It will be ignored.
+WARNING <35811117> - Attribute 'async_reg' on Port 'UartRxInt' in Module 'olo_intf_sync' cannot be supported. It will be ignored.
+WARNING <35811117> - Attribute 'shreg_extract' on Port 'reset' in Module 'olo_intf_sync' cannot be supported. It will be ignored.
+WARNING <35811117> - Attribute 'dont_merge' on Port 'reset' in Module 'olo_intf_sync' cannot be supported. It will be ignored.
+WARNING <35811117> - Attribute 'preserve' on Port 'reset' in Module 'olo_intf_sync' cannot be supported. It will be ignored.
+WARNING <35811117> - Attribute 'async_reg' on Port 'reset' in Module 'olo_intf_sync' cannot be supported. It will be ignored.
+WARNING <35811117> - Attribute 'shreg_extract' on Wire 'UartRxInt' in Module 'olo_intf_sync' cannot be supported. It will be ignored.
+WARNING <35811117> - Attribute 'dont_merge' on Wire 'UartRxInt' in Module 'olo_intf_sync' cannot be supported. It will be ignored.
+WARNING <35811117> - Attribute 'preserve' on Wire 'UartRxInt' in Module 'olo_intf_sync' cannot be supported. It will be ignored.
+WARNING <35811117> - Attribute 'async_reg' on Wire 'UartRxInt' in Module 'olo_intf_sync' cannot be supported. It will be ignored.
+WARNING <35811117> - Attribute 'shreg_extract' on Wire 'Reg0[0]' in Module 'olo_intf_sync' cannot be supported. It will be ignored.
+WARNING <35811117> - Attribute 'dont_merge' on Wire 'Reg0[0]' in Module 'olo_intf_sync' cannot be supported. It will be ignored.
+WARNING <35811117> - Attribute 'preserve' on Wire 'Reg0[0]' in Module 'olo_intf_sync' cannot be supported. It will be ignored.
+WARNING <35811117> - Attribute 'async_reg' on Wire 'Reg0[0]' in Module 'olo_intf_sync' cannot be supported. It will be ignored.
+WARNING <35811117> - Attribute 'shreg_extract' on Wire 'reset' in Module 'olo_intf_sync' cannot be supported. It will be ignored.
+WARNING <35811117> - Attribute 'dont_merge' on Wire 'reset' in Module 'olo_intf_sync' cannot be supported. It will be ignored.
+WARNING <35811117> - Attribute 'preserve' on Wire 'reset' in Module 'olo_intf_sync' cannot be supported. It will be ignored.
+WARNING <35811117> - Attribute 'async_reg' on Wire 'reset' in Module 'olo_intf_sync' cannot be supported. It will be ignored.
+WARNING <35811117> - Attribute 'shreg_extract' on Port 'reset' in Module 'olo_base_strobe_gen(freqclkhz_g=12000000.0,freqstrobehz_g=230400.0,fractionalmode_g=true)' cannot be supported. It will be ignored.
+WARNING <35811117> - Attribute 'dont_merge' on Port 'reset' in Module 'olo_base_strobe_gen(freqclkhz_g=12000000.0,freqstrobehz_g=230400.0,fractionalmode_g=true)' cannot be supported. It will be ignored.
+WARNING <35811117> - Attribute 'preserve' on Port 'reset' in Module 'olo_base_strobe_gen(freqclkhz_g=12000000.0,freqstrobehz_g=230400.0,fractionalmode_g=true)' cannot be supported. It will be ignored.
+WARNING <35811117> - Attribute 'async_reg' on Port 'reset' in Module 'olo_base_strobe_gen(freqclkhz_g=12000000.0,freqstrobehz_g=230400.0,fractionalmode_g=true)' cannot be supported. It will be ignored.
+WARNING <35811117> - Attribute 'shreg_extract' on Wire 'reset' in Module 'olo_base_strobe_gen(freqclkhz_g=12000000.0,freqstrobehz_g=230400.0,fractionalmode_g=true)' cannot be supported. It will be ignored.
+WARNING <35811117> - Attribute 'dont_merge' on Wire 'reset' in Module 'olo_base_strobe_gen(freqclkhz_g=12000000.0,freqstrobehz_g=230400.0,fractionalmode_g=true)' cannot be supported. It will be ignored.
+WARNING <35811117> - Attribute 'preserve' on Wire 'reset' in Module 'olo_base_strobe_gen(freqclkhz_g=12000000.0,freqstrobehz_g=230400.0,fractionalmode_g=true)' cannot be supported. It will be ignored.
+WARNING <35811117> - Attribute 'async_reg' on Wire 'reset' in Module 'olo_base_strobe_gen(freqclkhz_g=12000000.0,freqstrobehz_g=230400.0,fractionalmode_g=true)' cannot be supported. It will be ignored.
+WARNING <35811117> - Attribute 'shreg_extract' on Port 'reset' in Module 'olo_base_strobe_gen(freqclkhz_g=12000000.0,freqstrobehz_g=230400.0,fractionalmode_g=true)_U0' cannot be supported. It will be ignored.
+WARNING <35811117> - Attribute 'dont_merge' on Port 'reset' in Module 'olo_base_strobe_gen(freqclkhz_g=12000000.0,freqstrobehz_g=230400.0,fractionalmode_g=true)_U0' cannot be supported. It will be ignored.
+WARNING <35811117> - Attribute 'preserve' on Port 'reset' in Module 'olo_base_strobe_gen(freqclkhz_g=12000000.0,freqstrobehz_g=230400.0,fractionalmode_g=true)_U0' cannot be supported. It will be ignored.
+WARNING <35811117> - Attribute 'async_reg' on Port 'reset' in Module 'olo_base_strobe_gen(freqclkhz_g=12000000.0,freqstrobehz_g=230400.0,fractionalmode_g=true)_U0' cannot be supported. It will be ignored.
+WARNING <35811117> - Attribute 'shreg_extract' on Wire 'reset' in Module 'olo_base_strobe_gen(freqclkhz_g=12000000.0,freqstrobehz_g=230400.0,fractionalmode_g=true)_U0' cannot be supported. It will be ignored.
+WARNING <35811117> - Attribute 'dont_merge' on Wire 'reset' in Module 'olo_base_strobe_gen(freqclkhz_g=12000000.0,freqstrobehz_g=230400.0,fractionalmode_g=true)_U0' cannot be supported. It will be ignored.
+WARNING <35811117> - Attribute 'preserve' on Wire 'reset' in Module 'olo_base_strobe_gen(freqclkhz_g=12000000.0,freqstrobehz_g=230400.0,fractionalmode_g=true)_U0' cannot be supported. It will be ignored.
+WARNING <35811117> - Attribute 'async_reg' on Wire 'reset' in Module 'olo_base_strobe_gen(freqclkhz_g=12000000.0,freqstrobehz_g=230400.0,fractionalmode_g=true)_U0' cannot be supported. It will be ignored.
+WARNING <35811117> - Attribute 'shreg_extract' on Port 'reset' in Module 'olo_base_reset_gen(rstinpolarity_g='0')' cannot be supported. It will be ignored.
+WARNING <35811117> - Attribute 'dont_merge' on Port 'reset' in Module 'olo_base_reset_gen(rstinpolarity_g='0')' cannot be supported. It will be ignored.
+WARNING <35811117> - Attribute 'preserve' on Port 'reset' in Module 'olo_base_reset_gen(rstinpolarity_g='0')' cannot be supported. It will be ignored.
+WARNING <35811117> - Attribute 'async_reg' on Port 'reset' in Module 'olo_base_reset_gen(rstinpolarity_g='0')' cannot be supported. It will be ignored.
+WARNING <35811117> - Attribute 'shreg_extract' on Wire 'reset' in Module 'olo_base_reset_gen(rstinpolarity_g='0')' cannot be supported. It will be ignored.
+WARNING <35811117> - Attribute 'dont_merge' on Wire 'reset' in Module 'olo_base_reset_gen(rstinpolarity_g='0')' cannot be supported. It will be ignored.
+WARNING <35811117> - Attribute 'preserve' on Wire 'reset' in Module 'olo_base_reset_gen(rstinpolarity_g='0')' cannot be supported. It will be ignored.
+WARNING <35811117> - Attribute 'async_reg' on Wire 'reset' in Module 'olo_base_reset_gen(rstinpolarity_g='0')' cannot be supported. It will be ignored.
+WARNING <35811117> - Attribute 'shreg_extract' on Wire 'DsSync[0]' in Module 'olo_base_reset_gen(rstinpolarity_g='0')' cannot be supported. It will be ignored.
+WARNING <35811117> - Attribute 'dont_merge' on Wire 'DsSync[0]' in Module 'olo_base_reset_gen(rstinpolarity_g='0')' cannot be supported. It will be ignored.
+WARNING <35811117> - Attribute 'preserve' on Wire 'DsSync[0]' in Module 'olo_base_reset_gen(rstinpolarity_g='0')' cannot be supported. It will be ignored.
+WARNING <35811117> - Attribute 'async_reg' on Wire 'DsSync[0]' in Module 'olo_base_reset_gen(rstinpolarity_g='0')' cannot be supported. It will be ignored.
+WARNING <35811117> - Attribute 'shreg_extract' on Port 'reset' in Module 'pwm_motor_channel' cannot be supported. It will be ignored.
+WARNING <35811117> - Attribute 'dont_merge' on Port 'reset' in Module 'pwm_motor_channel' cannot be supported. It will be ignored.
+WARNING <35811117> - Attribute 'preserve' on Port 'reset' in Module 'pwm_motor_channel' cannot be supported. It will be ignored.
+WARNING <35811117> - Attribute 'async_reg' on Port 'reset' in Module 'pwm_motor_channel' cannot be supported. It will be ignored.
+WARNING <35811117> - Attribute 'shreg_extract' on Wire 'reset' in Module 'pwm_motor_channel' cannot be supported. It will be ignored.
+WARNING <35811117> - Attribute 'dont_merge' on Wire 'reset' in Module 'pwm_motor_channel' cannot be supported. It will be ignored.
+WARNING <35811117> - Attribute 'preserve' on Wire 'reset' in Module 'pwm_motor_channel' cannot be supported. It will be ignored.
+WARNING <35811117> - Attribute 'async_reg' on Wire 'reset' in Module 'pwm_motor_channel' cannot be supported. It will be ignored.
+WARNING <35811117> - Attribute 'shreg_extract' on Port 'reset' in Module 'pwm_motor_channel_U1' cannot be supported. It will be ignored.
+WARNING <35811117> - Attribute 'dont_merge' on Port 'reset' in Module 'pwm_motor_channel_U1' cannot be supported. It will be ignored.
+WARNING <35811117> - Attribute 'preserve' on Port 'reset' in Module 'pwm_motor_channel_U1' cannot be supported. It will be ignored.
+WARNING <35811117> - Attribute 'async_reg' on Port 'reset' in Module 'pwm_motor_channel_U1' cannot be supported. It will be ignored.
+WARNING <35811117> - Attribute 'shreg_extract' on Wire 'reset' in Module 'pwm_motor_channel_U1' cannot be supported. It will be ignored.
+WARNING <35811117> - Attribute 'dont_merge' on Wire 'reset' in Module 'pwm_motor_channel_U1' cannot be supported. It will be ignored.
+WARNING <35811117> - Attribute 'preserve' on Wire 'reset' in Module 'pwm_motor_channel_U1' cannot be supported. It will be ignored.
+WARNING <35811117> - Attribute 'async_reg' on Wire 'reset' in Module 'pwm_motor_channel_U1' cannot be supported. It will be ignored.
+Reading constraint file 'robot_impl_1.ldc' ...
+Removing unused logic ...
+Starting design annotation....
+ 
+Constraint Summary:
+   Total number of constraints: 4
+   Total number of constraints dropped: 0
+ 
+Writing output file 'robot_impl_1_syn.udb'.
+POSTSYN finished successfully.
+Total CPU Time: 0 secs 
+Total REAL Time: 0 secs 
+Peak Memory Usage: 47 MB
+Checksum -- postsyn: 81de4013af46c4e20491addc8acad02c869f86

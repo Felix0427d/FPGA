@@ -1,0 +1,114 @@
+----------------------------------------------------------------------
+Report for cell top.TECH
+Register bits:  350 of 5280 (6.629%)
+I/O cells:      12
+                                  Cell usage:
+                               cell     count   Res Usage(%)
+                               CCU2        74          100.0
+                            FD1P3XZ       350          100.0
+                                 IB         3          100.0
+                               LUT4       570          100.0
+                                 OB         6          100.0
+                              OBZ_B         3          100.0
+SUB MODULES
+                        config_regs         1
+olo_base_reset_gen(rstinpolarity_g='0')         1
+olo_base_strobe_gen(freqclkhz_g=12000000.0,freqstrobehz_g=230400.0,fractionalmode_g=true)         1
+olo_base_strobe_gen(freqclkhz_g=12000000.0,freqstrobehz_g=230400.0,fractionalmode_g=true)_U0         1
+                      olo_intf_sync         1
+olo_intf_uart(clkfreq_g=12000000.0)(1,1)(1,4)         1
+                  pwm_motor_channel         1
+               pwm_motor_channel_U1         1
+                     ramp_generator         1
+                      uart_protocol         1
+                              TOTAL      1016
+----------------------------------------------------------------------
+Report for cell ramp_generator.v1
+Instance Path : ramp_generator_inst
+                                  Cell usage:
+                               cell     count   Res Usage(%)
+                                FA2        52           70.3
+                            FD1P3XZ        54           15.4
+                               LUT4       194           34.0
+                              TOTAL       300
+----------------------------------------------------------------------
+Report for cell uart_protocol.v1
+Instance Path : uart_protocol_inst
+                                  Cell usage:
+                               cell     count   Res Usage(%)
+                            FD1P3XZ        90           25.7
+                               LUT4        56            9.8
+                              TOTAL       146
+----------------------------------------------------------------------
+Report for cell config_regs.v1
+Instance Path : config_regs_inst
+                                  Cell usage:
+                               cell     count   Res Usage(%)
+                            FD1P3XZ       116           33.1
+                               LUT4       131           23.0
+                              TOTAL       247
+----------------------------------------------------------------------
+Report for cell olo_intf_uart(clkfreq_g=12000000.0)(1,1)(1,4).v1
+Instance Path : uart_inst
+                                  Cell usage:
+                               cell     count   Res Usage(%)
+                                FA2        12           16.2
+                            FD1P3XZ        67           19.1
+                               LUT4        83           14.6
+SUB MODULES
+olo_base_strobe_gen(freqclkhz_g=12000000.0,freqstrobehz_g=230400.0,fractionalmode_g=true)         1
+olo_base_strobe_gen(freqclkhz_g=12000000.0,freqstrobehz_g=230400.0,fractionalmode_g=true)_U0         1
+                      olo_intf_sync         1
+                              TOTAL       165
+----------------------------------------------------------------------
+Report for cell olo_intf_sync.v1
+Instance Path : uart_inst.i_sync
+                                  Cell usage:
+                               cell     count   Res Usage(%)
+                            FD1P3XZ         2            0.6
+                               LUT4         1            0.2
+                              TOTAL         3
+----------------------------------------------------------------------
+Report for cell olo_base_strobe_gen(freqclkhz_g=12000000.0,freqstrobehz_g=230400.0,fractionalmode_g=true).v1
+Instance Path : uart_inst.i_strb_tx
+                                  Cell usage:
+                               cell     count   Res Usage(%)
+                                FA2         6            8.1
+                            FD1P3XZ        13            3.7
+                               LUT4         7            1.2
+                              TOTAL        26
+----------------------------------------------------------------------
+Report for cell olo_base_strobe_gen(freqclkhz_g=12000000.0,freqstrobehz_g=230400.0,fractionalmode_g=true)_U0.v1
+Instance Path : uart_inst.i_strb_rx
+                                  Cell usage:
+                               cell     count   Res Usage(%)
+                                FA2         6            8.1
+                            FD1P3XZ        13            3.7
+                               LUT4         7            1.2
+                              TOTAL        26
+----------------------------------------------------------------------
+Report for cell olo_base_reset_gen(rstinpolarity_g='0').v1
+Instance Path : reset_gen_inst
+                                  Cell usage:
+                               cell     count   Res Usage(%)
+                            FD1P3XZ         5            1.4
+                               LUT4         1            0.2
+                              TOTAL         6
+----------------------------------------------------------------------
+Report for cell pwm_motor_channel.v1
+Instance Path : pwm_motor2_inst
+                                  Cell usage:
+                               cell     count   Res Usage(%)
+                                FA2         5            6.8
+                            FD1P3XZ         9            2.6
+                               LUT4        34            6.0
+                              TOTAL        48
+----------------------------------------------------------------------
+Report for cell pwm_motor_channel_U1.v1
+Instance Path : pwm_motor1_inst
+                                  Cell usage:
+                               cell     count   Res Usage(%)
+                                FA2         5            6.8
+                            FD1P3XZ         9            2.6
+                               LUT4        33            5.8
+                              TOTAL        47

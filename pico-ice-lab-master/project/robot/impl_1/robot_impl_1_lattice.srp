@@ -1,0 +1,808 @@
+synthesis:  version Radiant Software (64-bit) 2025.2.0.48.0
+
+Copyright (c) 1991-1994 by NeoCAD Inc. All rights reserved.
+Copyright (c) 1995 AT&T Corp.   All rights reserved.
+Copyright (c) 1995-2001 Lucent Technologies Inc.  All rights reserved.
+Copyright (c) 2001 Agere Systems   All rights reserved.
+Copyright (c) 2002-2025 Lattice Semiconductor Corporation,  All rights reserved.
+Fri May 22 16:12:44 2026
+
+
+Command Line:  C:\lscc\radiant\2025.2\ispfpga\bin\nt64\synthesis.exe -f C:/Users/felix/Documents/Master_1ECAM/FPGA/pico-ice-lab-master/project/robot/impl_1/robot_impl_1_lattice.synproj -logfile robot_impl_1_lattice.srp -gui -msgset C:/Users/felix/Documents/Master_1ECAM/FPGA/pico-ice-lab-master/project/robot/promote.xml 
+
+Lattice Synthesis Engine launched.
+
+Synthesis options:
+The -a option is iCE40UP.
+The -t option is SG48.
+The -sp option is High-Performance_1.2V.
+The -p option is iCE40UP5K.
+
+###################### Device Information ######################
+----------------------------------------------------------------
+Lattice Family        | iCE40UP
+----------------------------------------------------------------
+Device                | iCE40UP5K
+----------------------------------------------------------------
+Package               | SG48
+----------------------------------------------------------------
+Performance Grade     | High-Performance_1.2V
+----------------------------------------------------------------
+################################################################
+
+####################### Device Resources #######################
+----------------------------------------------------------------
+Logic Cells           | 5280
+----------------------------------------------------------------
+RAM Blocks            | 30
+----------------------------------------------------------------
+DSP Blocks            | 8
+----------------------------------------------------------------
+PLLs                  | 1
+----------------------------------------------------------------
+I/O Pins              | 56
+----------------------------------------------------------------
+################################################################
+
+Resolving user-selected strategy settings...
+
+INFO <35001797> - synthesis: Use DCC Insertion disabled by default.
+
+###################### Strategy Settings #######################
+----------------------------------------------------------------
+Optimization Goal     | Area
+----------------------------------------------------------------
+Top-level Module Name | top
+----------------------------------------------------------------
+Target Frequency      | 12.000 MHz
+----------------------------------------------------------------
+Maximum Fanout        | 1000
+----------------------------------------------------------------
+Timing Path Count     | 3
+----------------------------------------------------------------
+RAM Read/Write Check  | False
+----------------------------------------------------------------
+BRAM Utilization      | 100.0%
+----------------------------------------------------------------
+DSP Usage             | True
+----------------------------------------------------------------
+DSP Utilization       | 100.0%
+----------------------------------------------------------------
+FSM Encoding Style    | Auto
+----------------------------------------------------------------
+Resolve Mixed Drivers | False
+----------------------------------------------------------------
+Fix Gated Clocks      | True
+----------------------------------------------------------------
+Mux Style             | Auto
+----------------------------------------------------------------
+Use Carry Chain       | True
+----------------------------------------------------------------
+Carry Chain Length    | Infinite
+----------------------------------------------------------------
+Loop Limit            | 1950
+----------------------------------------------------------------
+Use I/O Insertion     | True
+----------------------------------------------------------------
+Use I/O Registers     | True
+----------------------------------------------------------------
+Resource Sharing      | True
+----------------------------------------------------------------
+Propagate Constants   | True
+----------------------------------------------------------------
+Remove Duplicate Reg  | True
+----------------------------------------------------------------
+Force GSR             | False
+----------------------------------------------------------------
+ROM Style             | Auto
+----------------------------------------------------------------
+RAM Style             | Auto
+----------------------------------------------------------------
+Remove LOC Properties | False
+----------------------------------------------------------------
+Partition Flow        | False
+----------------------------------------------------------------
+Use DCC Insertion     | None
+----------------------------------------------------------------
+################################################################
+
+
+The -comp option is FALSE.
+The -syn option is FALSE.
+
+Output HDL filename: robot_impl_1.vm
+-sdc option: SDC file input is C:/Users/felix/Documents/Master_1ECAM/FPGA/pico-ice-lab-master/project/robot/timing.sdc.
+-vh2008
+
+-path C:/Users/felix/Documents/Master_1ECAM/FPGA/pico-ice-lab-master/open-logic-main/src/base/vhdl (searchpath added)
+-path C:/Users/felix/Documents/Master_1ECAM/FPGA/pico-ice-lab-master/open-logic-main/src/intf/vhdl (searchpath added)
+-path C:/Users/felix/Documents/Master_1ECAM/FPGA/pico-ice-lab-master/project/robot (searchpath added)
+-path C:/Users/felix/Documents/Master_1ECAM/FPGA/pico-ice-lab-master/project/robot/impl_1 (searchpath added)
+-path C:/Users/felix/Documents/Master_1ECAM/FPGA/pico-ice-lab-master/rtl/config_regs (searchpath added)
+-path C:/Users/felix/Documents/Master_1ECAM/FPGA/pico-ice-lab-master/rtl/top (searchpath added)
+-path C:/Users/felix/Documents/Master_1ECAM/FPGA/pico-ice-lab-master/rtl/uart_protocol (searchpath added)
+-path C:/lscc/radiant/2025.2/ispfpga/ice40tp/data (searchpath added)
+Mixed language design
+Verilog design file: C:/lscc/radiant/2025.2/ip/pmi/pmi_iCE40UP.v
+VHDL library: pmi
+VHDL design file: C:/lscc/radiant/2025.2/ip/pmi/pmi_iCE40UP.vhd
+VHDL library: work
+VHDL design file: C:/Users/felix/Documents/Master_1ECAM/FPGA/pico-ice-lab-master/rtl/top/top.vhd
+VHDL library: work
+VHDL design file: C:/Users/felix/Documents/Master_1ECAM/FPGA/pico-ice-lab-master/rtl/uart_protocol/uart_protocol.vhd
+VHDL library: work
+VHDL design file: C:/Users/felix/Documents/Master_1ECAM/FPGA/pico-ice-lab-master/rtl/config_regs/config_regs.vhd
+VHDL library: work
+VHDL design file: C:/Users/felix/Documents/Master_1ECAM/FPGA/pico-ice-lab-master/rtl/top/pwm_motor_channel.vhd
+VHDL library: work
+VHDL design file: C:/Users/felix/Documents/Master_1ECAM/FPGA/pico-ice-lab-master/rtl/top/ramp_generator.vhd
+VHDL library: work
+VHDL design file: C:/Users/felix/Documents/Master_1ECAM/FPGA/pico-ice-lab-master/open-logic-main/src/base/vhdl/olo_base_pkg_array.vhd
+VHDL library: work
+VHDL design file: C:/Users/felix/Documents/Master_1ECAM/FPGA/pico-ice-lab-master/open-logic-main/src/base/vhdl/olo_base_pkg_attribute.vhd
+VHDL library: work
+VHDL design file: C:/Users/felix/Documents/Master_1ECAM/FPGA/pico-ice-lab-master/open-logic-main/src/base/vhdl/olo_base_pkg_logic.vhd
+VHDL library: work
+VHDL design file: C:/Users/felix/Documents/Master_1ECAM/FPGA/pico-ice-lab-master/open-logic-main/src/base/vhdl/olo_base_pkg_math.vhd
+VHDL library: work
+VHDL design file: C:/Users/felix/Documents/Master_1ECAM/FPGA/pico-ice-lab-master/open-logic-main/src/base/vhdl/olo_base_reset_gen.vhd
+VHDL library: work
+VHDL design file: C:/Users/felix/Documents/Master_1ECAM/FPGA/pico-ice-lab-master/open-logic-main/src/intf/vhdl/olo_intf_uart.vhd
+VHDL library: work
+VHDL design file: C:/Users/felix/Documents/Master_1ECAM/FPGA/pico-ice-lab-master/open-logic-main/src/intf/vhdl/olo_intf_sync.vhd
+VHDL library: work
+VHDL design file: C:/Users/felix/Documents/Master_1ECAM/FPGA/pico-ice-lab-master/open-logic-main/src/base/vhdl/olo_base_strobe_gen.vhd
+Analyzing Verilog file C:/lscc/radiant/2025.2/ispfpga/../cae_library/synthesis/verilog/generic.v. VERI-1482
+Analyzing Verilog file C:/lscc/radiant/2025.2/ispfpga/../cae_library/synthesis/verilog/iCE40UP.v. VERI-1482
+Analyzing Verilog file C:/lscc/radiant/2025.2/ispfpga/../cae_library/synthesis/verilog/iCE40UP.v. VERI-1482
+Analyzing Verilog file C:/lscc/radiant/2025.2/ispfpga/../cae_library/simulation/verilog/iCE40UP/iCE40UP_sp.v. VERI-1482
+INFO <35901328> - synthesis: C:/lscc/radiant/2025.2/ispfpga/../cae_library/simulation/verilog/iCE40UP/iCE40UP_sp.v(1): analyzing included file C:/lscc/radiant/2025.2/ispfpga/../cae_library/simulation/verilog/iCE40UP/legacy.v. VERI-1328
+INFO <35901328> - synthesis: C:/lscc/radiant/2025.2/ispfpga/../cae_library/simulation/verilog/iCE40UP/iCE40UP_sp.v(2): analyzing included file C:/lscc/radiant/2025.2/ispfpga/../cae_library/simulation/verilog/iCE40UP/RGB.v. VERI-1328
+WARNING <35901206> - synthesis: C:/lscc/radiant/2025.2/ispfpga/../cae_library/simulation/verilog/iCE40UP/RGB.v(45): duplicate module name RGB. VERI-1206
+INFO <35901328> - synthesis: C:/lscc/radiant/2025.2/ispfpga/../cae_library/simulation/verilog/iCE40UP/iCE40UP_sp.v(3): analyzing included file C:/lscc/radiant/2025.2/ispfpga/../cae_library/simulation/verilog/iCE40UP/FD1P3BZ.v. VERI-1328
+WARNING <35901206> - synthesis: C:/lscc/radiant/2025.2/ispfpga/../cae_library/simulation/verilog/iCE40UP/FD1P3BZ.v(19): duplicate module name FD1P3BZ. VERI-1206
+INFO <35901328> - synthesis: C:/lscc/radiant/2025.2/ispfpga/../cae_library/simulation/verilog/iCE40UP/iCE40UP_sp.v(4): analyzing included file C:/lscc/radiant/2025.2/ispfpga/../cae_library/simulation/verilog/iCE40UP/FD1P3DZ.v. VERI-1328
+WARNING <35901206> - synthesis: C:/lscc/radiant/2025.2/ispfpga/../cae_library/simulation/verilog/iCE40UP/FD1P3DZ.v(19): duplicate module name FD1P3DZ. VERI-1206
+INFO <35901328> - synthesis: C:/lscc/radiant/2025.2/ispfpga/../cae_library/simulation/verilog/iCE40UP/iCE40UP_sp.v(5): analyzing included file C:/lscc/radiant/2025.2/ispfpga/../cae_library/simulation/verilog/iCE40UP/FD1P3IZ.v. VERI-1328
+WARNING <35901206> - synthesis: C:/lscc/radiant/2025.2/ispfpga/../cae_library/simulation/verilog/iCE40UP/FD1P3IZ.v(18): duplicate module name FD1P3IZ. VERI-1206
+INFO <35901328> - synthesis: C:/lscc/radiant/2025.2/ispfpga/../cae_library/simulation/verilog/iCE40UP/iCE40UP_sp.v(6): analyzing included file C:/lscc/radiant/2025.2/ispfpga/../cae_library/simulation/verilog/iCE40UP/FD1P3JZ.v. VERI-1328
+WARNING <35901206> - synthesis: C:/lscc/radiant/2025.2/ispfpga/../cae_library/simulation/verilog/iCE40UP/FD1P3JZ.v(18): duplicate module name FD1P3JZ. VERI-1206
+INFO <35901328> - synthesis: C:/lscc/radiant/2025.2/ispfpga/../cae_library/simulation/verilog/iCE40UP/iCE40UP_sp.v(7): analyzing included file C:/lscc/radiant/2025.2/ispfpga/../cae_library/simulation/verilog/iCE40UP/IB.v. VERI-1328
+WARNING <35901206> - synthesis: C:/lscc/radiant/2025.2/ispfpga/../cae_library/simulation/verilog/iCE40UP/IB.v(12): duplicate module name IB. VERI-1206
+INFO <35901328> - synthesis: C:/lscc/radiant/2025.2/ispfpga/../cae_library/simulation/verilog/iCE40UP/iCE40UP_sp.v(8): analyzing included file C:/lscc/radiant/2025.2/ispfpga/../cae_library/simulation/verilog/iCE40UP/OB.v. VERI-1328
+WARNING <35901206> - synthesis: C:/lscc/radiant/2025.2/ispfpga/../cae_library/simulation/verilog/iCE40UP/OB.v(12): duplicate module name OB. VERI-1206
+INFO <35901328> - synthesis: C:/lscc/radiant/2025.2/ispfpga/../cae_library/simulation/verilog/iCE40UP/iCE40UP_sp.v(9): analyzing included file C:/lscc/radiant/2025.2/ispfpga/../cae_library/simulation/verilog/iCE40UP/OBZ_B.v. VERI-1328
+WARNING <35901206> - synthesis: C:/lscc/radiant/2025.2/ispfpga/../cae_library/simulation/verilog/iCE40UP/OBZ_B.v(14): duplicate module name OBZ_B. VERI-1206
+INFO <35901328> - synthesis: C:/lscc/radiant/2025.2/ispfpga/../cae_library/simulation/verilog/iCE40UP/iCE40UP_sp.v(10): analyzing included file C:/lscc/radiant/2025.2/ispfpga/../cae_library/simulation/verilog/iCE40UP/IFD1P3AZ.v. VERI-1328
+WARNING <35901206> - synthesis: C:/lscc/radiant/2025.2/ispfpga/../cae_library/simulation/verilog/iCE40UP/IFD1P3AZ.v(30): duplicate module name IFD1P3AZ. VERI-1206
+INFO <35901328> - synthesis: C:/lscc/radiant/2025.2/ispfpga/../cae_library/simulation/verilog/iCE40UP/iCE40UP_sp.v(11): analyzing included file C:/lscc/radiant/2025.2/ispfpga/../cae_library/simulation/verilog/iCE40UP/OFD1P3AZ.v. VERI-1328
+WARNING <35901206> - synthesis: C:/lscc/radiant/2025.2/ispfpga/../cae_library/simulation/verilog/iCE40UP/OFD1P3AZ.v(31): duplicate module name OFD1P3AZ. VERI-1206
+INFO <35901328> - synthesis: C:/lscc/radiant/2025.2/ispfpga/../cae_library/simulation/verilog/iCE40UP/iCE40UP_sp.v(12): analyzing included file C:/lscc/radiant/2025.2/ispfpga/../cae_library/simulation/verilog/iCE40UP/PDP4K.v. VERI-1328
+WARNING <35901206> - synthesis: C:/lscc/radiant/2025.2/ispfpga/../cae_library/simulation/verilog/iCE40UP/PDP4K.v(143): duplicate module name PDP4K. VERI-1206
+INFO <35901328> - synthesis: C:/lscc/radiant/2025.2/ispfpga/../cae_library/simulation/verilog/iCE40UP/iCE40UP_sp.v(13): analyzing included file C:/lscc/radiant/2025.2/ispfpga/../cae_library/simulation/verilog/iCE40UP/CCU2_B.v. VERI-1328
+WARNING <35901206> - synthesis: C:/lscc/radiant/2025.2/ispfpga/../cae_library/simulation/verilog/iCE40UP/CCU2_B.v(34): duplicate module name CCU2_B. VERI-1206
+INFO <35901328> - synthesis: C:/lscc/radiant/2025.2/ispfpga/../cae_library/simulation/verilog/iCE40UP/iCE40UP_sp.v(14): analyzing included file C:/lscc/radiant/2025.2/ispfpga/../cae_library/simulation/verilog/iCE40UP/SP256K.v. VERI-1328
+WARNING <35901206> - synthesis: C:/lscc/radiant/2025.2/ispfpga/../cae_library/simulation/verilog/iCE40UP/SP256K.v(92): duplicate module name SP256K. VERI-1206
+INFO <35901328> - synthesis: C:/lscc/radiant/2025.2/ispfpga/../cae_library/simulation/verilog/iCE40UP/iCE40UP_sp.v(15): analyzing included file C:/lscc/radiant/2025.2/ispfpga/../cae_library/simulation/verilog/iCE40UP/HSOSC.v. VERI-1328
+WARNING <35901206> - synthesis: C:/lscc/radiant/2025.2/ispfpga/../cae_library/simulation/verilog/iCE40UP/HSOSC.v(20): duplicate module name HSOSC. VERI-1206
+INFO <35901328> - synthesis: C:/lscc/radiant/2025.2/ispfpga/../cae_library/simulation/verilog/iCE40UP/iCE40UP_sp.v(16): analyzing included file C:/lscc/radiant/2025.2/ispfpga/../cae_library/simulation/verilog/iCE40UP/LSOSC.v. VERI-1328
+WARNING <35901206> - synthesis: C:/lscc/radiant/2025.2/ispfpga/../cae_library/simulation/verilog/iCE40UP/LSOSC.v(16): duplicate module name LSOSC. VERI-1206
+INFO <35901328> - synthesis: C:/lscc/radiant/2025.2/ispfpga/../cae_library/simulation/verilog/iCE40UP/iCE40UP_sp.v(17): analyzing included file C:/lscc/radiant/2025.2/ispfpga/../cae_library/simulation/verilog/iCE40UP/HSOSC1P8V.v. VERI-1328
+WARNING <35901206> - synthesis: C:/lscc/radiant/2025.2/ispfpga/../cae_library/simulation/verilog/iCE40UP/HSOSC1P8V.v(24): duplicate module name HSOSC1P8V. VERI-1206
+INFO <35901328> - synthesis: C:/lscc/radiant/2025.2/ispfpga/../cae_library/simulation/verilog/iCE40UP/iCE40UP_sp.v(18): analyzing included file C:/lscc/radiant/2025.2/ispfpga/../cae_library/simulation/verilog/iCE40UP/LSOSC1P8V.v. VERI-1328
+WARNING <35901206> - synthesis: C:/lscc/radiant/2025.2/ispfpga/../cae_library/simulation/verilog/iCE40UP/LSOSC1P8V.v(21): duplicate module name LSOSC1P8V. VERI-1206
+INFO <35901328> - synthesis: C:/lscc/radiant/2025.2/ispfpga/../cae_library/simulation/verilog/iCE40UP/iCE40UP_sp.v(19): analyzing included file C:/lscc/radiant/2025.2/ispfpga/../cae_library/simulation/verilog/iCE40UP/RGB1P8V.v. VERI-1328
+WARNING <35901206> - synthesis: C:/lscc/radiant/2025.2/ispfpga/../cae_library/simulation/verilog/iCE40UP/RGB1P8V.v(52): duplicate module name RGB1P8V. VERI-1206
+WARNING <35901214> - synthesis: C:/lscc/radiant/2025.2/ispfpga/../cae_library/simulation/verilog/iCE40UP/IB.v(11): assignment to input I. VERI-1214
+WARNING <35931013> - synthesis: C:/lscc/radiant/2025.2/ispfpga/../cae_library/simulation/verilog/iCE40UP/RGB.v(33): input port TRIM9 is not connected on this instance. VDB-1013
+WARNING <35931013> - synthesis: C:/lscc/radiant/2025.2/ispfpga/../cae_library/simulation/verilog/iCE40UP/IB.v(11): input port I is not connected on this instance. VDB-1013
+Reading structural Verilog file 'C:/lscc/radiant/2025.2/ispfpga/../cae_library/simulation/verilog/iCE40UP/iCE40UP_sp.v'. VNLR-1084
+INFO <35911012> - synthesis: C:/lscc/radiant/2025.2/ispfpga/../cae_library/simulation/verilog/iCE40UP/legacy.v(1724): compiling module 'SB_DFFER'. VNLR-1012
+WARNING <35911026> - synthesis: C:/lscc/radiant/2025.2/ispfpga/../cae_library/simulation/verilog/iCE40UP/legacy.v(1724): instantiating unknown module 'FD1P3XZ'. VNLR-1026
+INFO <35911012> - synthesis: C:/lscc/radiant/2025.2/ispfpga/../cae_library/simulation/verilog/iCE40UP/legacy.v(1724): compiling module 'SB_DFFESR'. VNLR-1012
+INFO <35911012> - synthesis: C:/lscc/radiant/2025.2/ispfpga/../cae_library/simulation/verilog/iCE40UP/legacy.v(1724): compiling module 'SB_DFFESS'. VNLR-1012
+INFO <35911012> - synthesis: C:/lscc/radiant/2025.2/ispfpga/../cae_library/simulation/verilog/iCE40UP/legacy.v(1724): compiling module 'SB_DFFES'. VNLR-1012
+INFO <35911012> - synthesis: C:/lscc/radiant/2025.2/ispfpga/../cae_library/simulation/verilog/iCE40UP/legacy.v(1724): compiling module 'SB_DFFE'. VNLR-1012
+WARNING <35911026> - synthesis: C:/lscc/radiant/2025.2/ispfpga/../cae_library/simulation/verilog/iCE40UP/legacy.v(1724): instantiating unknown module 'VLO'. VNLR-1026
+INFO <35911012> - synthesis: C:/lscc/radiant/2025.2/ispfpga/../cae_library/simulation/verilog/iCE40UP/legacy.v(1724): compiling module 'SB_DFFNER'. VNLR-1012
+WARNING <35911026> - synthesis: C:/lscc/radiant/2025.2/ispfpga/../cae_library/simulation/verilog/iCE40UP/legacy.v(1724): instantiating unknown module 'INV'. VNLR-1026
+INFO <35911012> - synthesis: C:/lscc/radiant/2025.2/ispfpga/../cae_library/simulation/verilog/iCE40UP/legacy.v(1724): compiling module 'SB_DFFNESR'. VNLR-1012
+INFO <35911012> - synthesis: C:/lscc/radiant/2025.2/ispfpga/../cae_library/simulation/verilog/iCE40UP/legacy.v(1724): compiling module 'SB_DFFNESS'. VNLR-1012
+INFO <35911012> - synthesis: C:/lscc/radiant/2025.2/ispfpga/../cae_library/simulation/verilog/iCE40UP/legacy.v(1724): compiling module 'SB_DFFNES'. VNLR-1012
+INFO <35911012> - synthesis: C:/lscc/radiant/2025.2/ispfpga/../cae_library/simulation/verilog/iCE40UP/legacy.v(1724): compiling module 'SB_DFFNE'. VNLR-1012
+INFO <35911012> - synthesis: C:/lscc/radiant/2025.2/ispfpga/../cae_library/simulation/verilog/iCE40UP/legacy.v(1724): compiling module 'SB_DFFNR'. VNLR-1012
+WARNING <35911026> - synthesis: C:/lscc/radiant/2025.2/ispfpga/../cae_library/simulation/verilog/iCE40UP/legacy.v(1724): instantiating unknown module 'VHI'. VNLR-1026
+INFO <35911012> - synthesis: C:/lscc/radiant/2025.2/ispfpga/../cae_library/simulation/verilog/iCE40UP/legacy.v(1724): compiling module 'SB_DFFNSR'. VNLR-1012
+INFO <35911012> - synthesis: C:/lscc/radiant/2025.2/ispfpga/../cae_library/simulation/verilog/iCE40UP/legacy.v(1724): compiling module 'SB_DFFNSS'. VNLR-1012
+INFO <35911012> - synthesis: C:/lscc/radiant/2025.2/ispfpga/../cae_library/simulation/verilog/iCE40UP/legacy.v(1724): compiling module 'SB_DFFNS'. VNLR-1012
+INFO <35911012> - synthesis: C:/lscc/radiant/2025.2/ispfpga/../cae_library/simulation/verilog/iCE40UP/legacy.v(1724): compiling module 'SB_DFFN'. VNLR-1012
+INFO <35911012> - synthesis: C:/lscc/radiant/2025.2/ispfpga/../cae_library/simulation/verilog/iCE40UP/legacy.v(1724): compiling module 'SB_DFFR'. VNLR-1012
+INFO <35911012> - synthesis: C:/lscc/radiant/2025.2/ispfpga/../cae_library/simulation/verilog/iCE40UP/legacy.v(1724): compiling module 'SB_DFFSR'. VNLR-1012
+INFO <35911012> - synthesis: C:/lscc/radiant/2025.2/ispfpga/../cae_library/simulation/verilog/iCE40UP/legacy.v(1724): compiling module 'SB_DFFSS'. VNLR-1012
+INFO <35911012> - synthesis: C:/lscc/radiant/2025.2/ispfpga/../cae_library/simulation/verilog/iCE40UP/legacy.v(1724): compiling module 'SB_DFFS'. VNLR-1012
+INFO <35911012> - synthesis: C:/lscc/radiant/2025.2/ispfpga/../cae_library/simulation/verilog/iCE40UP/legacy.v(1724): compiling module 'SB_DFF'. VNLR-1012
+INFO <35911012> - synthesis: C:/lscc/radiant/2025.2/ispfpga/../cae_library/simulation/verilog/iCE40UP/legacy.v(1724): compiling module 'SB_IO'. VNLR-1012
+WARNING <35911026> - synthesis: C:/lscc/radiant/2025.2/ispfpga/../cae_library/simulation/verilog/iCE40UP/legacy.v(1724): instantiating unknown module 'BB_B'. VNLR-1026
+INFO <35911012> - synthesis: C:/lscc/radiant/2025.2/ispfpga/../cae_library/simulation/verilog/iCE40UP/legacy.v(1724): compiling module 'SB_LUT4'. VNLR-1012
+WARNING <35911026> - synthesis: C:/lscc/radiant/2025.2/ispfpga/../cae_library/simulation/verilog/iCE40UP/legacy.v(1724): instantiating unknown module 'LUT4'. VNLR-1026
+INFO <35911012> - synthesis: C:/lscc/radiant/2025.2/ispfpga/../cae_library/simulation/verilog/iCE40UP/legacy.v(1724): compiling module 'SB_MAC16'. VNLR-1012
+WARNING <35911026> - synthesis: C:/lscc/radiant/2025.2/ispfpga/../cae_library/simulation/verilog/iCE40UP/legacy.v(1724): instantiating unknown module 'MAC16'. VNLR-1026
+INFO <35911012> - synthesis: C:/lscc/radiant/2025.2/ispfpga/../cae_library/simulation/verilog/iCE40UP/legacy.v(1724): compiling module 'SB_RAM1024x4NRNW'. VNLR-1012
+WARNING <35911026> - synthesis: C:/lscc/radiant/2025.2/ispfpga/../cae_library/simulation/verilog/iCE40UP/legacy.v(1724): instantiating unknown module 'EBR_B'. VNLR-1026
+INFO <35911012> - synthesis: C:/lscc/radiant/2025.2/ispfpga/../cae_library/simulation/verilog/iCE40UP/legacy.v(1724): compiling module 'SB_RAM1024x4NR'. VNLR-1012
+INFO <35911012> - synthesis: C:/lscc/radiant/2025.2/ispfpga/../cae_library/simulation/verilog/iCE40UP/legacy.v(1724): compiling module 'SB_RAM1024x4NW'. VNLR-1012
+INFO <35911012> - synthesis: C:/lscc/radiant/2025.2/ispfpga/../cae_library/simulation/verilog/iCE40UP/legacy.v(1724): compiling module 'SB_RAM1024x4'. VNLR-1012
+INFO <35911012> - synthesis: C:/lscc/radiant/2025.2/ispfpga/../cae_library/simulation/verilog/iCE40UP/legacy.v(1724): compiling module 'SB_RAM2048x2NRNW'. VNLR-1012
+INFO <35911012> - synthesis: C:/lscc/radiant/2025.2/ispfpga/../cae_library/simulation/verilog/iCE40UP/legacy.v(1724): compiling module 'SB_RAM2048x2NR'. VNLR-1012
+INFO <35911012> - synthesis: C:/lscc/radiant/2025.2/ispfpga/../cae_library/simulation/verilog/iCE40UP/legacy.v(1724): compiling module 'SB_RAM2048x2NW'. VNLR-1012
+INFO <35911012> - synthesis: C:/lscc/radiant/2025.2/ispfpga/../cae_library/simulation/verilog/iCE40UP/legacy.v(1724): compiling module 'SB_RAM2048x2'. VNLR-1012
+INFO <35911012> - synthesis: C:/lscc/radiant/2025.2/ispfpga/../cae_library/simulation/verilog/iCE40UP/legacy.v(1724): compiling module 'SB_RAM256x16NRNW'. VNLR-1012
+INFO <35911012> - synthesis: C:/lscc/radiant/2025.2/ispfpga/../cae_library/simulation/verilog/iCE40UP/legacy.v(1724): compiling module 'SB_RAM256x16NR'. VNLR-1012
+INFO <35911012> - synthesis: C:/lscc/radiant/2025.2/ispfpga/../cae_library/simulation/verilog/iCE40UP/legacy.v(1724): compiling module 'SB_RAM256x16NW'. VNLR-1012
+INFO <35911012> - synthesis: C:/lscc/radiant/2025.2/ispfpga/../cae_library/simulation/verilog/iCE40UP/legacy.v(1724): compiling module 'SB_RAM256x16'. VNLR-1012
+INFO <35911012> - synthesis: C:/lscc/radiant/2025.2/ispfpga/../cae_library/simulation/verilog/iCE40UP/legacy.v(1724): compiling module 'SB_RAM512x8NRNW'. VNLR-1012
+INFO <35911012> - synthesis: C:/lscc/radiant/2025.2/ispfpga/../cae_library/simulation/verilog/iCE40UP/legacy.v(1724): compiling module 'SB_RAM512x8NR'. VNLR-1012
+INFO <35911012> - synthesis: C:/lscc/radiant/2025.2/ispfpga/../cae_library/simulation/verilog/iCE40UP/legacy.v(1724): compiling module 'SB_RAM512x8NW'. VNLR-1012
+INFO <35911012> - synthesis: C:/lscc/radiant/2025.2/ispfpga/../cae_library/simulation/verilog/iCE40UP/legacy.v(1724): compiling module 'SB_RAM512x8'. VNLR-1012
+INFO <35911012> - synthesis: C:/lscc/radiant/2025.2/ispfpga/../cae_library/simulation/verilog/iCE40UP/RGB.v(2): compiling module 'RGB'. VNLR-1012
+WARNING <35911026> - synthesis: C:/lscc/radiant/2025.2/ispfpga/../cae_library/simulation/verilog/iCE40UP/RGB.v(33): instantiating unknown module 'RGB_CORE'. VNLR-1026
+WARNING <35911026> - synthesis: C:/lscc/radiant/2025.2/ispfpga/../cae_library/simulation/verilog/iCE40UP/RGB.v(41): instantiating unknown module 'OB_RGB'. VNLR-1026
+INFO <35911012> - synthesis: C:/lscc/radiant/2025.2/ispfpga/../cae_library/simulation/verilog/iCE40UP/FD1P3BZ.v(2): compiling module 'FD1P3BZ'. VNLR-1012
+INFO <35911012> - synthesis: C:/lscc/radiant/2025.2/ispfpga/../cae_library/simulation/verilog/iCE40UP/FD1P3DZ.v(2): compiling module 'FD1P3DZ'. VNLR-1012
+INFO <35911012> - synthesis: C:/lscc/radiant/2025.2/ispfpga/../cae_library/simulation/verilog/iCE40UP/FD1P3IZ.v(2): compiling module 'FD1P3IZ'. VNLR-1012
+INFO <35911012> - synthesis: C:/lscc/radiant/2025.2/ispfpga/../cae_library/simulation/verilog/iCE40UP/FD1P3JZ.v(2): compiling module 'FD1P3JZ'. VNLR-1012
+INFO <35911012> - synthesis: C:/lscc/radiant/2025.2/ispfpga/../cae_library/simulation/verilog/iCE40UP/IB.v(2): compiling module 'IB'. VNLR-1012
+INFO <35911012> - synthesis: C:/lscc/radiant/2025.2/ispfpga/../cae_library/simulation/verilog/iCE40UP/OB.v(2): compiling module 'OB'. VNLR-1012
+INFO <35911012> - synthesis: C:/lscc/radiant/2025.2/ispfpga/../cae_library/simulation/verilog/iCE40UP/OBZ_B.v(2): compiling module 'OBZ_B'. VNLR-1012
+INFO <35911012> - synthesis: C:/lscc/radiant/2025.2/ispfpga/../cae_library/simulation/verilog/iCE40UP/IFD1P3AZ.v(2): compiling module 'IFD1P3AZ'. VNLR-1012
+WARNING <35911026> - synthesis: C:/lscc/radiant/2025.2/ispfpga/../cae_library/simulation/verilog/iCE40UP/IFD1P3AZ.v(15): instantiating unknown module 'IOL_B'. VNLR-1026
+INFO <35911012> - synthesis: C:/lscc/radiant/2025.2/ispfpga/../cae_library/simulation/verilog/iCE40UP/OFD1P3AZ.v(2): compiling module 'OFD1P3AZ'. VNLR-1012
+INFO <35911012> - synthesis: C:/lscc/radiant/2025.2/ispfpga/../cae_library/simulation/verilog/iCE40UP/PDP4K.v(2): compiling module 'PDP4K'. VNLR-1012
+INFO <35911012> - synthesis: C:/lscc/radiant/2025.2/ispfpga/../cae_library/simulation/verilog/iCE40UP/CCU2_B.v(2): compiling module 'CCU2_B'. VNLR-1012
+WARNING <35911026> - synthesis: C:/lscc/radiant/2025.2/ispfpga/../cae_library/simulation/verilog/iCE40UP/CCU2_B.v(28): instantiating unknown module 'FA2'. VNLR-1026
+INFO <35911012> - synthesis: C:/lscc/radiant/2025.2/ispfpga/../cae_library/simulation/verilog/iCE40UP/SP256K.v(2): compiling module 'SP256K'. VNLR-1012
+WARNING <35911026> - synthesis: C:/lscc/radiant/2025.2/ispfpga/../cae_library/simulation/verilog/iCE40UP/SP256K.v(28): instantiating unknown module 'VFB_B'. VNLR-1026
+INFO <35911012> - synthesis: C:/lscc/radiant/2025.2/ispfpga/../cae_library/simulation/verilog/iCE40UP/HSOSC.v(2): compiling module 'HSOSC'. VNLR-1012
+WARNING <35911026> - synthesis: C:/lscc/radiant/2025.2/ispfpga/../cae_library/simulation/verilog/iCE40UP/HSOSC.v(16): instantiating unknown module 'HSOSC_CORE'. VNLR-1026
+INFO <35911012> - synthesis: C:/lscc/radiant/2025.2/ispfpga/../cae_library/simulation/verilog/iCE40UP/LSOSC.v(2): compiling module 'LSOSC'. VNLR-1012
+WARNING <35911026> - synthesis: C:/lscc/radiant/2025.2/ispfpga/../cae_library/simulation/verilog/iCE40UP/LSOSC.v(13): instantiating unknown module 'LSOSC_CORE'. VNLR-1026
+INFO <35911012> - synthesis: C:/lscc/radiant/2025.2/ispfpga/../cae_library/simulation/verilog/iCE40UP/HSOSC1P8V.v(2): compiling module 'HSOSC1P8V'. VNLR-1012
+INFO <35911012> - synthesis: C:/lscc/radiant/2025.2/ispfpga/../cae_library/simulation/verilog/iCE40UP/LSOSC1P8V.v(2): compiling module 'LSOSC1P8V'. VNLR-1012
+INFO <35911012> - synthesis: C:/lscc/radiant/2025.2/ispfpga/../cae_library/simulation/verilog/iCE40UP/RGB1P8V.v(2): compiling module 'RGB1P8V'. VNLR-1012
+INFO <35911015> - synthesis: C:/lscc/radiant/2025.2/ispfpga/../cae_library/simulation/verilog/iCE40UP/RGB1P8V.v(2): setting 'RGB1P8V' as the top level module. VNLR-1015
+
+Compiling design...
+
+Analyzing VHDL file C:/lscc/radiant/2025.2/ispfpga/vhdl_packages/vh2008/std/standard_2008.vhd. VHDL-1481
+Analyzing VHDL file C:/lscc/radiant/2025.2/ispfpga/vhdl_packages/vh2008/std/standard_2008.vhd
+
+INFO <35921014> - synthesis: C:/lscc/radiant/2025.2/ispfpga/vhdl_packages/vh2008/std/standard_2008.vhd(9): analyzing package standard. VHDL-1014
+Analyzing VHDL file C:/lscc/radiant/2025.2/ispfpga/vhdl_packages/vh2008/std/textio_2008.vhd. VHDL-1481
+Analyzing VHDL file C:/lscc/radiant/2025.2/ispfpga/vhdl_packages/vh2008/std/textio_2008.vhd
+
+INFO <35921014> - synthesis: C:/lscc/radiant/2025.2/ispfpga/vhdl_packages/vh2008/std/textio_2008.vhd(13): analyzing package textio. VHDL-1014
+INFO <35921013> - synthesis: C:/lscc/radiant/2025.2/ispfpga/vhdl_packages/vh2008/std/textio_2008.vhd(157): analyzing package body textio. VHDL-1013
+Analyzing VHDL file C:/lscc/radiant/2025.2/ispfpga/vhdl_packages/vh2008/std/env_2008.vhd. VHDL-1481
+Analyzing VHDL file C:/lscc/radiant/2025.2/ispfpga/vhdl_packages/vh2008/std/env_2008.vhd
+
+INFO <35921014> - synthesis: C:/lscc/radiant/2025.2/ispfpga/vhdl_packages/vh2008/std/env_2008.vhd(8): analyzing package env. VHDL-1014
+Analyzing VHDL file C:/lscc/radiant/2025.2/ispfpga/vhdl_packages/vh2008/ieee/std_logic_1164_2008.vhd. VHDL-1481
+Analyzing VHDL file C:/lscc/radiant/2025.2/ispfpga/vhdl_packages/vh2008/ieee/std_logic_1164_2008.vhd
+
+INFO <35921014> - synthesis: C:/lscc/radiant/2025.2/ispfpga/vhdl_packages/vh2008/ieee/std_logic_1164_2008.vhd(59): analyzing package std_logic_1164. VHDL-1014
+INFO <35921013> - synthesis: C:/lscc/radiant/2025.2/ispfpga/vhdl_packages/vh2008/ieee/std_logic_1164_2008.vhd(390): analyzing package body std_logic_1164. VHDL-1013
+Analyzing VHDL file C:/lscc/radiant/2025.2/ispfpga/vhdl_packages/vh2008/ieee/std_logic_textio.vhdl. VHDL-1481
+Analyzing VHDL file C:/lscc/radiant/2025.2/ispfpga/vhdl_packages/vh2008/ieee/std_logic_textio.vhdl
+
+INFO <35921014> - synthesis: C:/lscc/radiant/2025.2/ispfpga/vhdl_packages/vh2008/ieee/std_logic_textio.vhdl(47): analyzing package std_logic_textio. VHDL-1014
+Analyzing VHDL file C:/lscc/radiant/2025.2/ispfpga/vhdl_packages/vh2008/ieee/numeric_std_2008.vhd. VHDL-1481
+Analyzing VHDL file C:/lscc/radiant/2025.2/ispfpga/vhdl_packages/vh2008/ieee/numeric_std_2008.vhd
+
+INFO <35921014> - synthesis: C:/lscc/radiant/2025.2/ispfpga/vhdl_packages/vh2008/ieee/numeric_std_2008.vhd(72): analyzing package numeric_std. VHDL-1014
+INFO <35921013> - synthesis: C:/lscc/radiant/2025.2/ispfpga/vhdl_packages/vh2008/ieee/numeric_std_2008.vhd(1770): analyzing package body numeric_std. VHDL-1013
+Analyzing VHDL file C:/lscc/radiant/2025.2/ispfpga/vhdl_packages/vh2008/ieee/numeric_std_unsigned_2008.vhd. VHDL-1481
+Analyzing VHDL file C:/lscc/radiant/2025.2/ispfpga/vhdl_packages/vh2008/ieee/numeric_std_unsigned_2008.vhd
+
+INFO <35921014> - synthesis: C:/lscc/radiant/2025.2/ispfpga/vhdl_packages/vh2008/ieee/numeric_std_unsigned_2008.vhd(58): analyzing package numeric_std_unsigned. VHDL-1014
+INFO <35921013> - synthesis: C:/lscc/radiant/2025.2/ispfpga/vhdl_packages/vh2008/ieee/numeric_std_unsigned_2008.vhd(679): analyzing package body numeric_std_unsigned. VHDL-1013
+Analyzing VHDL file C:/lscc/radiant/2025.2/ispfpga/vhdl_packages/vh2008/ieee/numeric_bit.vhdl. VHDL-1481
+Analyzing VHDL file C:/lscc/radiant/2025.2/ispfpga/vhdl_packages/vh2008/ieee/numeric_bit.vhdl
+
+INFO <35921014> - synthesis: C:/lscc/radiant/2025.2/ispfpga/vhdl_packages/vh2008/ieee/numeric_bit.vhdl(62): analyzing package numeric_bit. VHDL-1014
+Analyzing VHDL file C:/lscc/radiant/2025.2/ispfpga/vhdl_packages/vh2008/ieee/numeric_bit-body.vhdl. VHDL-1481
+Analyzing VHDL file C:/lscc/radiant/2025.2/ispfpga/vhdl_packages/vh2008/ieee/numeric_bit-body.vhdl
+
+INFO <35921013> - synthesis: C:/lscc/radiant/2025.2/ispfpga/vhdl_packages/vh2008/ieee/numeric_bit-body.vhdl(60): analyzing package body numeric_bit. VHDL-1013
+Analyzing VHDL file C:/lscc/radiant/2025.2/ispfpga/vhdl_packages/vh2008/ieee/numeric_bit_unsigned.vhdl. VHDL-1481
+Analyzing VHDL file C:/lscc/radiant/2025.2/ispfpga/vhdl_packages/vh2008/ieee/numeric_bit_unsigned.vhdl
+
+INFO <35921014> - synthesis: C:/lscc/radiant/2025.2/ispfpga/vhdl_packages/vh2008/ieee/numeric_bit_unsigned.vhdl(56): analyzing package numeric_bit_unsigned. VHDL-1014
+Analyzing VHDL file C:/lscc/radiant/2025.2/ispfpga/vhdl_packages/vh2008/ieee/numeric_bit_unsigned-body.vhdl. VHDL-1481
+Analyzing VHDL file C:/lscc/radiant/2025.2/ispfpga/vhdl_packages/vh2008/ieee/numeric_bit_unsigned-body.vhdl
+
+INFO <35921013> - synthesis: C:/lscc/radiant/2025.2/ispfpga/vhdl_packages/vh2008/ieee/numeric_bit_unsigned-body.vhdl(59): analyzing package body numeric_bit_unsigned. VHDL-1013
+Analyzing VHDL file C:/lscc/radiant/2025.2/ispfpga/vhdl_packages/vh2008/ieee/math_real.vhdl. VHDL-1481
+Analyzing VHDL file C:/lscc/radiant/2025.2/ispfpga/vhdl_packages/vh2008/ieee/math_real-body.vhdl. VHDL-1481
+Analyzing VHDL file C:/lscc/radiant/2025.2/ispfpga/vhdl_packages/vh2008/ieee/math_complex.vhdl. VHDL-1481
+Analyzing VHDL file C:/lscc/radiant/2025.2/ispfpga/vhdl_packages/vh2008/ieee/math_complex.vhdl
+
+INFO <35921014> - synthesis: C:/lscc/radiant/2025.2/ispfpga/vhdl_packages/vh2008/ieee/math_complex.vhdl(55): analyzing package math_complex. VHDL-1014
+Analyzing VHDL file C:/lscc/radiant/2025.2/ispfpga/vhdl_packages/vh2008/ieee/math_complex-body.vhdl. VHDL-1481
+Analyzing VHDL file C:/lscc/radiant/2025.2/ispfpga/vhdl_packages/vh2008/ieee/math_complex-body.vhdl
+
+INFO <35921013> - synthesis: C:/lscc/radiant/2025.2/ispfpga/vhdl_packages/vh2008/ieee/math_complex-body.vhdl(56): analyzing package body math_complex. VHDL-1013
+Analyzing VHDL file C:/lscc/radiant/2025.2/ispfpga/vhdl_packages/vh2008/ieee/fixed_float_types.vhdl. VHDL-1481
+Analyzing VHDL file C:/lscc/radiant/2025.2/ispfpga/vhdl_packages/vh2008/ieee/fixed_float_types.vhdl
+
+INFO <35921014> - synthesis: C:/lscc/radiant/2025.2/ispfpga/vhdl_packages/vh2008/ieee/fixed_float_types.vhdl(46): analyzing package fixed_float_types. VHDL-1014
+Analyzing VHDL file C:/lscc/radiant/2025.2/ispfpga/vhdl_packages/vh2008/ieee/fixed_generic_pkg.vhdl. VHDL-1481
+Analyzing VHDL file C:/lscc/radiant/2025.2/ispfpga/vhdl_packages/vh2008/ieee/fixed_generic_pkg.vhdl
+
+INFO <35921014> - synthesis: C:/lscc/radiant/2025.2/ispfpga/vhdl_packages/vh2008/ieee/fixed_generic_pkg.vhdl(52): analyzing package fixed_generic_pkg. VHDL-1014
+Analyzing VHDL file C:/lscc/radiant/2025.2/ispfpga/vhdl_packages/vh2008/ieee/fixed_generic_pkg-body.vhdl. VHDL-1481
+Analyzing VHDL file C:/lscc/radiant/2025.2/ispfpga/vhdl_packages/vh2008/ieee/fixed_generic_pkg-body.vhdl
+
+INFO <35921013> - synthesis: C:/lscc/radiant/2025.2/ispfpga/vhdl_packages/vh2008/ieee/fixed_generic_pkg-body.vhdl(49): analyzing package body fixed_generic_pkg. VHDL-1013
+Analyzing VHDL file C:/lscc/radiant/2025.2/ispfpga/vhdl_packages/vh2008/ieee/float_generic_pkg.vhdl. VHDL-1481
+Analyzing VHDL file C:/lscc/radiant/2025.2/ispfpga/vhdl_packages/vh2008/ieee/float_generic_pkg.vhdl
+
+INFO <35921014> - synthesis: C:/lscc/radiant/2025.2/ispfpga/vhdl_packages/vh2008/ieee/float_generic_pkg.vhdl(52): analyzing package float_generic_pkg. VHDL-1014
+Analyzing VHDL file C:/lscc/radiant/2025.2/ispfpga/vhdl_packages/vh2008/ieee/float_generic_pkg-body.vhdl. VHDL-1481
+Analyzing VHDL file C:/lscc/radiant/2025.2/ispfpga/vhdl_packages/vh2008/ieee/float_generic_pkg-body.vhdl
+
+INFO <35921013> - synthesis: C:/lscc/radiant/2025.2/ispfpga/vhdl_packages/vh2008/ieee/float_generic_pkg-body.vhdl(46): analyzing package body float_generic_pkg. VHDL-1013
+Analyzing VHDL file C:/lscc/radiant/2025.2/ispfpga/vhdl_packages/vh2008/ieee/fixed_pkg.vhdl. VHDL-1481
+Analyzing VHDL file C:/lscc/radiant/2025.2/ispfpga/vhdl_packages/vh2008/ieee/fixed_pkg.vhdl
+
+Analyzing VHDL file C:/lscc/radiant/2025.2/ispfpga/vhdl_packages/vh2008/ieee/float_pkg.vhdl. VHDL-1481
+Analyzing VHDL file C:/lscc/radiant/2025.2/ispfpga/vhdl_packages/vh2008/ieee/float_pkg.vhdl
+
+Analyzing VHDL file C:/lscc/radiant/2025.2/ispfpga/vhdl_packages/vh2008/ieee/ieee_bit_context.vhd. VHDL-1481
+Analyzing VHDL file C:/lscc/radiant/2025.2/ispfpga/vhdl_packages/vh2008/ieee/ieee_bit_context.vhd
+
+Analyzing VHDL file C:/lscc/radiant/2025.2/ispfpga/vhdl_packages/vh2008/ieee/ieee_std_context.vhd. VHDL-1481
+Analyzing VHDL file C:/lscc/radiant/2025.2/ispfpga/vhdl_packages/vh2008/ieee/ieee_std_context.vhd
+
+Analyzing VHDL file C:/lscc/radiant/2025.2/ispfpga/vhdl_packages/syn_attr.vhd. VHDL-1481
+Analyzing VHDL file C:/lscc/radiant/2025.2/ispfpga/vhdl_packages/syn_attr.vhd
+
+INFO <35921014> - synthesis: C:/lscc/radiant/2025.2/ispfpga/vhdl_packages/syn_attr.vhd(39): analyzing package attributes. VHDL-1014
+Analyzing VHDL file C:/lscc/radiant/2025.2/ispfpga/vhdl_packages/vh2008/ieee/syn_misc_2008.vhd. VHDL-1481
+Analyzing VHDL file C:/lscc/radiant/2025.2/ispfpga/vhdl_packages/vh2008/ieee/syn_misc_2008.vhd
+
+INFO <35921014> - synthesis: C:/lscc/radiant/2025.2/ispfpga/vhdl_packages/vh2008/ieee/syn_misc_2008.vhd(25): analyzing package std_logic_misc. VHDL-1014
+INFO <35921013> - synthesis: C:/lscc/radiant/2025.2/ispfpga/vhdl_packages/vh2008/ieee/syn_misc_2008.vhd(179): analyzing package body std_logic_misc. VHDL-1013
+Analyzing VHDL file C:/lscc/radiant/2025.2/ispfpga/vhdl_packages/vh2008/arithmetic/mgc_arit_2008.vhd. VHDL-1481
+Analyzing VHDL file C:/lscc/radiant/2025.2/ispfpga/vhdl_packages/vh2008/arithmetic/mgc_arit_2008.vhd
+
+INFO <35921014> - synthesis: C:/lscc/radiant/2025.2/ispfpga/vhdl_packages/vh2008/arithmetic/mgc_arit_2008.vhd(22): analyzing package std_logic_arith. VHDL-1014
+INFO <35921013> - synthesis: C:/lscc/radiant/2025.2/ispfpga/vhdl_packages/vh2008/arithmetic/mgc_arit_2008.vhd(276): analyzing package body std_logic_arith. VHDL-1013
+Analyzing VHDL file C:/lscc/radiant/2025.2/ispfpga/vhdl_packages/mixed_lang_vltype.vhd. VHDL-1481
+Analyzing VHDL file C:/lscc/radiant/2025.2/ispfpga/vhdl_packages/mixed_lang_vltype.vhd
+
+INFO <35921014> - synthesis: C:/lscc/radiant/2025.2/ispfpga/vhdl_packages/mixed_lang_vltype.vhd(9): analyzing package vl_types. VHDL-1014
+INFO <35921013> - synthesis: C:/lscc/radiant/2025.2/ispfpga/vhdl_packages/mixed_lang_vltype.vhd(88): analyzing package body vl_types. VHDL-1013
+Analyzing VHDL file C:/lscc/radiant/2025.2/ispfpga/vhdl_packages/syn_arit.vhd. VHDL-1481
+Analyzing VHDL file C:/lscc/radiant/2025.2/ispfpga/vhdl_packages/syn_arit.vhd
+
+INFO <35921014> - synthesis: C:/lscc/radiant/2025.2/ispfpga/vhdl_packages/syn_arit.vhd(25): analyzing package std_logic_arith. VHDL-1014
+INFO <35921013> - synthesis: C:/lscc/radiant/2025.2/ispfpga/vhdl_packages/syn_arit.vhd(206): analyzing package body std_logic_arith. VHDL-1013
+Analyzing VHDL file C:/lscc/radiant/2025.2/ispfpga/vhdl_packages/syn_sign.vhd. VHDL-1481
+Analyzing VHDL file C:/lscc/radiant/2025.2/ispfpga/vhdl_packages/syn_sign.vhd
+
+INFO <35921014> - synthesis: C:/lscc/radiant/2025.2/ispfpga/vhdl_packages/syn_sign.vhd(35): analyzing package std_logic_signed. VHDL-1014
+INFO <35921013> - synthesis: C:/lscc/radiant/2025.2/ispfpga/vhdl_packages/syn_sign.vhd(96): analyzing package body std_logic_signed. VHDL-1013
+Analyzing VHDL file C:/lscc/radiant/2025.2/ispfpga/vhdl_packages/syn_unsi.vhd. VHDL-1481
+Analyzing VHDL file C:/lscc/radiant/2025.2/ispfpga/vhdl_packages/syn_unsi.vhd
+
+INFO <35921014> - synthesis: C:/lscc/radiant/2025.2/ispfpga/vhdl_packages/syn_unsi.vhd(35): analyzing package std_logic_unsigned. VHDL-1014
+INFO <35921013> - synthesis: C:/lscc/radiant/2025.2/ispfpga/vhdl_packages/syn_unsi.vhd(94): analyzing package body std_logic_unsigned. VHDL-1013
+Analyzing VHDL file C:/lscc/radiant/2025.2/ispfpga/../cae_library/synthesis/vhdl/iCE40UP.vhd. VHDL-1481
+Analyzing VHDL file C:/lscc/radiant/2025.2/ispfpga/../cae_library/synthesis/vhdl/iCE40UP.vhd
+
+INFO <35921014> - synthesis: C:/lscc/radiant/2025.2/ispfpga/../cae_library/synthesis/vhdl/iCE40UP.vhd(4): analyzing package components. VHDL-1014
+Analyzing VHDL file C:/lscc/radiant/2025.2/ispfpga/vhdl_packages/synattr.vhd. VHDL-1481
+Analyzing VHDL file C:/lscc/radiant/2025.2/ispfpga/vhdl_packages/synattr.vhd
+
+INFO <35921014> - synthesis: C:/lscc/radiant/2025.2/ispfpga/vhdl_packages/synattr.vhd(50): analyzing package attributes. VHDL-1014
+Analyzing Verilog file c:/lscc/radiant/2025.2/ip/pmi/pmi_ice40up.v. VERI-1482
+INFO <35901328> - synthesis: c:/lscc/radiant/2025.2/ip/pmi/pmi_ice40up.v(1): analyzing included file c:/lscc/radiant/2025.2/ip/pmi/pmi_addsub.v. VERI-1328
+INFO <35901328> - synthesis: c:/lscc/radiant/2025.2/ip/pmi/pmi_addsub.v(40): analyzing included file c:/lscc/radiant/2025.2/ip/pmi/../common/adder_subtractor/rtl/lscc_add_sub.v. VERI-1328
+INFO <35901328> - synthesis: c:/lscc/radiant/2025.2/ip/pmi/pmi_ice40up.v(2): analyzing included file c:/lscc/radiant/2025.2/ip/pmi/pmi_add.v. VERI-1328
+INFO <35901328> - synthesis: c:/lscc/radiant/2025.2/ip/pmi/pmi_add.v(50): analyzing included file c:/lscc/radiant/2025.2/ip/pmi/../common/adder/rtl/lscc_adder.v. VERI-1328
+INFO <35901328> - synthesis: c:/lscc/radiant/2025.2/ip/pmi/pmi_ice40up.v(3): analyzing included file c:/lscc/radiant/2025.2/ip/pmi/pmi_complex_mult.v. VERI-1328
+INFO <35901328> - synthesis: c:/lscc/radiant/2025.2/ip/pmi/pmi_complex_mult.v(52): analyzing included file c:/lscc/radiant/2025.2/ip/pmi/../common/complex_mult/rtl/lscc_complex_mult.v. VERI-1328
+INFO <35901328> - synthesis: c:/lscc/radiant/2025.2/ip/pmi/pmi_ice40up.v(4): analyzing included file c:/lscc/radiant/2025.2/ip/pmi/pmi_counter.v. VERI-1328
+INFO <35901328> - synthesis: c:/lscc/radiant/2025.2/ip/pmi/pmi_counter.v(39): analyzing included file c:/lscc/radiant/2025.2/ip/pmi/../common/counter/rtl/lscc_cntr.v. VERI-1328
+INFO <35901328> - synthesis: c:/lscc/radiant/2025.2/ip/pmi/pmi_ice40up.v(5): analyzing included file c:/lscc/radiant/2025.2/ip/pmi/pmi_fifo.v. VERI-1328
+INFO <35901328> - synthesis: c:/lscc/radiant/2025.2/ip/pmi/pmi_fifo.v(44): analyzing included file c:/lscc/radiant/2025.2/ip/pmi/../common/fifo/rtl/lscc_fifo.v. VERI-1328
+INFO <35901328> - synthesis: c:/lscc/radiant/2025.2/ip/pmi/pmi_ice40up.v(6): analyzing included file c:/lscc/radiant/2025.2/ip/pmi/pmi_fifo_dc.v. VERI-1328
+INFO <35901328> - synthesis: c:/lscc/radiant/2025.2/ip/pmi/pmi_fifo_dc.v(47): analyzing included file c:/lscc/radiant/2025.2/ip/pmi/../common/fifo_dc/rtl/lscc_fifo_dc.v. VERI-1328
+INFO <35901328> - synthesis: c:/lscc/radiant/2025.2/ip/pmi/pmi_ice40up.v(7): analyzing included file c:/lscc/radiant/2025.2/ip/pmi/pmi_mac.v. VERI-1328
+INFO <35901328> - synthesis: c:/lscc/radiant/2025.2/ip/pmi/pmi_mac.v(52): analyzing included file c:/lscc/radiant/2025.2/ip/pmi/../common/mult_accumulate/rtl/lscc_mult_accumulate.v. VERI-1328
+INFO <35901328> - synthesis: c:/lscc/radiant/2025.2/ip/pmi/pmi_ice40up.v(8): analyzing included file c:/lscc/radiant/2025.2/ip/pmi/pmi_multaddsubsum.v. VERI-1328
+INFO <35901328> - synthesis: c:/lscc/radiant/2025.2/ip/pmi/pmi_multaddsubsum.v(53): analyzing included file c:/lscc/radiant/2025.2/ip/pmi/../common/mult_add_sub_sum/rtl/lscc_mult_add_sub_sum.v. VERI-1328
+INFO <35901328> - synthesis: c:/lscc/radiant/2025.2/ip/pmi/pmi_ice40up.v(9): analyzing included file c:/lscc/radiant/2025.2/ip/pmi/pmi_multaddsub.v. VERI-1328
+INFO <35901328> - synthesis: c:/lscc/radiant/2025.2/ip/pmi/pmi_multaddsub.v(52): analyzing included file c:/lscc/radiant/2025.2/ip/pmi/../common/mult_add_sub/rtl/lscc_mult_add_sub.v. VERI-1328
+INFO <35901328> - synthesis: c:/lscc/radiant/2025.2/ip/pmi/pmi_ice40up.v(10): analyzing included file c:/lscc/radiant/2025.2/ip/pmi/pmi_mult.v. VERI-1328
+INFO <35901328> - synthesis: c:/lscc/radiant/2025.2/ip/pmi/pmi_mult.v(51): analyzing included file c:/lscc/radiant/2025.2/ip/pmi/../common/multiplier/rtl/lscc_multiplier.v. VERI-1328
+INFO <35901328> - synthesis: c:/lscc/radiant/2025.2/ip/pmi/pmi_ice40up.v(11): analyzing included file c:/lscc/radiant/2025.2/ip/pmi/pmi_ram_dp.v. VERI-1328
+INFO <35901328> - synthesis: c:/lscc/radiant/2025.2/ip/pmi/pmi_ram_dp.v(48): analyzing included file c:/lscc/radiant/2025.2/ip/pmi/../common/ram_dp/rtl/lscc_ram_dp.v. VERI-1328
+INFO <35901328> - synthesis: c:/lscc/radiant/2025.2/ip/pmi/pmi_ram_dp.v(49): analyzing included file c:/lscc/radiant/2025.2/ip/pmi/../LFMXO4/ram_dp/rtl/lscc_lfmxo4_ram_dp.v. VERI-1328
+INFO <35901328> - synthesis: c:/lscc/radiant/2025.2/ip/pmi/pmi_ice40up.v(12): analyzing included file c:/lscc/radiant/2025.2/ip/pmi/pmi_ram_dq.v. VERI-1328
+INFO <35901328> - synthesis: c:/lscc/radiant/2025.2/ip/pmi/pmi_ram_dq.v(45): analyzing included file c:/lscc/radiant/2025.2/ip/pmi/../common/ram_dq/rtl/lscc_ram_dq.v. VERI-1328
+INFO <35901328> - synthesis: c:/lscc/radiant/2025.2/ip/pmi/pmi_ram_dq.v(46): analyzing included file c:/lscc/radiant/2025.2/ip/pmi/../LFMXO4/ram_dq/rtl/lscc_lfmxo4_ram_dq.v. VERI-1328
+INFO <35901328> - synthesis: c:/lscc/radiant/2025.2/ip/pmi/pmi_ice40up.v(13): analyzing included file c:/lscc/radiant/2025.2/ip/pmi/pmi_rom.v. VERI-1328
+INFO <35901328> - synthesis: c:/lscc/radiant/2025.2/ip/pmi/pmi_rom.v(45): analyzing included file c:/lscc/radiant/2025.2/ip/pmi/../common/rom/rtl/lscc_rom.v. VERI-1328
+INFO <35901328> - synthesis: c:/lscc/radiant/2025.2/ip/pmi/pmi_ice40up.v(14): analyzing included file c:/lscc/radiant/2025.2/ip/pmi/pmi_sub.v. VERI-1328
+INFO <35901328> - synthesis: c:/lscc/radiant/2025.2/ip/pmi/pmi_sub.v(50): analyzing included file c:/lscc/radiant/2025.2/ip/pmi/../common/subtractor/rtl/lscc_subtractor.v. VERI-1328
+INFO <35901328> - synthesis: c:/lscc/radiant/2025.2/ip/pmi/pmi_ice40up.v(15): analyzing included file c:/lscc/radiant/2025.2/ip/pmi/pmi_ram_dp_be.v. VERI-1328
+INFO <35901328> - synthesis: c:/lscc/radiant/2025.2/ip/pmi/pmi_ram_dp_be.v(49): analyzing included file c:/lscc/radiant/2025.2/ip/pmi/../common/ram_dp/rtl/lscc_ram_dp.v. VERI-1328
+INFO <35901328> - synthesis: c:/lscc/radiant/2025.2/ip/pmi/pmi_ram_dp_be.v(50): analyzing included file c:/lscc/radiant/2025.2/ip/pmi/../LFMXO4/ram_dp/rtl/lscc_lfmxo4_ram_dp.v. VERI-1328
+INFO <35901328> - synthesis: c:/lscc/radiant/2025.2/ip/pmi/pmi_ice40up.v(16): analyzing included file c:/lscc/radiant/2025.2/ip/pmi/pmi_ram_dq_be.v. VERI-1328
+INFO <35901328> - synthesis: c:/lscc/radiant/2025.2/ip/pmi/pmi_ram_dq_be.v(45): analyzing included file c:/lscc/radiant/2025.2/ip/pmi/../common/ram_dq/rtl/lscc_ram_dq.v. VERI-1328
+INFO <35901328> - synthesis: c:/lscc/radiant/2025.2/ip/pmi/pmi_ram_dq_be.v(46): analyzing included file c:/lscc/radiant/2025.2/ip/pmi/../LFMXO4/ram_dq/rtl/lscc_lfmxo4_ram_dq.v. VERI-1328
+INFO <35901328> - synthesis: c:/lscc/radiant/2025.2/ip/pmi/pmi_ice40up.v(17): analyzing included file c:/lscc/radiant/2025.2/ip/pmi/pmi_dsp.v. VERI-1328
+Analyzing VHDL file c:/lscc/radiant/2025.2/ip/pmi/pmi_ice40up.vhd. VHDL-1481
+Analyzing VHDL file c:/lscc/radiant/2025.2/ip/pmi/pmi_ice40up.vhd
+
+INFO <35921014> - synthesis: c:/lscc/radiant/2025.2/ip/pmi/pmi_ice40up.vhd(4): analyzing package components. VHDL-1014
+Analyzing VHDL file c:/users/felix/documents/master_1ecam/fpga/pico-ice-lab-master/open-logic-main/src/base/vhdl/olo_base_pkg_array.vhd. VHDL-1481
+Analyzing VHDL file c:/users/felix/documents/master_1ecam/fpga/pico-ice-lab-master/open-logic-main/src/base/vhdl/olo_base_pkg_array.vhd
+
+INFO <35921014> - synthesis: c:/users/felix/documents/master_1ecam/fpga/pico-ice-lab-master/open-logic-main/src/base/vhdl/olo_base_pkg_array.vhd(27): analyzing package olo_base_pkg_array. VHDL-1014
+INFO <35921013> - synthesis: c:/users/felix/documents/master_1ecam/fpga/pico-ice-lab-master/open-logic-main/src/base/vhdl/olo_base_pkg_array.vhd(77): analyzing package body olo_base_pkg_array. VHDL-1013
+Analyzing VHDL file c:/users/felix/documents/master_1ecam/fpga/pico-ice-lab-master/open-logic-main/src/base/vhdl/olo_base_pkg_math.vhd. VHDL-1481
+Analyzing VHDL file c:/users/felix/documents/master_1ecam/fpga/pico-ice-lab-master/open-logic-main/src/base/vhdl/olo_base_pkg_math.vhd
+
+INFO <35921014> - synthesis: c:/users/felix/documents/master_1ecam/fpga/pico-ice-lab-master/open-logic-main/src/base/vhdl/olo_base_pkg_math.vhd(33): analyzing package olo_base_pkg_math. VHDL-1014
+INFO <35921013> - synthesis: c:/users/felix/documents/master_1ecam/fpga/pico-ice-lab-master/open-logic-main/src/base/vhdl/olo_base_pkg_math.vhd(157): analyzing package body olo_base_pkg_math. VHDL-1013
+Analyzing VHDL file c:/users/felix/documents/master_1ecam/fpga/pico-ice-lab-master/open-logic-main/src/base/vhdl/olo_base_pkg_attribute.vhd. VHDL-1481
+Analyzing VHDL file c:/users/felix/documents/master_1ecam/fpga/pico-ice-lab-master/open-logic-main/src/base/vhdl/olo_base_pkg_attribute.vhd
+
+INFO <35921014> - synthesis: c:/users/felix/documents/master_1ecam/fpga/pico-ice-lab-master/open-logic-main/src/base/vhdl/olo_base_pkg_attribute.vhd(29): analyzing package olo_base_pkg_attribute. VHDL-1014
+INFO <35921013> - synthesis: c:/users/felix/documents/master_1ecam/fpga/pico-ice-lab-master/open-logic-main/src/base/vhdl/olo_base_pkg_attribute.vhd(123): analyzing package body olo_base_pkg_attribute. VHDL-1013
+Analyzing VHDL file c:/users/felix/documents/master_1ecam/fpga/pico-ice-lab-master/open-logic-main/src/base/vhdl/olo_base_reset_gen.vhd. VHDL-1481
+Analyzing VHDL file c:/users/felix/documents/master_1ecam/fpga/pico-ice-lab-master/open-logic-main/src/base/vhdl/olo_base_reset_gen.vhd
+
+INFO <35921012> - synthesis: c:/users/felix/documents/master_1ecam/fpga/pico-ice-lab-master/open-logic-main/src/base/vhdl/olo_base_reset_gen.vhd(35): analyzing entity olo_base_reset_gen. VHDL-1012
+INFO <35921010> - synthesis: c:/users/felix/documents/master_1ecam/fpga/pico-ice-lab-master/open-logic-main/src/base/vhdl/olo_base_reset_gen.vhd(52): analyzing architecture struct. VHDL-1010
+Analyzing VHDL file c:/users/felix/documents/master_1ecam/fpga/pico-ice-lab-master/open-logic-main/src/base/vhdl/olo_base_pkg_logic.vhd. VHDL-1481
+Analyzing VHDL file c:/users/felix/documents/master_1ecam/fpga/pico-ice-lab-master/open-logic-main/src/base/vhdl/olo_base_pkg_logic.vhd
+
+INFO <35921014> - synthesis: c:/users/felix/documents/master_1ecam/fpga/pico-ice-lab-master/open-logic-main/src/base/vhdl/olo_base_pkg_logic.vhd(32): analyzing package olo_base_pkg_logic. VHDL-1014
+INFO <35921013> - synthesis: c:/users/felix/documents/master_1ecam/fpga/pico-ice-lab-master/open-logic-main/src/base/vhdl/olo_base_pkg_logic.vhd(111): analyzing package body olo_base_pkg_logic. VHDL-1013
+Analyzing VHDL file c:/users/felix/documents/master_1ecam/fpga/pico-ice-lab-master/open-logic-main/src/base/vhdl/olo_base_strobe_gen.vhd. VHDL-1481
+Analyzing VHDL file c:/users/felix/documents/master_1ecam/fpga/pico-ice-lab-master/open-logic-main/src/base/vhdl/olo_base_strobe_gen.vhd
+
+INFO <35921012> - synthesis: c:/users/felix/documents/master_1ecam/fpga/pico-ice-lab-master/open-logic-main/src/base/vhdl/olo_base_strobe_gen.vhd(34): analyzing entity olo_base_strobe_gen. VHDL-1012
+INFO <35921010> - synthesis: c:/users/felix/documents/master_1ecam/fpga/pico-ice-lab-master/open-logic-main/src/base/vhdl/olo_base_strobe_gen.vhd(52): analyzing architecture rtl. VHDL-1010
+Analyzing VHDL file c:/users/felix/documents/master_1ecam/fpga/pico-ice-lab-master/open-logic-main/src/intf/vhdl/olo_intf_sync.vhd. VHDL-1481
+Analyzing VHDL file c:/users/felix/documents/master_1ecam/fpga/pico-ice-lab-master/open-logic-main/src/intf/vhdl/olo_intf_sync.vhd
+
+INFO <35921012> - synthesis: c:/users/felix/documents/master_1ecam/fpga/pico-ice-lab-master/open-logic-main/src/intf/vhdl/olo_intf_sync.vhd(34): analyzing entity olo_intf_sync. VHDL-1012
+INFO <35921010> - synthesis: c:/users/felix/documents/master_1ecam/fpga/pico-ice-lab-master/open-logic-main/src/intf/vhdl/olo_intf_sync.vhd(54): analyzing architecture struct. VHDL-1010
+Analyzing VHDL file c:/users/felix/documents/master_1ecam/fpga/pico-ice-lab-master/open-logic-main/src/intf/vhdl/olo_intf_uart.vhd. VHDL-1481
+Analyzing VHDL file c:/users/felix/documents/master_1ecam/fpga/pico-ice-lab-master/open-logic-main/src/intf/vhdl/olo_intf_uart.vhd
+
+INFO <35921012> - synthesis: c:/users/felix/documents/master_1ecam/fpga/pico-ice-lab-master/open-logic-main/src/intf/vhdl/olo_intf_uart.vhd(33): analyzing entity olo_intf_uart. VHDL-1012
+INFO <35921010> - synthesis: c:/users/felix/documents/master_1ecam/fpga/pico-ice-lab-master/open-logic-main/src/intf/vhdl/olo_intf_uart.vhd(62): analyzing architecture rtl. VHDL-1010
+Analyzing VHDL file c:/users/felix/documents/master_1ecam/fpga/pico-ice-lab-master/rtl/uart_protocol/uart_protocol.vhd. VHDL-1481
+Analyzing VHDL file c:/users/felix/documents/master_1ecam/fpga/pico-ice-lab-master/rtl/uart_protocol/uart_protocol.vhd
+
+INFO <35921012> - synthesis: c:/users/felix/documents/master_1ecam/fpga/pico-ice-lab-master/rtl/uart_protocol/uart_protocol.vhd(12): analyzing entity uart_protocol. VHDL-1012
+INFO <35921010> - synthesis: c:/users/felix/documents/master_1ecam/fpga/pico-ice-lab-master/rtl/uart_protocol/uart_protocol.vhd(35): analyzing architecture rtl. VHDL-1010
+Analyzing VHDL file c:/users/felix/documents/master_1ecam/fpga/pico-ice-lab-master/rtl/config_regs/config_regs.vhd. VHDL-1481
+Analyzing VHDL file c:/users/felix/documents/master_1ecam/fpga/pico-ice-lab-master/rtl/config_regs/config_regs.vhd
+
+INFO <35921012> - synthesis: c:/users/felix/documents/master_1ecam/fpga/pico-ice-lab-master/rtl/config_regs/config_regs.vhd(12): analyzing entity config_regs. VHDL-1012
+INFO <35921010> - synthesis: c:/users/felix/documents/master_1ecam/fpga/pico-ice-lab-master/rtl/config_regs/config_regs.vhd(48): analyzing architecture rtl. VHDL-1010
+Analyzing VHDL file c:/users/felix/documents/master_1ecam/fpga/pico-ice-lab-master/rtl/top/ramp_generator.vhd. VHDL-1481
+Analyzing VHDL file c:/users/felix/documents/master_1ecam/fpga/pico-ice-lab-master/rtl/top/ramp_generator.vhd
+
+INFO <35921012> - synthesis: c:/users/felix/documents/master_1ecam/fpga/pico-ice-lab-master/rtl/top/ramp_generator.vhd(10): analyzing entity ramp_generator. VHDL-1012
+INFO <35921010> - synthesis: c:/users/felix/documents/master_1ecam/fpga/pico-ice-lab-master/rtl/top/ramp_generator.vhd(26): analyzing architecture rtl. VHDL-1010
+Analyzing VHDL file c:/users/felix/documents/master_1ecam/fpga/pico-ice-lab-master/rtl/top/pwm_motor_channel.vhd. VHDL-1481
+Analyzing VHDL file c:/users/felix/documents/master_1ecam/fpga/pico-ice-lab-master/rtl/top/pwm_motor_channel.vhd
+
+INFO <35921012> - synthesis: c:/users/felix/documents/master_1ecam/fpga/pico-ice-lab-master/rtl/top/pwm_motor_channel.vhd(10): analyzing entity pwm_motor_channel. VHDL-1012
+INFO <35921010> - synthesis: c:/users/felix/documents/master_1ecam/fpga/pico-ice-lab-master/rtl/top/pwm_motor_channel.vhd(25): analyzing architecture rtl. VHDL-1010
+Analyzing VHDL file c:/users/felix/documents/master_1ecam/fpga/pico-ice-lab-master/rtl/top/top.vhd. VHDL-1481
+Analyzing VHDL file c:/users/felix/documents/master_1ecam/fpga/pico-ice-lab-master/rtl/top/top.vhd
+
+INFO <35921012> - synthesis: c:/users/felix/documents/master_1ecam/fpga/pico-ice-lab-master/rtl/top/top.vhd(12): analyzing entity top. VHDL-1012
+INFO <35921010> - synthesis: c:/users/felix/documents/master_1ecam/fpga/pico-ice-lab-master/rtl/top/top.vhd(35): analyzing architecture rtl. VHDL-1010
+INFO <35921504> - synthesis: The default VHDL library search path is now "C:/Users/felix/Documents/Master_1ECAM/FPGA/pico-ice-lab-master/project/robot/impl_1". VHDL-1504
+Top module language type = VHDL.
+INFO <35921172> - synthesis: c:/users/felix/documents/master_1ecam/fpga/pico-ice-lab-master/open-logic-main/src/intf/vhdl/olo_intf_uart.vhd(219): others clause is never selected. VHDL-1172
+INFO <35921172> - synthesis: c:/users/felix/documents/master_1ecam/fpga/pico-ice-lab-master/open-logic-main/src/intf/vhdl/olo_intf_uart.vhd(298): others clause is never selected. VHDL-1172
+WARNING <35921200> - synthesis: c:/users/felix/documents/master_1ecam/fpga/pico-ice-lab-master/open-logic-main/src/intf/vhdl/olo_intf_sync.vhd(99): range is empty (null range). VHDL-1200
+INFO <35921172> - synthesis: c:/users/felix/documents/master_1ecam/fpga/pico-ice-lab-master/rtl/uart_protocol/uart_protocol.vhd(242): others clause is never selected. VHDL-1172
+INFO <35921172> - synthesis: c:/users/felix/documents/master_1ecam/fpga/pico-ice-lab-master/rtl/top/ramp_generator.vhd(140): others clause is never selected. VHDL-1172
+Top module name (VHDL, mixed language): top
+[Parameter Setting Section Start]
+
+	[Parameter Settings for Instance(s): reset_gen_inst]
+	(Module: olo_base_reset_gen)
+		RstPulseCycles_g          3
+		RstInPolarity_g           '0'
+		AsyncResetOutput_g        false
+		SyncStages_g              2
+
+	[Parameter Settings for Instance(s): uart_inst]
+	(Module: olo_intf_uart)
+		ClkFreq_g                 12000000.0
+		BaudRate_g                115200.0
+		DataBits_g                8
+		StopBits_g                "1"
+		Parity_g                  "none"
+
+	[Parameter Settings for Instance(s): pwm_motor1_inst, pwm_motor2_inst]
+	(Module: pwm_motor_channel)
+		PwmPeriod_g               480
+
+	[Parameter Settings for Instance(s): i_strb_tx, i_strb_rx]
+	(Module: olo_base_strobe_gen)
+		FreqClkHz_g               12000000.0
+		FreqStrobeHz_g            230400.0
+		FractionalMode_g          true
+
+	[Parameter Settings for Instance(s): i_sync]
+	(Module: olo_intf_sync)
+		Width_g                   1
+		RstLevel_g                '0'
+		SyncStages_g              2
+
+[Parameter Setting Section End]
+WARNING <35001771> - synthesis: Initial value found on net uart_tx_valid will be ignored due to unrecognized driver type
+WARNING <35001771> - synthesis: Initial value found on net uart_rx_valid will be ignored due to unrecognized driver type
+WARNING <35001771> - synthesis: Initial value found on net led_out_r will be ignored due to unrecognized driver type
+WARNING <35001771> - synthesis: Initial value found on net led_out_g will be ignored due to unrecognized driver type
+WARNING <35001771> - synthesis: Initial value found on net led_out_b will be ignored due to unrecognized driver type
+WARNING <35001771> - synthesis: Initial value found on net RstIn will be ignored due to unrecognized driver type
+WARNING <35001771> - synthesis: Initial value found on net DsSync[1] will be ignored due to unrecognized driver type
+WARNING <35001771> - synthesis: Initial value found on net DsSync[0]_keep will be ignored due to unrecognized driver type
+WARNING <35001771> - synthesis: Initial value found on net Tx_Valid will be ignored due to unrecognized driver type
+WARNING <35001771> - synthesis: Initial value found on net Tx_Data[7] will be ignored due to unrecognized driver type
+WARNING <35001771> - synthesis: Initial value found on net Tx_Data[6] will be ignored due to unrecognized driver type
+WARNING <35001771> - synthesis: Initial value found on net Tx_Data[5] will be ignored due to unrecognized driver type
+WARNING <35001771> - synthesis: Initial value found on net Tx_Data[4] will be ignored due to unrecognized driver type
+WARNING <35001771> - synthesis: Initial value found on net Tx_Data[3] will be ignored due to unrecognized driver type
+WARNING <35001771> - synthesis: Initial value found on net Tx_Data[2] will be ignored due to unrecognized driver type
+WARNING <35001771> - synthesis: Initial value found on net Tx_Data[1] will be ignored due to unrecognized driver type
+WARNING <35001771> - synthesis: Initial value found on net Tx_Data[0] will be ignored due to unrecognized driver type
+WARNING <35001771> - synthesis: Initial value found on net Uart_Rx will be ignored due to unrecognized driver type
+WARNING <35001771> - synthesis: Initial value found on net In_Sync will be ignored due to unrecognized driver type
+WARNING <35001771> - synthesis: Initial value found on net Out_Ready will be ignored due to unrecognized driver type
+WARNING <35001771> - synthesis: Initial value found on net Rst will be ignored due to unrecognized driver type
+WARNING <35001771> - synthesis: Initial value found on net RegN[0][0] will be ignored due to unrecognized driver type
+WARNING <35001771> - synthesis: Initial value found on net Reg0[0]_keep will be ignored due to unrecognized driver type
+WARNING <35001771> - synthesis: Initial value found on net prdata_i[15] will be ignored due to unrecognized driver type
+WARNING <35001771> - synthesis: Initial value found on net prdata_i[14] will be ignored due to unrecognized driver type
+WARNING <35001771> - synthesis: Initial value found on net prdata_i[13] will be ignored due to unrecognized driver type
+WARNING <35001771> - synthesis: Initial value found on net prdata_i[12] will be ignored due to unrecognized driver type
+WARNING <35001771> - synthesis: Initial value found on net prdata_i[11] will be ignored due to unrecognized driver type
+WARNING <35001771> - synthesis: Initial value found on net prdata_i[10] will be ignored due to unrecognized driver type
+WARNING <35001771> - synthesis: Initial value found on net prdata_i[9] will be ignored due to unrecognized driver type
+WARNING <35001771> - synthesis: Initial value found on net prdata_i[8] will be ignored due to unrecognized driver type
+WARNING <35001771> - synthesis: Initial value found on net prdata_i[7] will be ignored due to unrecognized driver type
+WARNING <35001771> - synthesis: Initial value found on net prdata_i[6] will be ignored due to unrecognized driver type
+WARNING <35001771> - synthesis: Initial value found on net prdata_i[5] will be ignored due to unrecognized driver type
+WARNING <35001771> - synthesis: Initial value found on net prdata_i[4] will be ignored due to unrecognized driver type
+WARNING <35001771> - synthesis: Initial value found on net prdata_i[3] will be ignored due to unrecognized driver type
+WARNING <35001771> - synthesis: Initial value found on net prdata_i[2] will be ignored due to unrecognized driver type
+WARNING <35001771> - synthesis: Initial value found on net prdata_i[1] will be ignored due to unrecognized driver type
+WARNING <35001771> - synthesis: Initial value found on net prdata_i[0] will be ignored due to unrecognized driver type
+CRITICAL <35002028> - synthesis: I/O port's net has no driver and is unused: us_echo
+CRITICAL <35002028> - synthesis: I/O port's net has no driver and is unused: quad1[1]
+CRITICAL <35002028> - synthesis: I/O port's net has no driver and is unused: quad1[0]
+CRITICAL <35002028> - synthesis: I/O port's net has no driver and is unused: quad2[1]
+CRITICAL <35002028> - synthesis: I/O port's net has no driver and is unused: quad2[0]
+INFO <35001774> - synthesis: Extracted state machine for register '\uart_inst/r.StateTx' with one-hot encoding
+State machine has 4 reachable states with original encodings of:
+
+ 00 
+
+ 01 
+
+ 10 
+
+ 11 
+
+original encoding -> new encoding (one-hot encoding)
+
+ 00 -> 0001
+
+ 01 -> 0010
+
+ 10 -> 0100
+
+ 11 -> 1000
+
+INFO <35001774> - synthesis: Extracted state machine for register '\uart_inst/r.StateRx' with one-hot encoding
+State machine has 4 reachable states with original encodings of:
+
+ 000 
+
+ 001 
+
+ 010 
+
+ 100 
+
+original encoding -> new encoding (one-hot encoding)
+
+ 000 -> 0001
+
+ 001 -> 0010
+
+ 010 -> 0100
+
+ 100 -> 1000
+
+INFO <35001774> - synthesis: Extracted state machine for register '\uart_protocol_inst/state' with one-hot encoding
+State machine has 13 reachable states with original encodings of:
+
+ 0000 
+
+ 0001 
+
+ 0010 
+
+ 0011 
+
+ 0100 
+
+ 0101 
+
+ 0110 
+
+ 0111 
+
+ 1000 
+
+ 1001 
+
+ 1010 
+
+ 1011 
+
+ 1100 
+
+original encoding -> new encoding (one-hot encoding)
+
+ 0000 -> 0000000000001
+
+ 0001 -> 0000000000010
+
+ 0010 -> 0000000000100
+
+ 0011 -> 0000000001000
+
+ 0100 -> 0000000010000
+
+ 0101 -> 0000000100000
+
+ 0110 -> 0000001000000
+
+ 0111 -> 0000010000000
+
+ 1000 -> 0000100000000
+
+ 1001 -> 0001000000000
+
+ 1010 -> 0010000000000
+
+ 1011 -> 0100000000000
+
+ 1100 -> 1000000000000
+
+INFO <35001774> - synthesis: Extracted state machine for register '\ramp_generator_inst/state' with one-hot encoding
+State machine has 4 reachable states with original encodings of:
+
+ 00 
+
+ 01 
+
+ 10 
+
+ 11 
+
+original encoding -> new encoding (one-hot encoding)
+
+ 00 -> 0001
+
+ 01 -> 0010
+
+ 10 -> 0100
+
+ 11 -> 1000
+
+
+
+
+CRITICAL <35001747> - synthesis: Bit(s) of register driving \uart_inst/r.TxShiftReg[9:0] stuck at '0': 9
+CRITICAL <35002028> - synthesis: I/O port's net has no driver and is unused: us_echo
+CRITICAL <35002028> - synthesis: I/O port's net has no driver and is unused: quad1[1]
+CRITICAL <35002028> - synthesis: I/O port's net has no driver and is unused: quad1[0]
+CRITICAL <35002028> - synthesis: I/O port's net has no driver and is unused: quad2[1]
+CRITICAL <35002028> - synthesis: I/O port's net has no driver and is unused: quad2[0]
+WARNING <35935040> - synthesis: Register \uart_inst/i_strb_rx/Count__i0 clock is stuck at Zero. VDB-5040
+WARNING <35935040> - synthesis: Register \uart_inst/i_strb_tx/Count__i0 clock is stuck at Zero. VDB-5040
+WARNING <35935040> - synthesis: Register \uart_inst/i_strb_rx/Count__i1 clock is stuck at Zero. VDB-5040
+WARNING <35935040> - synthesis: Register \uart_inst/i_strb_tx/Count__i1 clock is stuck at Zero. VDB-5040
+WARNING <35002062> - synthesis: Port rejected for I/O register mapping: clk
+WARNING <35002062> - synthesis: Port rejected for I/O register mapping: rstn
+WARNING <35002062> - synthesis: Port rejected for I/O register mapping: uart_txd
+WARNING <35002062> - synthesis: Port rejected for I/O register mapping: uart_rxd
+WARNING <35002062> - synthesis: Port rejected for I/O register mapping: us_trig
+WARNING <35002062> - synthesis: Port rejected for I/O register mapping: us_echo
+WARNING <35002062> - synthesis: Port rejected for I/O register mapping: quad1[1]
+WARNING <35002062> - synthesis: Port rejected for I/O register mapping: quad1[0]
+WARNING <35002062> - synthesis: Port rejected for I/O register mapping: quad2[1]
+WARNING <35002062> - synthesis: Port rejected for I/O register mapping: quad2[0]
+WARNING <35002062> - synthesis: Port rejected for I/O register mapping: pwm_mot1[1]
+WARNING <35002062> - synthesis: Port rejected for I/O register mapping: pwm_mot1[0]
+WARNING <35002062> - synthesis: Port rejected for I/O register mapping: pwm_mot2[1]
+WARNING <35002062> - synthesis: Port rejected for I/O register mapping: pwm_mot2[0]
+WARNING <35002062> - synthesis: Port rejected for I/O register mapping: led_r
+WARNING <35002062> - synthesis: Port rejected for I/O register mapping: led_g
+WARNING <35002062> - synthesis: Port rejected for I/O register mapping: led_b
+Starting design annotation....
+
+Starting full timing analysis...
+Starting design annotation....
+
+Starting full timing analysis...
+Starting design annotation....
+
+Starting full timing analysis...
+Starting design annotation....
+
+Starting full timing analysis...
+
+################### Begin Area Report (top)######################
+Number of register bits => 350 of 5280 (6 % )
+CCU2 => 74
+FD1P3XZ => 350
+IB => 3
+LUT4 => 570
+OB => 6
+OBZ_B => 3
+################### End Area Report ##################
+Number of odd-length carry chains : 4
+Number of even-length carry chains : 6
+
+################### Begin Clock Report ######################
+Clock Nets
+Number of Clocks: 1
+  Net : clk_c, loads : 0
+Clock Enable Nets
+Number of Clock Enables: 0
+Highest fanout non-clock nets
+Top 10 highest fanout non-clock nets:
+  Net : reset_gen_inst/reset_N_388, loads : 265
+  Net : config_regs_inst/n3067, loads : 51
+  Net : ramp_generator_inst/n2132, loads : 44
+  Net : ramp_generator_inst/n7690, loads : 42
+  Net : ramp_generator_inst/pwm1_speed_cmd_14__N_103[2], loads : 37
+  Net : ramp_generator_inst/pwm1_speed_cmd_14__N_103[0], loads : 36
+  Net : ramp_generator_inst/n235, loads : 36
+  Net : n4186, loads : 33
+  Net : ramp_generator_inst/n3859, loads : 33
+  Net : ramp_generator_inst/n3956, loads : 32
+################### End Clock Report ##################
+
+################### Begin Constraint Report ######################
+Constraint Summary:
+  Total number of constraints: 4
+  Total number of constraints dropped: 0
+###################  End Constraint Report  ######################
+
+Peak Memory Usage: 114 MB
+
+--------------------------------------------------------------
+Total CPU Time: 9 secs 
+Total REAL Time: 14 secs 
+--------------------------------------------------------------
+Checksum -- synthesis -- netlist: c030abb7da3ef8e6d44bec25e29d656c146f6065
