@@ -32,7 +32,16 @@ entity config_regs is
         pwm1_direction : out std_logic;
         pwm1_speed     : out std_logic_vector(14 downto 0);
         pwm2_direction : out std_logic;
-        pwm2_speed     : out std_logic_vector(14 downto 0)
+        pwm2_speed     : out std_logic_vector(14 downto 0);
+
+        -- Ramp-generator configuration registers.
+        ramp_time_delay      : out std_logic_vector(15 downto 0);
+        ramp_target_speed    : out std_logic_vector(15 downto 0);
+        ramp_fast_time       : out std_logic_vector(15 downto 0);
+        ramp_speed_increment : out std_logic_vector(15 downto 0);
+        ramp_speed_decrement : out std_logic_vector(15 downto 0);
+        ramp_execute         : out std_logic;
+        ramp_execute_clear   : in  std_logic
     );
 end entity config_regs;
 
@@ -51,6 +60,12 @@ architecture rtl of config_regs is
     signal led_b_reg : std_logic := '0';
     signal pwm1_reg  : std_logic_vector(15 downto 0) := (others => '0');
     signal pwm2_reg  : std_logic_vector(15 downto 0) := (others => '0');
+    signal ramp_time_delay_reg      : std_logic_vector(15 downto 0) := (others => '0');
+    signal ramp_target_speed_reg    : std_logic_vector(15 downto 0) := (others => '0');
+    signal ramp_fast_time_reg       : std_logic_vector(15 downto 0) := (others => '0');
+    signal ramp_speed_increment_reg : std_logic_vector(15 downto 0) := (others => '0');
+    signal ramp_speed_decrement_reg : std_logic_vector(15 downto 0) := (others => '0');
+    signal ramp_execute_reg         : std_logic := '0';
 
     -- Read data mux output.
     signal prdata_i : std_logic_vector(15 downto 0) := (others => '0');
@@ -68,6 +83,14 @@ begin
                 led_b_reg <= '0';
                 pwm1_reg  <= (others => '0');
                 pwm2_reg  <= (others => '0');
+                ramp_time_delay_reg      <= (others => '0');
+                ramp_target_speed_reg    <= (others => '0');
+                ramp_fast_time_reg       <= (others => '0');
+                ramp_speed_increment_reg <= (others => '0');
+                ramp_speed_decrement_reg <= (others => '0');
+                ramp_execute_reg         <= '0';
+            elsif ramp_execute_clear = '1' then
+                ramp_execute_reg <= '0';
             elsif s_psel = '1' and s_penable = '1' and s_pwrite = '1' then
                 -- APB data is actually written during the access phase, i.e.
                 -- when both PSEL and PENABLE are high on a write transfer.
@@ -89,6 +112,24 @@ begin
                         -- bit 15 = direction, bits 14:0 = speed command
                         pwm2_reg <= s_pwdata;
 
+                    when x"16" =>
+                        ramp_time_delay_reg <= s_pwdata;
+
+                    when x"18" =>
+                        ramp_target_speed_reg <= s_pwdata;
+
+                    when x"1A" =>
+                        ramp_fast_time_reg <= s_pwdata;
+
+                    when x"1C" =>
+                        ramp_speed_increment_reg <= s_pwdata;
+
+                    when x"1E" =>
+                        ramp_speed_decrement_reg <= s_pwdata;
+
+                    when x"20" =>
+                        ramp_execute_reg <= s_pwdata(0);
+
                     when others =>
                         null;
                 end case;
@@ -99,7 +140,20 @@ begin
     -- Read mux.
     -- Read data is made available combinatorially from the addressed register.
     -- The APB master samples it during the access phase of a read transfer.
-    process (s_paddr, led_r_reg, led_g_reg, led_b_reg, pwm1_reg, pwm2_reg)
+    process (
+        s_paddr,
+        led_r_reg,
+        led_g_reg,
+        led_b_reg,
+        pwm1_reg,
+        pwm2_reg,
+        ramp_time_delay_reg,
+        ramp_target_speed_reg,
+        ramp_fast_time_reg,
+        ramp_speed_increment_reg,
+        ramp_speed_decrement_reg,
+        ramp_execute_reg
+    )
     begin
         prdata_i <= (others => '0');
 
@@ -119,6 +173,24 @@ begin
             when x"08" =>
                 prdata_i <= pwm2_reg;
 
+            when x"16" =>
+                prdata_i <= ramp_time_delay_reg;
+
+            when x"18" =>
+                prdata_i <= ramp_target_speed_reg;
+
+            when x"1A" =>
+                prdata_i <= ramp_fast_time_reg;
+
+            when x"1C" =>
+                prdata_i <= ramp_speed_increment_reg;
+
+            when x"1E" =>
+                prdata_i <= ramp_speed_decrement_reg;
+
+            when x"20" =>
+                prdata_i(0) <= ramp_execute_reg;
+
             when others =>
                 prdata_i <= (others => '0');
         end case;
@@ -134,6 +206,12 @@ begin
     pwm1_speed     <= pwm1_reg(14 downto 0);
     pwm2_direction <= pwm2_reg(15);
     pwm2_speed     <= pwm2_reg(14 downto 0);
+    ramp_time_delay      <= ramp_time_delay_reg;
+    ramp_target_speed    <= ramp_target_speed_reg;
+    ramp_fast_time       <= ramp_fast_time_reg;
+    ramp_speed_increment <= ramp_speed_increment_reg;
+    ramp_speed_decrement <= ramp_speed_decrement_reg;
+    ramp_execute         <= ramp_execute_reg;
 
 
 end architecture;

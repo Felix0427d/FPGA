@@ -63,6 +63,19 @@ architecture rtl of top is
     signal pwm1_speed     : std_logic_vector(14 downto 0);
     signal pwm2_direction : std_logic;
     signal pwm2_speed     : std_logic_vector(14 downto 0);
+    signal pwm1_speed_cmd : std_logic_vector(14 downto 0);
+    signal pwm2_speed_cmd : std_logic_vector(14 downto 0);
+
+    -- Ramp-generator configuration and outputs.
+    signal ramp_time_delay      : std_logic_vector(15 downto 0);
+    signal ramp_target_speed    : std_logic_vector(15 downto 0);
+    signal ramp_fast_time       : std_logic_vector(15 downto 0);
+    signal ramp_speed_increment : std_logic_vector(15 downto 0);
+    signal ramp_speed_decrement : std_logic_vector(15 downto 0);
+    signal ramp_execute         : std_logic;
+    signal ramp_execute_clear   : std_logic;
+    signal ramp_busy            : std_logic;
+    signal ramp_speed           : std_logic_vector(14 downto 0);
 
     signal counter : unsigned(23 downto 0) := (others => '0');
 begin
@@ -133,8 +146,38 @@ begin
         pwm1_direction => pwm1_direction,
         pwm1_speed     => pwm1_speed,
         pwm2_direction => pwm2_direction,
-        pwm2_speed     => pwm2_speed
+        pwm2_speed     => pwm2_speed,
+        ramp_time_delay      => ramp_time_delay,
+        ramp_target_speed    => ramp_target_speed,
+        ramp_fast_time       => ramp_fast_time,
+        ramp_speed_increment => ramp_speed_increment,
+        ramp_speed_decrement => ramp_speed_decrement,
+        ramp_execute         => ramp_execute,
+        ramp_execute_clear   => ramp_execute_clear
     );
+
+    -- *** Ramp generator ***
+    -- The ramp block follows the requested sequence:
+    -- accelerate -> stay at full speed -> decelerate.
+    ramp_generator_inst : entity work.ramp_generator
+    port map (
+        clk               => clk,
+        reset             => reset,
+        execute           => ramp_execute,
+        time_delay        => ramp_time_delay,
+        target_speed      => ramp_target_speed,
+        fast_time         => ramp_fast_time,
+        speed_increment   => ramp_speed_increment,
+        speed_decrement   => ramp_speed_decrement,
+        current_speed     => ramp_speed,
+        busy              => ramp_busy,
+        execute_clear     => ramp_execute_clear
+    );
+
+    -- When a ramp is running, both motors use the generated ramp speed.
+    -- Otherwise the manual APB PWM speed registers are used directly.
+    pwm1_speed_cmd <= ramp_speed when ramp_busy = '1' else pwm1_speed;
+    pwm2_speed_cmd <= ramp_speed when ramp_busy = '1' else pwm2_speed;
 
     -- *** PWM generators ***
     -- One channel is instantiated per motor. Each channel generates two logic
@@ -147,7 +190,7 @@ begin
         clk       => clk,
         reset     => reset,
         direction => pwm1_direction,
-        speed     => pwm1_speed,
+        speed     => pwm1_speed_cmd,
         pwm_out   => pwm_mot1
     );
 
@@ -159,7 +202,7 @@ begin
         clk       => clk,
         reset     => reset,
         direction => pwm2_direction,
-        speed     => pwm2_speed,
+        speed     => pwm2_speed_cmd,
         pwm_out   => pwm_mot2
     );
 
