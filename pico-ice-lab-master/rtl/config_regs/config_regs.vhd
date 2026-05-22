@@ -31,15 +31,18 @@ entity config_regs is
 end entity config_regs;
 
 architecture rtl of config_regs is
-    -- Register 0x00: LED control register.
-    --   bit 0 -> red LED
-    --   bit 1 -> green LED
-    --   bit 2 -> blue LED
-    signal led_reg : std_logic_vector(2 downto 0) := (others => '0');
-
-    -- Register 0x01: generic 16-bit scratch register.
-    -- This is useful to validate read and write transactions over UART.
-    signal scratch_reg : std_logic_vector(15 downto 0) := (others => '0');
+    -- Requested register map for this lab session:
+    --   0x00 -> Red LED control   (bit 0 used)
+    --   0x02 -> Green LED control (bit 0 used)
+    --   0x04 -> Blue LED control  (bit 0 used)
+    --
+    -- A full FSM is not required for this APB slave because the register bank
+    -- does not have any multi-cycle behavior. The transfer is simple enough to
+    -- be handled with one synchronous write process and one combinatorial read
+    -- mux.
+    signal led_r_reg : std_logic := '0';
+    signal led_g_reg : std_logic := '0';
+    signal led_b_reg : std_logic := '0';
 
     -- Read data mux output.
     signal prdata_i : std_logic_vector(15 downto 0) := (others => '0');
@@ -52,15 +55,21 @@ begin
     begin
         if rising_edge(clk) then
             if reset = '1' then
-                led_reg     <= (others => '0');
-                scratch_reg <= (others => '0');
+                led_r_reg <= '0';
+                led_g_reg <= '0';
+                led_b_reg <= '0';
             elsif s_psel = '1' and s_penable = '1' and s_pwrite = '1' then
+                -- APB data is actually written during the access phase, i.e.
+                -- when both PSEL and PENABLE are high on a write transfer.
                 case s_paddr is
                     when x"00" =>
-                        led_reg <= s_pwdata(2 downto 0);
+                        led_r_reg <= s_pwdata(0);
 
-                    when x"01" =>
-                        scratch_reg <= s_pwdata;
+                    when x"02" =>
+                        led_g_reg <= s_pwdata(0);
+
+                    when x"04" =>
+                        led_b_reg <= s_pwdata(0);
 
                     when others =>
                         null;
@@ -70,22 +79,21 @@ begin
     end process;
 
     -- Read mux.
-    -- Since this lab bus does not model PREADY, the master simply samples the
-    -- combinatorial read data during the access phase.
-    process (s_paddr, led_reg, scratch_reg)
+    -- Read data is made available combinatorially from the addressed register.
+    -- The APB master samples it during the access phase of a read transfer.
+    process (s_paddr, led_r_reg, led_g_reg, led_b_reg)
     begin
         prdata_i <= (others => '0');
 
         case s_paddr is
             when x"00" =>
-                prdata_i(2 downto 0) <= led_reg;
-
-            when x"01" =>
-                prdata_i <= scratch_reg;
+                prdata_i(0) <= led_r_reg;
 
             when x"02" =>
-                -- Constant identification value to make readback debugging easy.
-                prdata_i <= x"EC10";
+                prdata_i(0) <= led_g_reg;
+
+            when x"04" =>
+                prdata_i(0) <= led_b_reg;
 
             when others =>
                 prdata_i <= (others => '0');
@@ -94,10 +102,10 @@ begin
 
     s_prdata <= prdata_i;
 
-    -- Drive the visible outputs from the LED control register.
-    led_r <= led_reg(0);
-    led_g <= led_reg(1);
-    led_b <= led_reg(2);
+    -- Drive the visible outputs from the APB-accessible LED registers.
+    led_r <= led_r_reg;
+    led_g <= led_g_reg;
+    led_b <= led_b_reg;
 
 
 end architecture;

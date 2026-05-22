@@ -6,6 +6,12 @@
         <Source name="../../rtl/top/top.vhd" type="VHDL" type_short="VHDL">
             <Options top_module="top"/>
         </Source>
+        <Source name="../../rtl/uart_protocol/uart_protocol.vhd" type="VHDL" type_short="VHDL">
+            <Options/>
+        </Source>
+        <Source name="../../rtl/config_regs/config_regs.vhd" type="VHDL" type_short="VHDL">
+            <Options/>
+        </Source>
         <Source name="../../open-logic-main/src/base/vhdl/olo_base_pkg_array.vhd" type="VHDL" type_short="VHDL">
             <Options/>
         </Source>
